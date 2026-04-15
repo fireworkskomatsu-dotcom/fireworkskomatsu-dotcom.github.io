@@ -23,9 +23,13 @@
       box-shadow:0 10px 30px rgba(0,0,0,.18);
     }
     .hero{
-      background:#f0c93d;
       color:#000;
+      transition:background .2s ease;
     }
+    .hero.yellow{ background:#f0c93d; }
+    .hero.green{ background:#49d17d; }
+    .hero.red{ background:#ff6b6b; }
+
     .panel{
       background:#0c2570;
       color:#fff;
@@ -79,7 +83,7 @@
 <body>
   <div class="wrap">
 
-    <div class="card hero">
+    <div id="hero" class="card hero yellow">
       <div class="title">JP Market AI Dashboard</div>
       <div id="weather" class="big">--</div>
       <div id="judgement" class="mid">読み込み中…</div>
@@ -122,17 +126,68 @@
       }
     }
 
+    async function loadText(path, fallback = '') {
+      try {
+        const res = await fetch(path + '?v=' + Date.now(), { cache: 'no-store' });
+        if (!res.ok) return fallback;
+        return await res.text();
+      } catch {
+        return fallback;
+      }
+    }
+
     function setText(id, value) {
       document.getElementById(id).textContent = value;
+    }
+
+    function setHeroColor(mode) {
+      const hero = document.getElementById('hero');
+      hero.classList.remove('yellow', 'green', 'red');
+      hero.classList.add(mode);
+    }
+
+    function decideColor(action, pnl, weatherText) {
+      const w = (weatherText || '').trim();
+
+      if (action === 'ENTER') {
+        return 'green';
+      }
+      if (action === 'EXIT') {
+        return 'red';
+      }
+      if (typeof pnl === 'number' && pnl < 0) {
+        return 'red';
+      }
+      if (w.includes('赤') || w.toUpperCase().includes('RISK') || w.toUpperCase().includes('DANGER')) {
+        return 'red';
+      }
+      if (w.includes('緑')) {
+        return 'green';
+      }
+      return 'yellow';
+    }
+
+    function decideWeatherLabel(color, weatherText) {
+      const w = (weatherText || '').trim();
+      if (w) return w;
+      if (color === 'green') return '緑';
+      if (color === 'red') return '赤';
+      return '黄';
+    }
+
+    function decideJudgement(action, color) {
+      if (action === 'ENTER') return 'エントリー指示';
+      if (action === 'EXIT') return '決済指示';
+      if (color === 'green') return 'ロング優勢';
+      if (color === 'red') return 'ショート優勢 / 危険回避';
+      return '様子見';
     }
 
     async function main() {
       const execution = await loadJson('./execution.json', {});
       const monitor = await loadJson('./monitor.json', { status: 'OK', alerts: [] });
       const position = await loadJson('./position.json', {});
-      const weatherTxt = await fetch('./weather.txt?v=' + Date.now(), { cache: 'no-store' })
-        .then(r => r.ok ? r.text() : '')
-        .catch(() => '');
+      const weatherTxt = await loadText('./weather.txt', '');
 
       const actionMap = {
         ENTER: '▶ エントリー',
@@ -144,10 +199,15 @@
       const side = execution.side ? ' / ' + execution.side : '';
       const reason = execution.reason || '待機';
       const size = execution.size ?? 0;
+      const pnl = Number(position.pnl ?? 0);
 
-      const weather = weatherTxt.trim() || '--';
-      setText('weather', weather);
-      setText('judgement', action === 'ENTER' ? 'エントリー指示' : action === 'EXIT' ? '決済指示' : '待機');
+      const color = decideColor(action, pnl, weatherTxt);
+      const weatherLabel = decideWeatherLabel(color, weatherTxt);
+      const judgement = decideJudgement(action, color);
+
+      setHeroColor(color);
+      setText('weather', weatherLabel);
+      setText('judgement', judgement);
       setText('action', (actionMap[action] || '▶ 何もしない') + side);
       setText('reason', '理由: ' + reason);
       setText('size', 'サイズ: ' + size);
