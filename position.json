@@ -1,0 +1,13 @@
+{
+  "weather": "",
+  "score": 0,
+  "danger": "",
+  "up_prob": 50,
+  "down_prob": 50,
+  "total_position": 0.0,
+  "allocations": {
+    "nikkei_etf": 0.0,
+    "semi_etf": 0.0,
+    "cash": 1.0
+  }
+}
