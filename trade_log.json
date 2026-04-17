@@ -1,0 +1,19 @@
+[
+  {
+    "time": "2026-04-17 15:14:10",
+    "type": "ENTER",
+    "side": "LONG",
+    "size": 0.03,
+    "reason": "FORCE_ENTRY_RANGE_SKIP_LONG"
+  },
+  {
+    "time": "2026-04-17 15:39:13",
+    "type": "EXIT",
+    "side": "LONG",
+    "size": 0.03,
+    "reason": "test_exit",
+    "entry_price": 0.0,
+    "exit_price": 110.0,
+    "pnl": 0.0
+  }
+]

@@ -4,14 +4,15 @@
   "danger": "",
   "up_prob": 50,
   "down_prob": 50,
-  "total_position": 0.03,
+  "total_position": 0,
   "allocations": {
     "nikkei_etf": 0.0,
     "semi_etf": 0.0,
     "cash": 1.0
   },
-  "entry_time": "2026-04-17 15:14:10",
-  "entry_reason": "FORCE_ENTRY_RANGE_SKIP_LONG",
-  "side": "LONG",
-  "pnl": 0
+  "entry_time": null,
+  "entry_reason": null,
+  "side": null,
+  "pnl": 0,
+  "entry_price": 0
 }
