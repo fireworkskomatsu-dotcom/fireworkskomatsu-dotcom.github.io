@@ -1,6 +1,6 @@
 {
-  "action": "ENTER",
-  "side": "LONG",
-  "size": 0.03,
-  "reason": "FORCE_ENTRY_RANGE_SKIP_LONG"
+  "action": "HOLD",
+  "side": null,
+  "size": 0,
+  "reason": "待機"
 }
