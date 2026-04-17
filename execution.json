@@ -1,6 +1,6 @@
 {
-  "action": "HOLD",
-  "side": null,
-  "size": 0,
-  "reason": "待機"
+  "action": "ENTER",
+  "side": "LONG",
+  "size": 0.1,
+  "reason": "両方向可 (NORMAL)"
 }
