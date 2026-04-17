@@ -1,19 +1,20 @@
 [
   {
-    "time": "2026-04-17 15:14:10",
+    "time": "2026-04-17 15:46:43",
     "type": "ENTER",
     "side": "LONG",
     "size": 0.03,
-    "reason": "FORCE_ENTRY_RANGE_SKIP_LONG"
+    "reason": "test_enter",
+    "entry_price": 100.0
   },
   {
-    "time": "2026-04-17 15:39:13",
+    "time": "2026-04-17 15:48:03",
     "type": "EXIT",
     "side": "LONG",
     "size": 0.03,
     "reason": "test_exit",
-    "entry_price": 0.0,
+    "entry_price": 100.0,
     "exit_price": 110.0,
-    "pnl": 0.0
+    "pnl": 0.3
   }
 ]
