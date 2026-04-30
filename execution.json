@@ -1,6 +1,6 @@
 {
-  "action": "ENTER",
-  "side": "LONG",
-  "size": 0.1,
-  "reason": "両方向可 (NORMAL)"
+  "action": "EXIT",
+  "side": null,
+  "size": 0,
+  "reason": "TAKE_PROFIT pnl=0.306"
 }
