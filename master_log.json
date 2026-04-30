@@ -1,0 +1,24 @@
+[
+  {
+    "time": "2026-04-30 17:15:05",
+    "price": 17.940000534057617,
+    "filter_decision": "LIGHT",
+    "confidence": 40.0,
+    "filter_reason": "両方向可 (NORMAL)",
+    "entry": true,
+    "entry_side": "LONG",
+    "entry_size": 0.1,
+    "entry_reason": "両方向可 (NORMAL)",
+    "action": "ENTER",
+    "exec_side": "LONG",
+    "exec_size": 0.1,
+    "exec_reason": "両方向可 (NORMAL)",
+    "total_position": 0.1,
+    "position_side": "LONG",
+    "entry_price": 17.940000534057617,
+    "pnl": 0,
+    "closed_trades": null,
+    "win_rate": 60.0,
+    "total_pnl": null
+  }
+]

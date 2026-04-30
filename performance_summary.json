@@ -1,9 +1,18 @@
 {
-  "entries": 1,
-  "closed_trades": 0,
-  "wins": 0,
-  "losses": 0,
-  "win_rate": 0.0,
-  "total_pnl": 0,
-  "avg_pnl": 0.0
+  "wins": 3,
+  "losses": 2,
+  "flats": 2,
+  "total_closed": 7,
+  "total_decisive": 5,
+  "win_rate": 60.0,
+  "avg_pnl": -632775.21,
+  "avg_win": 359.78,
+  "avg_loss": -2215252.89,
+  "cumulative_pnl": -4429426.44,
+  "profit_factor": 0.0,
+  "max_drawdown": 4429766.49,
+  "current_mode": "UNKNOWN",
+  "current_size_mult": 1.5,
+  "go_status": "NOT_READY",
+  "go_reason": "サンプル不足"
 }
