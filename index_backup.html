@@ -96,18 +96,7 @@
       </div>
     </div>
 
-    
-<div class="card panel">
-  <div class="title">AI総合判断</div>
-  <div id="ai_status" class="line">状態: --</div>
-  <div id="ai_reason" class="line">理由: --</div>
-  <div id="ai_regime" class="line">相場: --</div>
-  <div id="ai_vol" class="line">ボラ: --</div>
-  <div id="ai_go" class="line">本番判定: --</div>
-  <div id="ai_shadow" class="line">シャドー成績: --</div>
-</div>
-
-<div class="card panel">
+    <div class="card panel">
       <div class="title">安全状態</div>
       <div id="status" class="line">状態: --</div>
       <div id="alerts" class="line">警告: --</div>
@@ -231,15 +220,6 @@
 
       setText('pos', '総ポジション: ' + (position.total_position ?? 0));
       setText('pnl', 'PnL: ' + (position.pnl ?? 0));
-      
-      const ai = await loadJson('./ai_report.json', {});
-      setText('ai_status', '状態: ' + (ai.ai_status || '--'));
-      setText('ai_reason', '理由: ' + (ai.reason || '--'));
-      setText('ai_regime', '相場: ' + (ai.market_regime || '--') + ' / ' + (ai.regime_reason || ''));
-      setText('ai_vol', 'ボラ: ' + (ai.volatility_mode || '--') + ' / ' + (ai.volatility_reason || ''));
-      setText('ai_go', '本番判定: ' + (ai.go_live_status || '--') + ' / ' + (ai.go_live_reason || ''));
-      setText('ai_shadow', 'シャドー: ' + (ai.shadow_closed ?? 0) + '件 / 勝率 ' + (ai.shadow_win_rate ?? 0) + '% / PnL ' + (ai.shadow_total_pnl ?? 0));
-
       setText('updated', new Date().toLocaleString('ja-JP'));
     }
 
