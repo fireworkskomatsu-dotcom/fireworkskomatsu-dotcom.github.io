@@ -1,0 +1,22 @@
+{
+  "time": "2026-05-11 23:17:38",
+  "ai_status": "STOP",
+  "decision": "SKIP",
+  "reason": "VOLATILITY_PAUSE / 異常ボラ vol=12.63%",
+  "market_regime": "TREND_DOWN",
+  "regime_reason": "弱気トレンド",
+  "allowed_direction": "BOTH",
+  "size": 0,
+  "confidence": 40.0,
+  "volatility_mode": "DANGER",
+  "volatility_reason": "異常ボラ vol=12.63%",
+  "self_pause": false,
+  "self_pause_reason": "OK",
+  "go_live_status": "NOT_READY",
+  "go_live_reason": "サンプル不足 closed=2/10",
+  "shadow_closed": 3,
+  "shadow_win_rate": 66.7,
+  "shadow_total_pnl": 0.051,
+  "regime_learning_mode": "LEARNING",
+  "regime_size_mult": 0.5
+}
