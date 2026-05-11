@@ -1,0 +1,10 @@
+{
+  "time": "2026-05-11 23:39:47",
+  "fear": 100,
+  "aggression": 0,
+  "confidence": 43,
+  "risk": 100,
+  "market_pressure": 100,
+  "survival_mode": "EXTREME_DEFENSE",
+  "summary": "Fear=100, Aggression=0, Confidence=43, Mode=EXTREME_DEFENSE"
+}
