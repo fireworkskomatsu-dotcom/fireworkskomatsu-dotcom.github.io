@@ -1,0 +1,9 @@
+{
+  "stop": false,
+  "size_mult": 1.0,
+  "mode": "NORMAL",
+  "reason": "OK",
+  "max_drawdown": 0.0,
+  "total_pnl": 0.02,
+  "win_rate": 50.0
+}

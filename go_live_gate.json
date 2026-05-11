@@ -1,0 +1,9 @@
+{
+  "status": "NOT_READY",
+  "reason": "サンプル不足 closed=2/10",
+  "closed_trades": 2,
+  "win_rate": 50.0,
+  "total_pnl": 0.02,
+  "max_drawdown": 0.0,
+  "dd_stop": false
+}
