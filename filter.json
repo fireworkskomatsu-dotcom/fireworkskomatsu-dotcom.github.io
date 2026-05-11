@@ -3,5 +3,12 @@
   "size": 0,
   "confidence": 40.0,
   "allowed_direction": "BOTH",
-  "reason": "VOLATILITY_PAUSE / 異常ボラ vol=12.63%"
+  "reason": "VOLATILITY_PAUSE / 異常ボラ vol=12.63%",
+  "regime": "TREND_DOWN",
+  "vol_mode": "DANGER",
+  "vol_size_mult": 1.0,
+  "regime_size_mode": "LEARNING",
+  "regime_size_mult": 0.5,
+  "memory_mode": "LEARNING",
+  "memory_size_mult": 0.7
 }

@@ -1,5 +1,5 @@
 {
-  "time": "2026-05-11 23:17:38",
+  "time": "2026-05-12 02:07:58",
   "ai_status": "STOP",
   "decision": "SKIP",
   "reason": "VOLATILITY_PAUSE / 異常ボラ vol=12.63%",
@@ -18,5 +18,11 @@
   "shadow_win_rate": 66.7,
   "shadow_total_pnl": 0.051,
   "regime_learning_mode": "LEARNING",
-  "regime_size_mult": 0.5
+  "regime_size_mult": 0.5,
+  "filter_regime_size_mode": "LEARNING",
+  "filter_regime_size_mult": 0.5,
+  "filter_memory_mode": "LEARNING",
+  "filter_memory_size_mult": 0.7,
+  "filter_vol_mode": "DANGER",
+  "filter_vol_size_mult": 1.0
 }
