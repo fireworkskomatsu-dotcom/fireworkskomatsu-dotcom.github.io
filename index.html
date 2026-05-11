@@ -98,6 +98,17 @@
 
     
 
+
+<div class="card panel">
+  <div class="title">AI脳内メーター</div>
+  <div id="emotion_mode" class="line">Mode: --</div>
+  <div id="emotion_fear" class="line">Fear: --</div>
+  <div id="emotion_aggression" class="line">Aggression: --</div>
+  <div id="emotion_confidence" class="line">Confidence: --</div>
+  <div id="emotion_risk" class="line">Risk: --</div>
+  <div id="emotion_pressure" class="line">Market Pressure: --</div>
+</div>
+
 <div class="card panel">
   <div class="title">AIコメント</div>
   <div id="ai_commentary" class="line" style="white-space: pre-line;">--</div>
@@ -239,6 +250,15 @@
       setText('pnl', 'PnL: ' + (position.pnl ?? 0));
       
       
+      
+      const emotion = await loadJson('./emotion.json', {});
+      setText('emotion_mode', 'Mode: ' + (emotion.survival_mode || '--'));
+      setText('emotion_fear', 'Fear: ' + (emotion.fear ?? '--'));
+      setText('emotion_aggression', 'Aggression: ' + (emotion.aggression ?? '--'));
+      setText('emotion_confidence', 'Confidence: ' + (emotion.confidence ?? '--'));
+      setText('emotion_risk', 'Risk: ' + (emotion.risk ?? '--'));
+      setText('emotion_pressure', 'Market Pressure: ' + (emotion.market_pressure ?? '--'));
+
       const comment = await loadJson('./ai_commentary.json', {});
       setText('ai_commentary', comment.commentary || '--');
 
