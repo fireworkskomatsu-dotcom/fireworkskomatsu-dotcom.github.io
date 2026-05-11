@@ -1,10 +1,7 @@
 {
-  "decision": "LIGHT",
-  "size": 0.19,
+  "decision": "SKIP",
+  "size": 0,
   "confidence": 40.0,
-  "allowed_direction": "SHORT_ONLY",
-  "reason": "ロング禁止 (NORMAL)",
-  "regime": "TREND_DOWN",
-  "regime_size_mode": "LEARNING",
-  "regime_size_mult": 0.5
+  "allowed_direction": "BOTH",
+  "reason": "VOLATILITY_PAUSE / 異常ボラ vol=12.63%"
 }
