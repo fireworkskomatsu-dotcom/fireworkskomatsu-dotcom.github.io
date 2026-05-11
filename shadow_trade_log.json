@@ -1,0 +1,12 @@
+[
+  {
+    "time": "2026-05-11 17:22:53",
+    "type": "ENTER",
+    "side": "LONG",
+    "size": 0.1,
+    "entry_price": 20.8,
+    "decision": "LIGHT",
+    "confidence": 40.0,
+    "reason": "両方向可 (NORMAL)"
+  }
+]
