@@ -97,6 +97,12 @@
     </div>
 
     
+
+<div class="card panel">
+  <div class="title">AIコメント</div>
+  <div id="ai_commentary" class="line" style="white-space: pre-line;">--</div>
+</div>
+
 <div class="card panel">
   <div class="title">AI総合判断</div>
   <div id="ai_status" class="line">状態: --</div>
@@ -232,6 +238,10 @@
       setText('pos', '総ポジション: ' + (position.total_position ?? 0));
       setText('pnl', 'PnL: ' + (position.pnl ?? 0));
       
+      
+      const comment = await loadJson('./ai_commentary.json', {});
+      setText('ai_commentary', comment.commentary || '--');
+
       const ai = await loadJson('./ai_report.json', {});
       setText('ai_status', '状態: ' + (ai.ai_status || '--'));
       setText('ai_reason', '理由: ' + (ai.reason || '--'));
