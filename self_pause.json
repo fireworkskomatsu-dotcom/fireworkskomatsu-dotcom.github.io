@@ -1,0 +1,12 @@
+{
+  "pause": false,
+  "reason": "OK",
+  "shadow_closed": 3,
+  "shadow_win_rate": 66.7,
+  "shadow_total_pnl": 0.051,
+  "regime_mode": "LEARNING",
+  "regime_closed": 3,
+  "regime_win_rate": 66.7,
+  "regime_total_pnl": 0.051,
+  "dd_stop": false
+}

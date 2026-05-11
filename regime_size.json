@@ -1,0 +1,10 @@
+{
+  "regime": "TREND_DOWN",
+  "size_mult": 0.5,
+  "mode": "LEARNING",
+  "reason": "regimeサンプル不足 closed=3/5",
+  "closed_trades": 3,
+  "win_rate": 66.7,
+  "total_pnl": 0.051,
+  "avg_pnl": 0.017
+}

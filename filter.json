@@ -1,0 +1,10 @@
+{
+  "decision": "LIGHT",
+  "size": 0.19,
+  "confidence": 40.0,
+  "allowed_direction": "SHORT_ONLY",
+  "reason": "ロング禁止 (NORMAL)",
+  "regime": "TREND_DOWN",
+  "regime_size_mode": "LEARNING",
+  "regime_size_mult": 0.5
+}

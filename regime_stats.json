@@ -1,0 +1,13 @@
+{
+  "current_regime": "TREND_DOWN",
+  "stats": {
+    "TREND_DOWN": {
+      "closed_trades": 3,
+      "wins": 2,
+      "losses": 1,
+      "total_pnl": 0.051,
+      "win_rate": 66.7,
+      "avg_pnl": 0.017
+    }
+  }
+}
