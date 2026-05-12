@@ -3,10 +3,13 @@
   "size": 0,
   "confidence": 40.0,
   "allowed_direction": "BOTH",
-  "reason": "EMOTION_EXTREME_STOP / fear=100.0 risk=100.0",
+  "reason": "MULTI_AGENT_SKIP / council={'LONG': 1, 'SHORT': 1, 'SKIP': 1, 'HOLD': 0}",
   "regime": "TREND_DOWN",
-  "emotion_mode": "EXTREME_DEFENSE",
-  "emotion_fear": 100.0,
-  "emotion_risk": 100.0,
-  "emotion_aggression": 50.0
+  "multi_agent_decision": "SKIP",
+  "multi_agent_votes": {
+    "LONG": 1,
+    "SHORT": 1,
+    "SKIP": 1,
+    "HOLD": 0
+  }
 }
