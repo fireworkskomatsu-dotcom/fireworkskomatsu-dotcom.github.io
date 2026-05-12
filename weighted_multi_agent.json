@@ -1,0 +1,45 @@
+{
+  "time": "2026-05-12 11:21:43",
+  "final_decision": "SKIP",
+  "weighted_votes": {
+    "LONG": 1.0,
+    "SHORT": 1.0,
+    "SKIP": 2.0,
+    "HOLD": 0.0
+  },
+  "agents": [
+    {
+      "name": "TREND_AGENT",
+      "vote": "SHORT",
+      "confidence": 75,
+      "reason": "弱気トレンド",
+      "weight": 1.0,
+      "trust_mode": "LEARNING",
+      "agent_trades": 1,
+      "agent_win_rate": 100.0,
+      "agent_total_pnl": 0.03
+    },
+    {
+      "name": "DEFENSE_AGENT",
+      "vote": "SKIP",
+      "confidence": 100,
+      "reason": "EXTREME_DEFENSE",
+      "weight": 2.0,
+      "trust_mode": "VETO",
+      "agent_trades": 0,
+      "agent_win_rate": 0,
+      "agent_total_pnl": 0
+    },
+    {
+      "name": "CONTRARIAN_AGENT",
+      "vote": "LONG",
+      "confidence": 35,
+      "reason": "逆張り監視",
+      "weight": 1.0,
+      "trust_mode": "LEARNING",
+      "agent_trades": 2,
+      "agent_win_rate": 50.0,
+      "agent_total_pnl": 0.021
+    }
+  ]
+}

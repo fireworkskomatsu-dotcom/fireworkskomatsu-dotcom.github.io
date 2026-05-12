@@ -1,8 +1,8 @@
 {
-  "time": "2026-05-12 11:10:22",
+  "time": "2026-05-12 11:25:53",
   "ai_status": "STOP",
   "decision": "SKIP",
-  "reason": "MULTI_AGENT_SKIP / council={'LONG': 1, 'SHORT': 1, 'SKIP': 1, 'HOLD': 0}",
+  "reason": "WEIGHTED_MULTI_AGENT_SKIP / council={'LONG': 1.0, 'SHORT': 1.0, 'SKIP': 2.0, 'HOLD': 0.0}",
   "market_regime": "TREND_DOWN",
   "regime_reason": "弱気トレンド",
   "allowed_direction": "BOTH",
