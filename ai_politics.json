@@ -1,0 +1,43 @@
+{
+  "time": "2026-05-12 16:45:38",
+  "leader_agent": "TREND_AGENT",
+  "leader_power": 65.0,
+  "political_balance": [
+    {
+      "name": "TREND_AGENT",
+      "vote": "SHORT",
+      "confidence": 75,
+      "reason": "弱気トレンド",
+      "weight": 1.3,
+      "trust_mode": "LEARNING",
+      "agent_trades": 1,
+      "agent_win_rate": 100.0,
+      "agent_total_pnl": 0.03,
+      "power_score": 65.0
+    },
+    {
+      "name": "DEFENSE_AGENT",
+      "vote": "SKIP",
+      "confidence": 100,
+      "reason": "EXTREME_DEFENSE",
+      "weight": 2.4,
+      "trust_mode": "VETO",
+      "agent_trades": 0,
+      "agent_win_rate": 0,
+      "agent_total_pnl": 0,
+      "power_score": 60
+    },
+    {
+      "name": "CONTRARIAN_AGENT",
+      "vote": "LONG",
+      "confidence": 35,
+      "reason": "逆張り監視",
+      "weight": 1.0,
+      "trust_mode": "LEARNING",
+      "agent_trades": 2,
+      "agent_win_rate": 50.0,
+      "agent_total_pnl": 0.021,
+      "power_score": 50.0
+    }
+  ]
+}
