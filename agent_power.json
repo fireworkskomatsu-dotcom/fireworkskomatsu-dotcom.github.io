@@ -1,0 +1,29 @@
+{
+  "time": "2026-05-12 16:24:48",
+  "agent_power": {
+    "TREND_AGENT": {
+      "power_score": 65.0,
+      "mode": "LEARNING",
+      "reason": "学習中",
+      "trades": 1,
+      "win_rate": 100.0,
+      "total_pnl": 0.03
+    },
+    "DEFENSE_AGENT": {
+      "power_score": 60,
+      "mode": "UNPROVEN",
+      "reason": "実績不足 / 防衛権限",
+      "trades": 0,
+      "win_rate": 0.0,
+      "total_pnl": 0.0
+    },
+    "CONTRARIAN_AGENT": {
+      "power_score": 50.0,
+      "mode": "LEARNING",
+      "reason": "学習中",
+      "trades": 2,
+      "win_rate": 50.0,
+      "total_pnl": 0.021
+    }
+  }
+}
