@@ -1,0 +1,18 @@
+[
+  {
+    "time": "2026-05-12 10:39:09",
+    "pattern": "TREND_DOWN_SHORT",
+    "mode": "LEARNING",
+    "trades": 1,
+    "win_rate": 100.0,
+    "total_pnl": 0.03,
+    "vol_mode": "DANGER",
+    "ai_status": "STOP",
+    "go_live_status": "NOT_READY",
+    "notes": [
+      "TREND_DOWN_SHORT は学習初期。まだ攻撃判断には使わない。",
+      "異常ボラ検知。記憶より安全停止を優先。",
+      "本番運用はまだ未解禁。シャドー検証を継続。"
+    ]
+  }
+]
