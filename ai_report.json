@@ -1,8 +1,8 @@
 {
-  "time": "2026-05-12 02:07:58",
+  "time": "2026-05-12 11:00:31",
   "ai_status": "STOP",
   "decision": "SKIP",
-  "reason": "VOLATILITY_PAUSE / 異常ボラ vol=12.63%",
+  "reason": "EMOTION_EXTREME_STOP / fear=100.0 risk=100.0",
   "market_regime": "TREND_DOWN",
   "regime_reason": "弱気トレンド",
   "allowed_direction": "BOTH",
@@ -19,10 +19,37 @@
   "shadow_total_pnl": 0.051,
   "regime_learning_mode": "LEARNING",
   "regime_size_mult": 0.5,
-  "filter_regime_size_mode": "LEARNING",
-  "filter_regime_size_mult": 0.5,
-  "filter_memory_mode": "LEARNING",
-  "filter_memory_size_mult": 0.7,
-  "filter_vol_mode": "DANGER",
-  "filter_vol_size_mult": 1.0
+  "filter_regime_size_mode": "UNKNOWN",
+  "filter_regime_size_mult": 1.0,
+  "filter_memory_mode": "UNKNOWN",
+  "filter_memory_size_mult": 1.0,
+  "filter_vol_mode": "UNKNOWN",
+  "filter_vol_size_mult": 1.0,
+  "multi_agent_decision": "SKIP",
+  "multi_agent_votes": {
+    "LONG": 1,
+    "SHORT": 1,
+    "SKIP": 1,
+    "HOLD": 0
+  },
+  "multi_agent_agents": [
+    {
+      "name": "TREND_AGENT",
+      "vote": "SHORT",
+      "confidence": 75,
+      "reason": "弱気トレンド"
+    },
+    {
+      "name": "DEFENSE_AGENT",
+      "vote": "SKIP",
+      "confidence": 100,
+      "reason": "EXTREME_DEFENSE"
+    },
+    {
+      "name": "CONTRARIAN_AGENT",
+      "vote": "LONG",
+      "confidence": 35,
+      "reason": "逆張り監視"
+    }
+  ]
 }

@@ -1,0 +1,30 @@
+{
+  "time": "2026-05-12 10:56:21",
+  "final_decision": "SKIP",
+  "votes": {
+    "LONG": 1,
+    "SHORT": 1,
+    "SKIP": 1,
+    "HOLD": 0
+  },
+  "agents": [
+    {
+      "name": "TREND_AGENT",
+      "vote": "SHORT",
+      "confidence": 75,
+      "reason": "弱気トレンド"
+    },
+    {
+      "name": "DEFENSE_AGENT",
+      "vote": "SKIP",
+      "confidence": 100,
+      "reason": "EXTREME_DEFENSE"
+    },
+    {
+      "name": "CONTRARIAN_AGENT",
+      "vote": "LONG",
+      "confidence": 35,
+      "reason": "逆張り監視"
+    }
+  ]
+}
