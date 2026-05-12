@@ -1,5 +1,5 @@
 {
-  "time": "2026-05-12 16:17:43",
+  "time": "2026-05-12 16:39:57",
   "final_decision": "SKIP",
   "weighted_votes": {
     "LONG": 1.0,
@@ -7,7 +7,7 @@
     "SKIP": 2.0,
     "HOLD": 0.0
   },
-  "summary": "AI会議最終判断: SKIP\n重み付き投票: LONG 1.0 / SHORT 1.0 / SKIP 2.0\nTREND_AGENT: SHORT / weight 1.0 / LEARNING / 勝率100.0%\nDEFENSE_AGENT: SKIP / weight 2.0 / VETO / 勝率0%\nCONTRARIAN_AGENT: LONG / weight 1.0 / LEARNING / 勝率50.0%",
+  "summary": "AI会議最終判断: SKIP\n重み付き投票: LONG 1.0 / SHORT 1.0 / SKIP 2.0\nTREND_AGENT: SHORT / weight 1.0 / LEARNING / 勝率100.0% / 発言力65.0 (LEARNING)\nDEFENSE_AGENT: SKIP / weight 2.0 / VETO / 勝率0% / 発言力60 (UNPROVEN)\nCONTRARIAN_AGENT: LONG / weight 1.0 / LEARNING / 勝率50.0% / 発言力50.0 (LEARNING)",
   "agents": [
     {
       "name": "TREND_AGENT",
@@ -61,6 +61,32 @@
       "wins": 1,
       "total_pnl": 0.021,
       "win_rate": 50.0
+    }
+  },
+  "agent_power": {
+    "TREND_AGENT": {
+      "power_score": 65.0,
+      "mode": "LEARNING",
+      "reason": "学習中",
+      "trades": 1,
+      "win_rate": 100.0,
+      "total_pnl": 0.03
+    },
+    "DEFENSE_AGENT": {
+      "power_score": 60,
+      "mode": "UNPROVEN",
+      "reason": "実績不足 / 防衛権限",
+      "trades": 0,
+      "win_rate": 0.0,
+      "total_pnl": 0.0
+    },
+    "CONTRARIAN_AGENT": {
+      "power_score": 50.0,
+      "mode": "LEARNING",
+      "reason": "学習中",
+      "trades": 2,
+      "win_rate": 50.0,
+      "total_pnl": 0.021
     }
   }
 }
