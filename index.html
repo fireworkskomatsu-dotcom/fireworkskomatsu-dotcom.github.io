@@ -123,6 +123,12 @@
 
 
 
+
+<div class="card panel">
+  <div class="title">AI政治バランス</div>
+  <div id="ai_politics" class="line" style="white-space: pre-line;">--</div>
+</div>
+
 <div class="card panel">
   <div class="title">AI会議レポート</div>
   <div id="agent_council_report" class="line" style="white-space: pre-line;">--</div>
@@ -294,6 +300,15 @@
       
       const council = await loadJson('./agent_council_report.json', {});
       setText('agent_council_report', council.summary || '--');
+
+      
+      const politics = await loadJson('./ai_politics.json', {});
+      const pAgents = politics.political_balance || [];
+      const pText = [
+        'Leader: ' + (politics.leader_agent || '--') + ' / Power ' + (politics.leader_power || '--'),
+        ...pAgents.map(a => `${a.name}: ${a.vote} / power ${a.power_score} / weight ${a.weight}`)
+      ].join('\n');
+      setText('ai_politics', pText);
 
       const ai = await loadJson('./ai_report.json', {});
       setText('ai_status', '状態: ' + (ai.ai_status || '--'));
