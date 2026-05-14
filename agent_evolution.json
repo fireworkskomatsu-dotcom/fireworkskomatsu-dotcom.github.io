@@ -1,0 +1,39 @@
+{
+  "time": "2026-05-14 18:50:43",
+  "evolution": {
+    "TREND_AGENT": {
+      "old_power": 65.0,
+      "new_power": 65.0,
+      "personality": "LEARNING",
+      "trades": 1,
+      "win_rate": 100.0,
+      "total_pnl": 0.03,
+      "notes": [
+        "学習中。発言力は大きく変えない。"
+      ]
+    },
+    "DEFENSE_AGENT": {
+      "old_power": 60.0,
+      "new_power": 60.0,
+      "personality": "GUARDIAN",
+      "trades": 0,
+      "win_rate": 0.0,
+      "total_pnl": 0.0,
+      "notes": [
+        "まだ実績不足。",
+        "防衛人格。危機時の拒否権を維持。"
+      ]
+    },
+    "CONTRARIAN_AGENT": {
+      "old_power": 50.0,
+      "new_power": 50.0,
+      "personality": "LEARNING",
+      "trades": 2,
+      "win_rate": 50.0,
+      "total_pnl": 0.021,
+      "notes": [
+        "学習中。発言力は大きく変えない。"
+      ]
+    }
+  }
+}
