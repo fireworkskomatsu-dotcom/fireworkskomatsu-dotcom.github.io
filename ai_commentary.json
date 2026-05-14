@@ -1,4 +1,4 @@
 {
-  "time": "2026-05-14 16:33:18",
-  "commentary": "現在はAI停止モード。\n異常ボラティリティ検知により防御優先。\n市場は下落トレンド継続。\nショート方向を優先監視。\nシャドー成績: 3戦 勝率66.7% PnL 0.051\n重み付きAI会議の最終判断: UNKNOWN\n重み付き投票: LONG 0 / SHORT 0 / SKIP 0\n本番運用は未解禁: サンプル不足 closed=2/10"
+  "time": "2026-05-14 16:39:36",
+  "commentary": "現在はAI停止モード。\n異常ボラティリティ検知により防御優先。\n市場は下落トレンド継続。\nショート方向を優先監視。\nシャドー成績: 3戦 勝率66.7% PnL 0.051\n重み付きAI会議の最終判断: SKIP\n重み付き投票: LONG 1 / SHORT 1 / SKIP 1\nTREND_AGENT: SHORT / weight None / power None / 弱気トレンド\nDEFENSE_AGENT: SKIP / weight None / power None / EXTREME_DEFENSE\nCONTRARIAN_AGENT: LONG / weight None / power None / 逆張り監視\n本番運用は未解禁: サンプル不足 closed=2/10"
 }
