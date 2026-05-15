@@ -78,7 +78,64 @@
     .ok{ color:#45e37b; }
     .alert{ color:#ff6b6b; }
     .muted{ opacity:.85; }
-  </style>
+  
+.entry-wrap{
+  background:#0b1020;
+  border-radius:35px;
+  padding:40px;
+  margin-top:30px;
+  margin-bottom:30px;
+  border:2px solid #1f2a44;
+}
+
+.entry-label{
+  font-size:18px;
+  color:#8ea0c9;
+  margin-bottom:15px;
+  letter-spacing:2px;
+}
+
+#entrySignal{
+  font-size:82px;
+  font-weight:900;
+  line-height:1;
+  color:#ff5c6c;
+  margin-bottom:40px;
+}
+
+.confidence-wrap{
+  margin-top:10px;
+}
+
+.confidence-label{
+  font-size:14px;
+  color:#8ea0c9;
+  margin-bottom:10px;
+}
+
+.confidence-bar-bg{
+  width:100%;
+  height:22px;
+  background:#1a2236;
+  border-radius:30px;
+  overflow:hidden;
+}
+
+#confidenceBar{
+  width:0%;
+  height:100%;
+  background:#57ff98;
+  border-radius:30px;
+  transition:0.4s;
+}
+
+#confidenceText{
+  margin-top:10px;
+  font-size:22px;
+  font-weight:bold;
+}
+
+</style>
 
 <style>
 .ai-brain {
@@ -100,6 +157,63 @@
   50% { transform: scale(1.02); opacity: 0.9; }
   100% { transform: scale(1); opacity: 1; }
 }
+
+.entry-wrap{
+  background:#0b1020;
+  border-radius:35px;
+  padding:40px;
+  margin-top:30px;
+  margin-bottom:30px;
+  border:2px solid #1f2a44;
+}
+
+.entry-label{
+  font-size:18px;
+  color:#8ea0c9;
+  margin-bottom:15px;
+  letter-spacing:2px;
+}
+
+#entrySignal{
+  font-size:82px;
+  font-weight:900;
+  line-height:1;
+  color:#ff5c6c;
+  margin-bottom:40px;
+}
+
+.confidence-wrap{
+  margin-top:10px;
+}
+
+.confidence-label{
+  font-size:14px;
+  color:#8ea0c9;
+  margin-bottom:10px;
+}
+
+.confidence-bar-bg{
+  width:100%;
+  height:22px;
+  background:#1a2236;
+  border-radius:30px;
+  overflow:hidden;
+}
+
+#confidenceBar{
+  width:0%;
+  height:100%;
+  background:#57ff98;
+  border-radius:30px;
+  transition:0.4s;
+}
+
+#confidenceText{
+  margin-top:10px;
+  font-size:22px;
+  font-weight:bold;
+}
+
 </style>
 
 
@@ -165,6 +279,63 @@
   font-size:30px;
   font-weight:900;
   word-break:break-word;
+}
+
+
+.entry-wrap{
+  background:#0b1020;
+  border-radius:35px;
+  padding:40px;
+  margin-top:30px;
+  margin-bottom:30px;
+  border:2px solid #1f2a44;
+}
+
+.entry-label{
+  font-size:18px;
+  color:#8ea0c9;
+  margin-bottom:15px;
+  letter-spacing:2px;
+}
+
+#entrySignal{
+  font-size:82px;
+  font-weight:900;
+  line-height:1;
+  color:#ff5c6c;
+  margin-bottom:40px;
+}
+
+.confidence-wrap{
+  margin-top:10px;
+}
+
+.confidence-label{
+  font-size:14px;
+  color:#8ea0c9;
+  margin-bottom:10px;
+}
+
+.confidence-bar-bg{
+  width:100%;
+  height:22px;
+  background:#1a2236;
+  border-radius:30px;
+  overflow:hidden;
+}
+
+#confidenceBar{
+  width:0%;
+  height:100%;
+  background:#57ff98;
+  border-radius:30px;
+  transition:0.4s;
+}
+
+#confidenceText{
+  margin-top:10px;
+  font-size:22px;
+  font-weight:bold;
 }
 
 </style>
@@ -490,6 +661,22 @@ setInterval(loadEmotionPanel, 30000);
 
 </div>
 
+
+
+<div class="entry-wrap">
+  <div class="entry-label">ENTRY SIGNAL</div>
+  <div id="entrySignal">NO ENTRY</div>
+
+  <div class="confidence-wrap">
+    <div class="confidence-label">AI CONFIDENCE</div>
+
+    <div class="confidence-bar-bg">
+      <div id="confidenceBar"></div>
+    </div>
+
+    <div id="confidenceText">0%</div>
+  </div>
+</div>
 
 </body>
 </html>
