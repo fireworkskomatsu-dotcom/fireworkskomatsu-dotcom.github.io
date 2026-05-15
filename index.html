@@ -125,6 +125,12 @@
 
 
 
+
+<div class="card panel">
+  <div class="title">AI短評</div>
+  <div id="short_commentary" class="line" style="white-space: pre-line;">--</div>
+</div>
+
 <div class="card panel">
   <div class="title">AIストーリー</div>
   <div id="ai_story" class="line" style="white-space: pre-line;">--</div>
@@ -319,6 +325,10 @@
       
       const story = await loadJson('./ai_story.json', {});
       setText('ai_story', story.story || '--');
+
+      
+      const shortComment = await loadJson('./short_commentary.json', {});
+      setText('short_commentary', shortComment.summary || '--');
 
       const ai = await loadJson('./ai_report.json', {});
       setText('ai_status', '状態: ' + (ai.ai_status || '--'));
