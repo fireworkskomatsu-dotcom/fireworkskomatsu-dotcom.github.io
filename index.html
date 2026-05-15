@@ -244,6 +244,33 @@
   opacity:0.8;
 }
 
+
+.radar-panel{
+  background:#081018;
+  border:2px solid #1f3b5b;
+  border-radius:35px;
+  padding:35px;
+  margin-bottom:30px;
+}
+
+.radar-title{
+  font-size:20px;
+  opacity:0.7;
+  margin-bottom:20px;
+}
+
+#radarMode{
+  font-size:72px;
+  font-weight:900;
+  line-height:1;
+  margin-bottom:20px;
+}
+
+#radarMarket{
+  font-size:22px;
+  opacity:0.7;
+}
+
 </style>
 
 <style>
@@ -430,6 +457,33 @@
 .power-meta{
   margin-top:8px;
   opacity:0.8;
+}
+
+
+.radar-panel{
+  background:#081018;
+  border:2px solid #1f3b5b;
+  border-radius:35px;
+  padding:35px;
+  margin-bottom:30px;
+}
+
+.radar-title{
+  font-size:20px;
+  opacity:0.7;
+  margin-bottom:20px;
+}
+
+#radarMode{
+  font-size:72px;
+  font-weight:900;
+  line-height:1;
+  margin-bottom:20px;
+}
+
+#radarMarket{
+  font-size:22px;
+  opacity:0.7;
 }
 
 </style>
@@ -663,6 +717,33 @@
 .power-meta{
   margin-top:8px;
   opacity:0.8;
+}
+
+
+.radar-panel{
+  background:#081018;
+  border:2px solid #1f3b5b;
+  border-radius:35px;
+  padding:35px;
+  margin-bottom:30px;
+}
+
+.radar-title{
+  font-size:20px;
+  opacity:0.7;
+  margin-bottom:20px;
+}
+
+#radarMode{
+  font-size:72px;
+  font-weight:900;
+  line-height:1;
+  margin-bottom:20px;
+}
+
+#radarMarket{
+  font-size:22px;
+  opacity:0.7;
 }
 
 </style>
@@ -1032,6 +1113,42 @@ if(powerBox){
   });
 }
 
+
+const radar =
+  await loadJson('./trade_radar.json', {});
+
+setText(
+  'radarMode',
+  radar.radar || 'WAIT'
+);
+
+setText(
+  'radarMarket',
+  radar.market || '--'
+);
+
+const radarEl =
+  document.getElementById('radarMode');
+
+if(radarEl){
+
+  const mode =
+    (radar.radar || '').toUpperCase();
+
+  if(mode.includes('LONG')){
+    radarEl.style.color = '#57ff98';
+  }
+  else if(mode.includes('SHORT')){
+    radarEl.style.color = '#ff5c6c';
+  }
+  else if(mode.includes('DEFENSE')){
+    radarEl.style.color = '#ffd84d';
+  }
+  else{
+    radarEl.style.color = '#9aa4bd';
+  }
+}
+
 const ai = await loadJson('./ai_report.json', {});
       setText('ai_status', '状態: ' + (ai.ai_status || '--'));
       setText('ai_reason', '理由: ' + (ai.reason || '--'));
@@ -1094,6 +1211,17 @@ setInterval(loadEmotionPanel, 30000);
 <div class="power-panel">
   <div class="power-title">AI POWER RANKING</div>
   <div id="powerRanking"></div>
+</div>
+
+
+<div class="radar-panel">
+  <div class="radar-title">TRADE RADAR</div>
+
+  <div id="radarMode">
+    WAIT
+  </div>
+
+  <div id="radarMarket"></div>
 </div>
 
 <div class="entry-wrap">
