@@ -173,6 +173,45 @@
   color:#8b93a7;
 }
 
+
+.alert-panel{
+  background:#1a0910;
+  border:2px solid #ff5c6c;
+  border-radius:25px;
+  padding:25px;
+  margin-bottom:30px;
+}
+
+.alert-title{
+  font-size:28px;
+  font-weight:900;
+  color:#ff5c6c;
+  margin-bottom:20px;
+}
+
+.alert-item{
+  background:#2b1018;
+  border-radius:18px;
+  padding:18px;
+  margin-bottom:12px;
+}
+
+.alert-level{
+  font-size:13px;
+  color:#ffd84d;
+  margin-bottom:6px;
+}
+
+.alert-head{
+  font-size:24px;
+  font-weight:900;
+  margin-bottom:8px;
+}
+
+.alert-msg{
+  opacity:0.8;
+}
+
 </style>
 
 <style>
@@ -288,6 +327,45 @@
 
 .phase-dead{
   color:#8b93a7;
+}
+
+
+.alert-panel{
+  background:#1a0910;
+  border:2px solid #ff5c6c;
+  border-radius:25px;
+  padding:25px;
+  margin-bottom:30px;
+}
+
+.alert-title{
+  font-size:28px;
+  font-weight:900;
+  color:#ff5c6c;
+  margin-bottom:20px;
+}
+
+.alert-item{
+  background:#2b1018;
+  border-radius:18px;
+  padding:18px;
+  margin-bottom:12px;
+}
+
+.alert-level{
+  font-size:13px;
+  color:#ffd84d;
+  margin-bottom:6px;
+}
+
+.alert-head{
+  font-size:24px;
+  font-weight:900;
+  margin-bottom:8px;
+}
+
+.alert-msg{
+  opacity:0.8;
 }
 
 </style>
@@ -452,10 +530,55 @@
   color:#8b93a7;
 }
 
+
+.alert-panel{
+  background:#1a0910;
+  border:2px solid #ff5c6c;
+  border-radius:25px;
+  padding:25px;
+  margin-bottom:30px;
+}
+
+.alert-title{
+  font-size:28px;
+  font-weight:900;
+  color:#ff5c6c;
+  margin-bottom:20px;
+}
+
+.alert-item{
+  background:#2b1018;
+  border-radius:18px;
+  padding:18px;
+  margin-bottom:12px;
+}
+
+.alert-level{
+  font-size:13px;
+  color:#ffd84d;
+  margin-bottom:6px;
+}
+
+.alert-head{
+  font-size:24px;
+  font-weight:900;
+  margin-bottom:8px;
+}
+
+.alert-msg{
+  opacity:0.8;
+}
+
 </style>
 
 </head>
 <body>
+
+<div class="alert-panel">
+  <div class="alert-title">AI ALERTS</div>
+  <div id="alertBox"></div>
+</div>
+
 
 <div class="command-center">
 
@@ -759,7 +882,30 @@ if(phaseEl){
 }
 
 
-      const ai = await loadJson('./ai_report.json', {});
+      
+const alertsData = await loadJson('./ai_alerts.json', {});
+
+const alertBox = document.getElementById("alertBox");
+
+if(alertBox){
+
+  const alerts = alertsData.alerts || [];
+
+  alertBox.innerHTML = '';
+
+  alerts.forEach(a => {
+
+    alertBox.innerHTML += `
+      <div class="alert-item">
+        <div class="alert-level">${a.level}</div>
+        <div class="alert-head">${a.title}</div>
+        <div class="alert-msg">${a.message}</div>
+      </div>
+    `;
+  });
+}
+
+const ai = await loadJson('./ai_report.json', {});
       setText('ai_status', '状態: ' + (ai.ai_status || '--'));
       setText('ai_reason', '理由: ' + (ai.reason || '--'));
       setText('ai_regime', '相場: ' + (ai.market_regime || '--') + ' / ' + (ai.regime_reason || ''));
