@@ -156,6 +156,23 @@
   border-color:#ff2d55 !important;
 }
 
+
+.phase-panic{
+  color:#ff5c6c;
+}
+
+.phase-up{
+  color:#57ff98;
+}
+
+.phase-down{
+  color:#ff884d;
+}
+
+.phase-dead{
+  color:#8b93a7;
+}
+
 </style>
 
 <style>
@@ -254,6 +271,23 @@
 .entry-stop{
   background:#120509 !important;
   border-color:#ff2d55 !important;
+}
+
+
+.phase-panic{
+  color:#ff5c6c;
+}
+
+.phase-up{
+  color:#57ff98;
+}
+
+.phase-down{
+  color:#ff884d;
+}
+
+.phase-dead{
+  color:#8b93a7;
 }
 
 </style>
@@ -399,6 +433,23 @@
 .entry-stop{
   background:#120509 !important;
   border-color:#ff2d55 !important;
+}
+
+
+.phase-panic{
+  color:#ff5c6c;
+}
+
+.phase-up{
+  color:#57ff98;
+}
+
+.phase-down{
+  color:#ff884d;
+}
+
+.phase-dead{
+  color:#8b93a7;
 }
 
 </style>
@@ -679,6 +730,34 @@
       const phase = await loadJson('./market_phase.json', {});
       setText('marketPhase', 'PHASE: ' + (phase.phase || '--'));
       setText('marketPhaseReason', '理由: ' + (phase.reason || '--'));
+
+const phaseEl = document.getElementById("marketPhase");
+
+if(phaseEl){
+
+  phaseEl.classList.remove(
+    "phase-panic",
+    "phase-up",
+    "phase-down",
+    "phase-dead"
+  );
+
+  const p = (phase.phase || "").toUpperCase();
+
+  if(p.includes("PANIC")){
+    phaseEl.classList.add("phase-panic");
+  }
+  else if(p.includes("UP")){
+    phaseEl.classList.add("phase-up");
+  }
+  else if(p.includes("DOWN")){
+    phaseEl.classList.add("phase-down");
+  }
+  else{
+    phaseEl.classList.add("phase-dead");
+  }
+}
+
 
       const ai = await loadJson('./ai_report.json', {});
       setText('ai_status', '状態: ' + (ai.ai_status || '--'));
