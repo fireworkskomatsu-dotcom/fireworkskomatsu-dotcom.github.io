@@ -212,6 +212,38 @@
   opacity:0.8;
 }
 
+
+.power-panel{
+  background:#0d1324;
+  border:2px solid #24304f;
+  border-radius:30px;
+  padding:30px;
+  margin-bottom:30px;
+}
+
+.power-title{
+  font-size:32px;
+  font-weight:900;
+  margin-bottom:25px;
+}
+
+.power-item{
+  background:#131c31;
+  border-radius:20px;
+  padding:20px;
+  margin-bottom:15px;
+}
+
+.power-name{
+  font-size:24px;
+  font-weight:900;
+}
+
+.power-meta{
+  margin-top:8px;
+  opacity:0.8;
+}
+
 </style>
 
 <style>
@@ -365,6 +397,38 @@
 }
 
 .alert-msg{
+  opacity:0.8;
+}
+
+
+.power-panel{
+  background:#0d1324;
+  border:2px solid #24304f;
+  border-radius:30px;
+  padding:30px;
+  margin-bottom:30px;
+}
+
+.power-title{
+  font-size:32px;
+  font-weight:900;
+  margin-bottom:25px;
+}
+
+.power-item{
+  background:#131c31;
+  border-radius:20px;
+  padding:20px;
+  margin-bottom:15px;
+}
+
+.power-name{
+  font-size:24px;
+  font-weight:900;
+}
+
+.power-meta{
+  margin-top:8px;
   opacity:0.8;
 }
 
@@ -566,6 +630,38 @@
 }
 
 .alert-msg{
+  opacity:0.8;
+}
+
+
+.power-panel{
+  background:#0d1324;
+  border:2px solid #24304f;
+  border-radius:30px;
+  padding:30px;
+  margin-bottom:30px;
+}
+
+.power-title{
+  font-size:32px;
+  font-weight:900;
+  margin-bottom:25px;
+}
+
+.power-item{
+  background:#131c31;
+  border-radius:20px;
+  padding:20px;
+  margin-bottom:15px;
+}
+
+.power-name{
+  font-size:24px;
+  font-weight:900;
+}
+
+.power-meta{
+  margin-top:8px;
   opacity:0.8;
 }
 
@@ -905,6 +1001,37 @@ if(alertBox){
   });
 }
 
+
+const powerData =
+  await loadJson('./power_ranking.json', {});
+
+const powerBox =
+  document.getElementById("powerRanking");
+
+if(powerBox){
+
+  powerBox.innerHTML = '';
+
+  (powerData.ranking || []).forEach((a,i)=>{
+
+    powerBox.innerHTML += `
+      <div class="power-item">
+        <div class="power-name">
+          #${i+1} ${a.name}
+        </div>
+
+        <div class="power-meta">
+          POWER ${a.power_score}
+          /
+          ${a.vote}
+          /
+          ${a.reason}
+        </div>
+      </div>
+    `;
+  });
+}
+
 const ai = await loadJson('./ai_report.json', {});
       setText('ai_status', '状態: ' + (ai.ai_status || '--'));
       setText('ai_reason', '理由: ' + (ai.reason || '--'));
@@ -962,6 +1089,12 @@ setInterval(loadEmotionPanel, 30000);
 </div>
 
 
+
+
+<div class="power-panel">
+  <div class="power-title">AI POWER RANKING</div>
+  <div id="powerRanking"></div>
+</div>
 
 <div class="entry-wrap">
   <div class="entry-label">ENTRY SIGNAL</div>
