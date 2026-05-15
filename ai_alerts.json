@@ -1,0 +1,20 @@
+{
+  "time": "2026-05-15 17:45:53",
+  "alerts": [
+    {
+      "level": "HIGH",
+      "title": "AI DEFENSE MODE",
+      "message": "AIが危険回避を優先"
+    },
+    {
+      "level": "CRITICAL",
+      "title": "MARKET PANIC",
+      "message": "市場が異常状態"
+    },
+    {
+      "level": "INFO",
+      "title": "AI LEADER",
+      "message": "TREND_AGENT が主導権を保持"
+    }
+  ]
+}
