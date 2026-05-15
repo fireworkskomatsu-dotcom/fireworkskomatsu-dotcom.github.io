@@ -464,6 +464,13 @@
 
 
 
+
+<div class="card panel">
+  <div class="title">LIVE MARKET PHASE</div>
+  <div id="marketPhase" class="line">--</div>
+  <div id="marketPhaseReason" class="line">--</div>
+</div>
+
 <div class="card panel">
   <div class="title">AI短評</div>
   <div id="short_commentary" class="line" style="white-space: pre-line;">--</div>
@@ -667,6 +674,11 @@
       
       const shortComment = await loadJson('./short_commentary.json', {});
       setText('short_commentary', shortComment.summary || '--');
+
+      
+      const phase = await loadJson('./market_phase.json', {});
+      setText('marketPhase', 'PHASE: ' + (phase.phase || '--'));
+      setText('marketPhaseReason', '理由: ' + (phase.reason || '--'));
 
       const ai = await loadJson('./ai_report.json', {});
       setText('ai_status', '状態: ' + (ai.ai_status || '--'));

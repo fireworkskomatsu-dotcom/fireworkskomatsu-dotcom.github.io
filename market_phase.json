@@ -1,0 +1,9 @@
+{
+  "time": "2026-05-15 17:43:25",
+  "phase": "PANIC",
+  "reason": "異常ボラと恐怖指数が極大",
+  "regime": "TREND_DOWN",
+  "volatility": "DANGER",
+  "fear": 100.0,
+  "market_pressure": 100.0
+}
