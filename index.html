@@ -1161,550 +1161,120 @@
 <div class="command-center">
 
   <div class="command-title">
-    AI COMMAND CENTER
-  </div>
-
-  <div id="cmdStatus" class="command-main">
-    --
-  </div>
-
-  <div class="command-grid">
-
-    <div class="command-box">
-      <div class="command-label">ACTION</div>
-      <div id="cmdAction" class="command-value">--</div>
-    </div>
-
-    <div class="command-box">
-      <div class="command-label">MARKET</div>
-      <div id="cmdMarket" class="command-value">--</div>
-    </div>
-
-    <div class="command-box">
-      <div class="command-label">RISK</div>
-      <div id="cmdRisk" class="command-value">--</div>
-    </div>
-
-    <div class="command-box">
-      <div class="command-label">CONFIDENCE</div>
-      <div id="cmdConfidence" class="command-value">--</div>
-    </div>
-
-  </div>
-
-</div>
-
-  <div class="wrap">
-
-    <div id="hero" class="card hero yellow">
-      <div class="title">JP Market AI Dashboard</div>
-      <div id="weather" class="big">--</div>
-      <div id="judgement" class="mid">読み込み中…</div>
-
-      <div class="actionbox">
-        <div class="label">AI最終指示</div>
-        <div id="action" class="action">読込中</div>
-        <div id="reason" class="line">理由: --</div>
-        <div id="size" class="line">サイズ: --</div>
-      </div>
-    </div>
-
     
 
+<div class="simple-ai">
 
-
-
-
-
-
-<div class="card panel">
-  <div class="title">LIVE MARKET PHASE</div>
-  <div id="marketPhase" class="line">--</div>
-  <div id="marketPhaseReason" class="line">--</div>
-</div>
-
-<div class="card panel">
-  <div class="title">AI短評</div>
-  <div id="short_commentary" class="line" style="white-space: pre-line;">--</div>
-</div>
-
-<div class="card panel">
-  <div class="title">AIストーリー</div>
-  <div id="ai_story" class="line" style="white-space: pre-line;">--</div>
-</div>
-
-<div class="card panel">
-  <div class="title">AI政治バランス</div>
-  <div id="ai_politics" class="line" style="white-space: pre-line;">--</div>
-</div>
-
-<div class="card panel">
-  <div class="title">AI会議レポート</div>
-  <div id="agent_council_report" class="line" style="white-space: pre-line;">--</div>
-</div>
-
-<div class="card panel">
-  <div class="title">AI脳内メーター</div>
-  <div id="emotion_mode" class="line">Mode: --</div>
-  <div id="emotion_fear" class="line">Fear: --</div>
-  <div id="emotion_aggression" class="line">Aggression: --</div>
-  <div id="emotion_confidence" class="line">Confidence: --</div>
-  <div id="emotion_risk" class="line">Risk: --</div>
-  <div id="emotion_pressure" class="line">Market Pressure: --</div>
-</div>
-
-<div class="card panel">
-  <div class="title">AIコメント</div>
-  <div id="ai_commentary" class="line" style="white-space: pre-line;">--</div>
-</div>
-
-<div class="card panel">
-  <div class="title">AI総合判断</div>
-  <div id="ai_status" class="line">状態: --</div>
-  <div id="ai_reason" class="line">理由: --</div>
-  <div id="ai_regime" class="line">相場: --</div>
-  <div id="ai_vol" class="line">ボラ: --</div>
-  <div id="ai_go" class="line">本番判定: --</div>
-  <div id="ai_shadow" class="line">シャドー成績: --</div>
-</div>
-
-<div class="card panel">
-      <div class="title">安全状態</div>
-      <div id="status" class="line">状態: --</div>
-      <div id="alerts" class="line">警告: --</div>
-    </div>
-
-    <div class="card panel">
-      <div class="title">ポジション</div>
-      <div id="pos" class="line">総ポジション: --</div>
-      <div id="pnl" class="line">PnL: --</div>
-    </div>
-
-    <div class="card panel">
-      <div class="title">更新</div>
-      <div id="updated" class="line muted">--</div>
-    </div>
-
+  <div class="simple-title">
+    AI EXECUTION
   </div>
 
-  <script>
-    async function loadJson(path, fallback = {}) {
-      try {
-        const res = await fetch(path + '?v=' + Date.now(), { cache: 'no-store' });
-        if (!res.ok) return fallback;
-        return await res.json();
-      } catch {
-        return fallback;
-      }
-    }
-
-    async function loadText(path, fallback = '') {
-      try {
-        const res = await fetch(path + '?v=' + Date.now(), { cache: 'no-store' });
-        if (!res.ok) return fallback;
-        return await res.text();
-      } catch {
-        return fallback;
-      }
-    }
-
-    function setText(id, value) {
-      document.getElementById(id).textContent = value;
-    }
-
-    function setHeroColor(mode) {
-      const hero = document.getElementById('hero');
-      hero.classList.remove('yellow', 'green', 'red');
-      hero.classList.add(mode);
-    }
-
-    function decideColor(action, pnl, weatherText) {
-      const w = (weatherText || '').trim();
-
-      if (action === 'ENTER') {
-        return 'green';
-      }
-      if (action === 'EXIT') {
-        return 'red';
-      }
-      if (typeof pnl === 'number' && pnl < 0) {
-        return 'red';
-      }
-      if (w.includes('赤') || w.toUpperCase().includes('RISK') || w.toUpperCase().includes('DANGER')) {
-        return 'red';
-      }
-      if (w.includes('緑')) {
-        return 'green';
-      }
-      return 'yellow';
-    }
-
-    function decideWeatherLabel(color, weatherText) {
-      const w = (weatherText || '').trim();
-      if (w) return w;
-      if (color === 'green') return '緑';
-      if (color === 'red') return '赤';
-      return '黄';
-    }
-
-    function decideJudgement(action, color) {
-      if (action === 'ENTER') return 'エントリー指示';
-      if (action === 'EXIT') return '決済指示';
-      if (color === 'green') return 'ロング優勢';
-      if (color === 'red') return 'ショート優勢 / 危険回避';
-      return '様子見';
-    }
-
-    async function main() {
-      const execution = await loadJson('./execution.json', {});
-      const monitor = await loadJson('./monitor.json', { status: 'OK', alerts: [] });
-      const position = await loadJson('./position.json', {});
-      const weatherTxt = await loadText('./weather.txt', '');
-
-      const actionMap = {
-        ENTER: '▶ エントリー',
-        EXIT: '■ 決済',
-        HOLD: '▶ 何もしない'
-      };
-
-      const action = execution.action || 'HOLD';
-      const side = execution.side ? ' / ' + execution.side : '';
-      const reason = execution.reason || '待機';
-      const size = execution.size ?? 0;
-      const pnl = Number(position.pnl ?? 0);
-
-      const color = decideColor(action, pnl, weatherTxt);
-      const weatherLabel = decideWeatherLabel(color, weatherTxt);
-      const judgement = decideJudgement(action, color);
-
-      setHeroColor(color);
-      setText('weather', weatherLabel);
-      setText('judgement', judgement);
-      setText('action', (actionMap[action] || '▶ 何もしない') + side);
-      setText('reason', '理由: ' + reason);
-      setText('size', 'サイズ: ' + size);
-
-      const statusEl = document.getElementById('status');
-      const status = monitor.status || 'OK';
-      statusEl.textContent = '状態: ' + status;
-      statusEl.className = 'line ' + (status === 'OK' ? 'ok' : 'alert');
-      setText('alerts', '警告: ' + ((monitor.alerts && monitor.alerts.length) ? monitor.alerts.join(', ') : 'なし'));
-
-      setText('pos', '総ポジション: ' + (position.total_position ?? 0));
-      setText('pnl', 'PnL: ' + (position.pnl ?? 0));
-      
-      
-      
-      const emotion = await loadJson('./emotion.json', {});
-      setText('emotion_mode', 'Mode: ' + (emotion.survival_mode || '--'));
-      setText('emotion_fear', 'Fear: ' + (emotion.fear ?? '--'));
-      setText('emotion_aggression', 'Aggression: ' + (emotion.aggression ?? '--'));
-      setText('emotion_confidence', 'Confidence: ' + (emotion.confidence ?? '--'));
-      setText('emotion_risk', 'Risk: ' + (emotion.risk ?? '--'));
-      setText('emotion_pressure', 'Market Pressure: ' + (emotion.market_pressure ?? '--'));
-
-      const comment = await loadJson('./ai_commentary.json', {});
-      setText('ai_commentary', comment.commentary || '--');
-
-      
-      const council = await loadJson('./agent_council_report.json', {});
-      setText('agent_council_report', council.summary || '--');
-
-      
-      const politics = await loadJson('./ai_politics.json', {});
-      const pAgents = politics.political_balance || [];
-      const pText = [
-        'Leader: ' + (politics.leader_agent || '--') + ' / Power ' + (politics.leader_power || '--'),
-        ...pAgents.map(a => `${a.name}: ${a.vote} / power ${a.power_score} / weight ${a.weight}`)
-      ].join('\n');
-      setText('ai_politics', pText);
-
-      
-      const story = await loadJson('./ai_story.json', {});
-      setText('ai_story', story.story || '--');
-
-      
-      const shortComment = await loadJson('./short_commentary.json', {});
-      setText('short_commentary', shortComment.summary || '--');
-
-      
-      const phase = await loadJson('./market_phase.json', {});
-      setText('marketPhase', 'PHASE: ' + (phase.phase || '--'));
-      setText('marketPhaseReason', '理由: ' + (phase.reason || '--'));
-
-const phaseEl = document.getElementById("marketPhase");
-
-if(phaseEl){
-
-  phaseEl.classList.remove(
-    "phase-panic",
-    "phase-up",
-    "phase-down",
-    "phase-dead"
-  );
-
-  const p = (phase.phase || "").toUpperCase();
-
-  if(p.includes("PANIC")){
-    phaseEl.classList.add("phase-panic");
-  }
-  else if(p.includes("UP")){
-    phaseEl.classList.add("phase-up");
-  }
-  else if(p.includes("DOWN")){
-    phaseEl.classList.add("phase-down");
-  }
-  else{
-    phaseEl.classList.add("phase-dead");
-  }
-}
-
-
-      
-const alertsData = await loadJson('./ai_alerts.json', {});
-
-const alertBox = document.getElementById("alertBox");
-
-if(alertBox){
-
-  const alerts = alertsData.alerts || [];
-
-  alertBox.innerHTML = '';
-
-  alerts.forEach(a => {
-
-    alertBox.innerHTML += `
-      <div class="alert-item">
-        <div class="alert-level">${a.level}</div>
-        <div class="alert-head">${a.title}</div>
-        <div class="alert-msg">${a.message}</div>
-      </div>
-    `;
-  });
-}
-
-
-const powerData =
-  await loadJson('./power_ranking.json', {});
-
-const powerBox =
-  document.getElementById("powerRanking");
-
-if(powerBox){
-
-  powerBox.innerHTML = '';
-
-  (powerData.ranking || []).forEach((a,i)=>{
-
-    powerBox.innerHTML += `
-      <div class="power-item">
-        <div class="power-name">
-          #${i+1} ${a.name}
-        </div>
-
-        <div class="power-meta">
-          POWER ${a.power_score}
-          /
-          ${a.vote}
-          /
-          ${a.reason}
-        </div>
-      </div>
-    `;
-  });
-}
-
-
-const radar =
-  await loadJson('./trade_radar.json', {});
-
-setText(
-  'radarMode',
-  radar.radar || 'WAIT'
-);
-
-setText(
-  'radarMarket',
-  radar.market || '--'
-);
-
-const radarEl =
-  document.getElementById('radarMode');
-
-if(radarEl){
-
-  const mode =
-    (radar.radar || '').toUpperCase();
-
-  if(mode.includes('LONG')){
-    radarEl.style.color = '#57ff98';
-  }
-  else if(mode.includes('SHORT')){
-    radarEl.style.color = '#ff5c6c';
-  }
-  else if(mode.includes('DEFENSE')){
-    radarEl.style.color = '#ffd84d';
-  }
-  else{
-    radarEl.style.color = '#9aa4bd';
-  }
-}
-
-
-const execAction =
-  report.weighted_agent_decision ||
-  report.multi_agent_decision ||
-  report.decision ||
-  "WAIT";
-
-setText('execAction', execAction);
-
-setText('execSymbol', '1321');
-
-if(execAction === 'LONG'){
-  setText('execSize', 'BUY x1');
-}
-else if(execAction === 'SHORT'){
-  setText('execSize', 'SELL x1');
-}
-else{
-  setText('execSize', 'NO TRADE');
-}
-
-const execEl =
-  document.getElementById('execAction');
-
-if(execEl){
-
-  if(execAction === 'LONG'){
-    execEl.style.color = '#57ff98';
-  }
-  else if(execAction === 'SHORT'){
-    execEl.style.color = '#ff5c6c';
-  }
-  else if(execAction === 'SKIP'){
-    execEl.style.color = '#ffd84d';
-  }
-  else{
-    execEl.style.color = '#9aa4bd';
-  }
-}
-
-
-const modeData =
-  await loadJson('./execution_mode.json', {});
-
-setText(
-  'modeStatus',
-  modeData.mode || 'MANUAL'
-);
-
-setText(
-  'modeDesc',
-  modeData.description || '--'
-);
-
-
-const tradePlan =
-  await loadJson('./trade_plan.json', {});
-
-const plan =
-  tradePlan.plan || {};
-
-setText('tpEntry', plan.entry || '--');
-setText('tpStop', plan.stop || '--');
-setText('tpTarget', plan.target || '--');
-setText('tpSize', plan.size || '--');
-
-const ai = await loadJson('./ai_report.json', {});
-      setText('ai_status', '状態: ' + (ai.ai_status || '--'));
-      setText('ai_reason', '理由: ' + (ai.reason || '--'));
-      setText('ai_regime', '相場: ' + (ai.market_regime || '--') + ' / ' + (ai.regime_reason || ''));
-      setText('ai_vol', 'ボラ: ' + (ai.volatility_mode || '--') + ' / ' + (ai.volatility_reason || ''));
-      setText('ai_go', '本番判定: ' + (ai.go_live_status || '--') + ' / ' + (ai.go_live_reason || ''));
-      setText('ai_shadow', 'シャドー: ' + (ai.shadow_closed ?? 0) + '件 / 勝率 ' + (ai.shadow_win_rate ?? 0) + '% / PnL ' + (ai.shadow_total_pnl ?? 0));
-
-      setText('updated', new Date().toLocaleString('ja-JP'));
-    }
-
-    main();
-    setInterval(main, 30000);
-  </script>
-
-<script>
-async function loadEmotionPanel(){
-  try{
-    const r = await fetch('./emotion.json?v=' + Date.now(), {cache:'no-store'});
-    const e = await r.json();
-
-    const panels = [...document.querySelectorAll('.card')];
-    const brain = panels.find(x => x.textContent.includes('AI脳内メーター'));
-
-    if(brain){
-      brain.classList.add('ai-brain');
-
-      if(e.survival_mode === 'EXTREME_DEFENSE'){
-        brain.classList.add('ai-extreme');
-      }else{
-        brain.classList.remove('ai-extreme');
-      }
-    }
-  }catch(err){
-    console.log(err);
-  }
-}
-
-loadEmotionPanel();
-setInterval(loadEmotionPanel, 30000);
-</script>
-
-
-
-<div class="card panel">
-
-<h2>AI GOVERNMENT</h2>
-
-<div id="govLeader">--</div>
-<div id="govDecision">--</div>
-<div id="govVotes">--</div>
-
-<pre id="govAgents"></pre>
-
-</div>
-
-
-
-
-<div class="power-panel">
-  <div class="power-title">AI POWER RANKING</div>
-  <div id="powerRanking"></div>
-</div>
-
-
-<div class="radar-panel">
-  <div class="radar-title">TRADE RADAR</div>
-
-  <div id="radarMode">
+  <div id="simpleAction" class="simple-action">
     WAIT
   </div>
 
-  <div id="radarMarket"></div>
-</div>
+  <div class="simple-box">
 
-<div class="entry-wrap">
-  <div class="entry-label">ENTRY SIGNAL</div>
-  <div id="entrySignal">NO ENTRY</div>
-
-  <div class="confidence-wrap">
-    <div class="confidence-label">AI CONFIDENCE</div>
-
-    <div class="confidence-bar-bg">
-      <div id="confidenceBar"></div>
+    <div class="simple-line">
+      <span>銘柄</span>
+      <span id="simpleSymbol">1321</span>
     </div>
 
-    <div id="confidenceText">0%</div>
+    <div class="simple-line">
+      <span>数量</span>
+      <span id="simpleSize">1 LOT</span>
+    </div>
+
+    <div class="simple-line">
+      <span>注文</span>
+      <span id="simpleOrder">成行</span>
+    </div>
+
+    <div class="simple-line">
+      <span>損切</span>
+      <span id="simpleStop">-1.5%</span>
+    </div>
+
+    <div class="simple-line">
+      <span>利確</span>
+      <span id="simpleTarget">+3.0%</span>
+    </div>
+
+    <div class="simple-line">
+      <span>信頼度</span>
+      <span id="simpleConfidence">0%</span>
+    </div>
+
   </div>
+
 </div>
 
-</body>
-</html>
+<style>
+
+.simple-ai{
+  padding:40px;
+  margin:20px;
+  background:#071427;
+  border-radius:40px;
+}
+
+.simple-title{
+  font-size:28px;
+  font-weight:900;
+  opacity:0.7;
+  margin-bottom:30px;
+}
+
+.simple-action{
+  font-size:120px;
+  font-weight:900;
+  margin-bottom:40px;
+}
+
+.simple-box{
+  background:#0d1d36;
+  border-radius:30px;
+  padding:30px;
+}
+
+.simple-line{
+  display:flex;
+  justify-content:space-between;
+  font-size:30px;
+  margin-bottom:25px;
+}
+
+</style>
+
+<script>
+
+async function loadJson(path,d={}){
+  try{
+    const r = await fetch(path + '?t=' + Date.now());
+    return await r.json();
+  }catch(e){
+    return d;
+  }
+}
+
+(async()=>{
+
+  const ai =
+    await loadJson('./ai_report.json',{});
+
+  const plan =
+    await loadJson('./trade_plan.json',{});
+
+  const action =
+    ai.weighted_agent_decision || 'WAIT';
+
+  document.getElementById('simpleAction')
+    .innerText = action;
+
+  document.getElementById('simpleConfidence')
+    .innerText =
+      (ai.confidence || 0) + '%';
+
+})();
+</script>
+
