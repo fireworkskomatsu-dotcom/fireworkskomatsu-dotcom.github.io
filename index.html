@@ -271,6 +271,51 @@
   opacity:0.7;
 }
 
+
+.exec-panel{
+  background:#050816;
+  border:3px solid #1f3359;
+  border-radius:40px;
+  padding:40px;
+  margin-bottom:35px;
+}
+
+.exec-title{
+  font-size:22px;
+  opacity:0.7;
+  margin-bottom:25px;
+  letter-spacing:2px;
+}
+
+.exec-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.exec-box{
+  background:#0e1730;
+  border-radius:25px;
+  padding:25px;
+}
+
+.exec-label{
+  font-size:14px;
+  color:#8ea0c9;
+  margin-bottom:10px;
+}
+
+.exec-big{
+  font-size:72px;
+  font-weight:900;
+  line-height:1;
+}
+
+.exec-mid{
+  font-size:34px;
+  font-weight:800;
+}
+
 </style>
 
 <style>
@@ -484,6 +529,51 @@
 #radarMarket{
   font-size:22px;
   opacity:0.7;
+}
+
+
+.exec-panel{
+  background:#050816;
+  border:3px solid #1f3359;
+  border-radius:40px;
+  padding:40px;
+  margin-bottom:35px;
+}
+
+.exec-title{
+  font-size:22px;
+  opacity:0.7;
+  margin-bottom:25px;
+  letter-spacing:2px;
+}
+
+.exec-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.exec-box{
+  background:#0e1730;
+  border-radius:25px;
+  padding:25px;
+}
+
+.exec-label{
+  font-size:14px;
+  color:#8ea0c9;
+  margin-bottom:10px;
+}
+
+.exec-big{
+  font-size:72px;
+  font-weight:900;
+  line-height:1;
+}
+
+.exec-mid{
+  font-size:34px;
+  font-weight:800;
 }
 
 </style>
@@ -746,10 +836,87 @@
   opacity:0.7;
 }
 
+
+.exec-panel{
+  background:#050816;
+  border:3px solid #1f3359;
+  border-radius:40px;
+  padding:40px;
+  margin-bottom:35px;
+}
+
+.exec-title{
+  font-size:22px;
+  opacity:0.7;
+  margin-bottom:25px;
+  letter-spacing:2px;
+}
+
+.exec-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.exec-box{
+  background:#0e1730;
+  border-radius:25px;
+  padding:25px;
+}
+
+.exec-label{
+  font-size:14px;
+  color:#8ea0c9;
+  margin-bottom:10px;
+}
+
+.exec-big{
+  font-size:72px;
+  font-weight:900;
+  line-height:1;
+}
+
+.exec-mid{
+  font-size:34px;
+  font-weight:800;
+}
+
 </style>
 
 </head>
 <body>
+
+<div class="exec-panel">
+
+  <div class="exec-title">
+    EXECUTION PANEL
+  </div>
+
+  <div class="exec-grid">
+
+    <div class="exec-box">
+      <div class="exec-label">ACTION</div>
+      <div id="execAction" class="exec-big">WAIT</div>
+    </div>
+
+    <div class="exec-box">
+      <div class="exec-label">SYMBOL</div>
+      <div id="execSymbol" class="exec-mid">1321</div>
+    </div>
+
+    <div class="exec-box">
+      <div class="exec-label">SIZE</div>
+      <div id="execSize" class="exec-mid">1 LOT</div>
+    </div>
+
+    <div class="exec-box">
+      <div class="exec-label">MODE</div>
+      <div id="execMode" class="exec-mid">MANUAL</div>
+    </div>
+
+  </div>
+</div>
+
 
 <div class="alert-panel">
   <div class="alert-title">AI ALERTS</div>
@@ -1146,6 +1313,46 @@ if(radarEl){
   }
   else{
     radarEl.style.color = '#9aa4bd';
+  }
+}
+
+
+const execAction =
+  report.weighted_agent_decision ||
+  report.multi_agent_decision ||
+  report.decision ||
+  "WAIT";
+
+setText('execAction', execAction);
+
+setText('execSymbol', '1321');
+
+if(execAction === 'LONG'){
+  setText('execSize', 'BUY x1');
+}
+else if(execAction === 'SHORT'){
+  setText('execSize', 'SELL x1');
+}
+else{
+  setText('execSize', 'NO TRADE');
+}
+
+const execEl =
+  document.getElementById('execAction');
+
+if(execEl){
+
+  if(execAction === 'LONG'){
+    execEl.style.color = '#57ff98';
+  }
+  else if(execAction === 'SHORT'){
+    execEl.style.color = '#ff5c6c';
+  }
+  else if(execAction === 'SKIP'){
+    execEl.style.color = '#ffd84d';
+  }
+  else{
+    execEl.style.color = '#9aa4bd';
   }
 }
 
