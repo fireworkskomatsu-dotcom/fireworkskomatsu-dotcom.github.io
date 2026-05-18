@@ -341,6 +341,43 @@
   opacity:0.8;
 }
 
+
+.tradeplan-panel{
+  background:#08111f;
+  border:2px solid #23426a;
+  border-radius:35px;
+  padding:35px;
+  margin-bottom:30px;
+}
+
+.tradeplan-title{
+  font-size:26px;
+  font-weight:900;
+  margin-bottom:25px;
+}
+
+.tradeplan-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.tradeplan-box{
+  background:#101a30;
+  border-radius:20px;
+  padding:20px;
+}
+
+.tp-label{
+  opacity:0.7;
+  margin-bottom:10px;
+}
+
+.tp-big{
+  font-size:36px;
+  font-weight:900;
+}
+
 </style>
 
 <style>
@@ -624,6 +661,43 @@
 
 #modeDesc{
   opacity:0.8;
+}
+
+
+.tradeplan-panel{
+  background:#08111f;
+  border:2px solid #23426a;
+  border-radius:35px;
+  padding:35px;
+  margin-bottom:30px;
+}
+
+.tradeplan-title{
+  font-size:26px;
+  font-weight:900;
+  margin-bottom:25px;
+}
+
+.tradeplan-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.tradeplan-box{
+  background:#101a30;
+  border-radius:20px;
+  padding:20px;
+}
+
+.tp-label{
+  opacity:0.7;
+  margin-bottom:10px;
+}
+
+.tp-big{
+  font-size:36px;
+  font-weight:900;
 }
 
 </style>
@@ -956,11 +1030,81 @@
   opacity:0.8;
 }
 
+
+.tradeplan-panel{
+  background:#08111f;
+  border:2px solid #23426a;
+  border-radius:35px;
+  padding:35px;
+  margin-bottom:30px;
+}
+
+.tradeplan-title{
+  font-size:26px;
+  font-weight:900;
+  margin-bottom:25px;
+}
+
+.tradeplan-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.tradeplan-box{
+  background:#101a30;
+  border-radius:20px;
+  padding:20px;
+}
+
+.tp-label{
+  opacity:0.7;
+  margin-bottom:10px;
+}
+
+.tp-big{
+  font-size:36px;
+  font-weight:900;
+}
+
 </style>
 
 </head>
 <body>
 
+
+
+<div class="tradeplan-panel">
+
+  <div class="tradeplan-title">
+    TRADE PLAN
+  </div>
+
+  <div class="tradeplan-grid">
+
+    <div class="tradeplan-box">
+      <div class="tp-label">ENTRY</div>
+      <div id="tpEntry" class="tp-big">--</div>
+    </div>
+
+    <div class="tradeplan-box">
+      <div class="tp-label">STOP</div>
+      <div id="tpStop" class="tp-big">--</div>
+    </div>
+
+    <div class="tradeplan-box">
+      <div class="tp-label">TARGET</div>
+      <div id="tpTarget" class="tp-big">--</div>
+    </div>
+
+    <div class="tradeplan-box">
+      <div class="tp-label">SIZE</div>
+      <div id="tpSize" class="tp-big">--</div>
+    </div>
+
+  </div>
+
+</div>
 
 <div class="mode-panel">
 
@@ -1459,6 +1603,18 @@ setText(
   'modeDesc',
   modeData.description || '--'
 );
+
+
+const tradePlan =
+  await loadJson('./trade_plan.json', {});
+
+const plan =
+  tradePlan.plan || {};
+
+setText('tpEntry', plan.entry || '--');
+setText('tpStop', plan.stop || '--');
+setText('tpTarget', plan.target || '--');
+setText('tpSize', plan.size || '--');
 
 const ai = await loadJson('./ai_report.json', {});
       setText('ai_status', '状態: ' + (ai.ai_status || '--'));
