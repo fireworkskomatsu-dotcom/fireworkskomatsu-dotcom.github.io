@@ -1130,7 +1130,7 @@
 
     <div class="exec-box">
       <div class="exec-label">ACTION</div>
-      <div id="execAction" class="exec-big">WAIT</div>
+      <div id="execAction" class="exec-big">待機</div>
     </div>
 
     <div class="exec-box">
@@ -1140,7 +1140,7 @@
 
     <div class="exec-box">
       <div class="exec-label">SIZE</div>
-      <div id="execSize" class="exec-mid">1 LOT</div>
+      <div id="execSize" class="exec-mid">1株</div>
     </div>
 
     <div class="exec-box">
@@ -1166,11 +1166,11 @@
 <div class="simple-ai">
 
   <div class="simple-title">
-    AI EXECUTION
+    今日の指示
   </div>
 
   <div id="simpleAction" class="simple-action">
-    WAIT
+    待機
   </div>
 
   <div class="simple-box">
@@ -1182,7 +1182,7 @@
 
     <div class="simple-line">
       <span>数量</span>
-      <span id="simpleSize">1 LOT</span>
+      <span id="simpleSize">1株</span>
     </div>
 
     <div class="simple-line">
@@ -1201,7 +1201,7 @@
     </div>
 
     <div class="simple-line">
-      <span>信頼度</span>
+      <span>AI信頼度</span>
       <span id="simpleConfidence">0%</span>
     </div>
 
@@ -1266,7 +1266,7 @@ async function loadJson(path,d={}){
     await loadJson('./trade_plan.json',{});
 
   const action =
-    ai.weighted_agent_decision || 'WAIT';
+    ai.weighted_agent_decision || '待機';
 
   document.getElementById('simpleAction')
     .innerText = action;
