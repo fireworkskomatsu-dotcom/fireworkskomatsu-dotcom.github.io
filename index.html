@@ -378,6 +378,43 @@
   font-weight:900;
 }
 
+
+.today-panel{
+  background:#050816;
+  border-radius:40px;
+  padding:40px;
+  margin:20px;
+  border:3px solid #26385f;
+}
+
+.today-title{
+  font-size:32px;
+  font-weight:900;
+  opacity:.75;
+  margin-bottom:25px;
+}
+
+.today-action{
+  font-size:110px;
+  font-weight:900;
+  line-height:1;
+  margin-bottom:35px;
+  color:#ffd84d;
+}
+
+.today-box{
+  background:#101a30;
+  border-radius:28px;
+  padding:28px;
+}
+
+.today-box div{
+  display:flex;
+  justify-content:space-between;
+  font-size:34px;
+  margin-bottom:22px;
+}
+
 </style>
 
 <style>
@@ -698,6 +735,43 @@
 .tp-big{
   font-size:36px;
   font-weight:900;
+}
+
+
+.today-panel{
+  background:#050816;
+  border-radius:40px;
+  padding:40px;
+  margin:20px;
+  border:3px solid #26385f;
+}
+
+.today-title{
+  font-size:32px;
+  font-weight:900;
+  opacity:.75;
+  margin-bottom:25px;
+}
+
+.today-action{
+  font-size:110px;
+  font-weight:900;
+  line-height:1;
+  margin-bottom:35px;
+  color:#ffd84d;
+}
+
+.today-box{
+  background:#101a30;
+  border-radius:28px;
+  padding:28px;
+}
+
+.today-box div{
+  display:flex;
+  justify-content:space-between;
+  font-size:34px;
+  margin-bottom:22px;
 }
 
 </style>
@@ -1067,10 +1141,61 @@
   font-weight:900;
 }
 
+
+.today-panel{
+  background:#050816;
+  border-radius:40px;
+  padding:40px;
+  margin:20px;
+  border:3px solid #26385f;
+}
+
+.today-title{
+  font-size:32px;
+  font-weight:900;
+  opacity:.75;
+  margin-bottom:25px;
+}
+
+.today-action{
+  font-size:110px;
+  font-weight:900;
+  line-height:1;
+  margin-bottom:35px;
+  color:#ffd84d;
+}
+
+.today-box{
+  background:#101a30;
+  border-radius:28px;
+  padding:28px;
+}
+
+.today-box div{
+  display:flex;
+  justify-content:space-between;
+  font-size:34px;
+  margin-bottom:22px;
+}
+
 </style>
 
 </head>
 <body>
+
+<div class="today-panel">
+  <div class="today-title">今日の指示</div>
+  <div id="todayAction" class="today-action">待機</div>
+
+  <div class="today-box">
+    <div><span>銘柄</span><b id="todaySymbol">1321</b></div>
+    <div><span>数量</span><b id="todaySize">0株</b></div>
+    <div><span>注文</span><b id="todayOrder">なし</b></div>
+    <div><span>損切</span><b id="todayStop">なし</b></div>
+    <div><span>利確</span><b id="todayTarget">なし</b></div>
+  </div>
+</div>
+
 
 
 
@@ -1242,6 +1367,43 @@
   justify-content:space-between;
   font-size:30px;
   margin-bottom:25px;
+}
+
+
+.today-panel{
+  background:#050816;
+  border-radius:40px;
+  padding:40px;
+  margin:20px;
+  border:3px solid #26385f;
+}
+
+.today-title{
+  font-size:32px;
+  font-weight:900;
+  opacity:.75;
+  margin-bottom:25px;
+}
+
+.today-action{
+  font-size:110px;
+  font-weight:900;
+  line-height:1;
+  margin-bottom:35px;
+  color:#ffd84d;
+}
+
+.today-box{
+  background:#101a30;
+  border-radius:28px;
+  padding:28px;
+}
+
+.today-box div{
+  display:flex;
+  justify-content:space-between;
+  font-size:34px;
+  margin-bottom:22px;
 }
 
 </style>
