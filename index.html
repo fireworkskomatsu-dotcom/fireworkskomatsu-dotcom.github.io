@@ -1581,3 +1581,45 @@ async function loadJson(path,d={}){
 })();
 </script>
 
+
+<script>
+async function forcePerformance(){
+
+  try{
+
+    const res = await fetch('./performance_dashboard.json?t=' + Date.now());
+    const perf = await res.json();
+
+    const cards = document.querySelectorAll('.perf-box');
+
+    if(cards.length >= 4){
+
+      cards[0].innerHTML =
+        '勝率<br><span style="font-size:42px;font-weight:900;">'
+        + perf.win_rate + '%</span>';
+
+      cards[1].innerHTML =
+        '総損益<br><span style="font-size:42px;font-weight:900;">'
+        + perf.total_pnl + '</span>';
+
+      cards[2].innerHTML =
+        'LONG勝率<br><span style="font-size:42px;font-weight:900;">'
+        + perf.long_win_rate + '%</span>';
+
+      cards[3].innerHTML =
+        'SHORT勝率<br><span style="font-size:42px;font-weight:900;">'
+        + perf.short_win_rate + '%</span>';
+    }
+
+    console.log("PERF OK", perf);
+
+  }catch(e){
+
+    console.log("PERF ERROR", e);
+
+  }
+}
+
+forcePerformance();
+</script>
+
