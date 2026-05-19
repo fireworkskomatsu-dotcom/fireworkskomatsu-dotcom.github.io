@@ -442,6 +442,49 @@
   font-size:28px;
 }
 
+
+.perf-panel{
+  box-sizing:border-box;
+  width:calc(100% - 40px);
+  margin:20px;
+  padding:35px;
+  background:#071018;
+  border-radius:36px;
+  overflow:hidden;
+}
+
+.perf-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+
+.perf-box{
+  box-sizing:border-box;
+  min-width:0;
+  background:#121d30;
+  border-radius:22px;
+  padding:22px;
+  font-size:28px;
+  line-height:1.25;
+}
+
+.perf-box span{
+  display:block;
+  font-size:42px;
+  font-weight:900;
+  margin-top:8px;
+  word-break:break-word;
+}
+
+.perf-sub{
+  display:block;
+  font-size:24px !important;
+  font-weight:700 !important;
+  opacity:.75;
+  margin-top:8px;
+}
+
 </style>
 
 <style>
@@ -826,6 +869,49 @@
   border-radius:20px;
   padding:20px;
   font-size:28px;
+}
+
+
+.perf-panel{
+  box-sizing:border-box;
+  width:calc(100% - 40px);
+  margin:20px;
+  padding:35px;
+  background:#071018;
+  border-radius:36px;
+  overflow:hidden;
+}
+
+.perf-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+
+.perf-box{
+  box-sizing:border-box;
+  min-width:0;
+  background:#121d30;
+  border-radius:22px;
+  padding:22px;
+  font-size:28px;
+  line-height:1.25;
+}
+
+.perf-box span{
+  display:block;
+  font-size:42px;
+  font-weight:900;
+  margin-top:8px;
+  word-break:break-word;
+}
+
+.perf-sub{
+  display:block;
+  font-size:24px !important;
+  font-weight:700 !important;
+  opacity:.75;
+  margin-top:8px;
 }
 
 </style>
@@ -1259,6 +1345,49 @@
   font-size:28px;
 }
 
+
+.perf-panel{
+  box-sizing:border-box;
+  width:calc(100% - 40px);
+  margin:20px;
+  padding:35px;
+  background:#071018;
+  border-radius:36px;
+  overflow:hidden;
+}
+
+.perf-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+
+.perf-box{
+  box-sizing:border-box;
+  min-width:0;
+  background:#121d30;
+  border-radius:22px;
+  padding:22px;
+  font-size:28px;
+  line-height:1.25;
+}
+
+.perf-box span{
+  display:block;
+  font-size:42px;
+  font-weight:900;
+  margin-top:8px;
+  word-break:break-word;
+}
+
+.perf-sub{
+  display:block;
+  font-size:24px !important;
+  font-weight:700 !important;
+  opacity:.75;
+  margin-top:8px;
+}
+
 </style>
 
 </head>
@@ -1547,6 +1676,49 @@
   font-size:28px;
 }
 
+
+.perf-panel{
+  box-sizing:border-box;
+  width:calc(100% - 40px);
+  margin:20px;
+  padding:35px;
+  background:#071018;
+  border-radius:36px;
+  overflow:hidden;
+}
+
+.perf-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+
+.perf-box{
+  box-sizing:border-box;
+  min-width:0;
+  background:#121d30;
+  border-radius:22px;
+  padding:22px;
+  font-size:28px;
+  line-height:1.25;
+}
+
+.perf-box span{
+  display:block;
+  font-size:42px;
+  font-weight:900;
+  margin-top:8px;
+  word-break:break-word;
+}
+
+.perf-sub{
+  display:block;
+  font-size:24px !important;
+  font-weight:700 !important;
+  opacity:.75;
+  margin-top:8px;
+}
+
 </style>
 
 <script>
@@ -1595,28 +1767,22 @@ async function forcePerformance(){
     if(cards.length >= 4){
 
       cards[0].innerHTML =
-        '勝率<br><span style="font-size:42px;font-weight:900;">'
-        + perf.win_rate + '%</span>';
+        '勝率<br><span>' + perf.win_rate + '%</span>' +
+        '<span class="perf-sub">' + perf.wins + '勝' + perf.losses + '敗</span>';
 
       cards[1].innerHTML =
-        '総損益<br><span style="font-size:42px;font-weight:900;">'
-        + perf.total_pnl + '</span>';
+        '総損益<br><span>' + perf.total_pnl + '</span>' +
+        '<span class="perf-sub">決済 ' + perf.closed + '件</span>';
 
       cards[2].innerHTML =
-        'LONG勝率<br><span style="font-size:42px;font-weight:900;">'
-        + perf.long_win_rate + '%</span>';
+        'LONG勝率<br><span>' + perf.long_win_rate + '%</span>';
 
       cards[3].innerHTML =
-        'SHORT勝率<br><span style="font-size:42px;font-weight:900;">'
-        + perf.short_win_rate + '%</span>';
+        'SHORT勝率<br><span>' + perf.short_win_rate + '%</span>';
     }
 
-    console.log("PERF OK", perf);
-
   }catch(e){
-
     console.log("PERF ERROR", e);
-
   }
 }
 
