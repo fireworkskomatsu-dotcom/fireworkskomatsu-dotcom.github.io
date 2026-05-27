@@ -1,8 +1,8 @@
 {
-  "time": "2026-05-27 16:47:31",
+  "time": "2026-05-27 17:01:54",
   "status": "NOT_READY",
   "reason": "リアルログ不足",
-  "closed": 0,
-  "win_rate": 0,
-  "total_pnl": 0
+  "closed": 1,
+  "win_rate": 0.0,
+  "total_pnl": -0.0001
 }
