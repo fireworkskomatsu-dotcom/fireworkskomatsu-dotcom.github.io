@@ -1414,7 +1414,12 @@
       <div><span>注文</span><b id="todayOrder">なし</b></div>
       <div><span>損切</span><b id="todayStop">なし</b></div>
       <div><span>利確</span><b id="todayTarget">なし</b></div>
+      
       <div><span>実価格</span><b id="todayPrice">--</b></div>
+      <div><span>保有状態</span><b id="todayPosition">--</b></div>
+      <div><span>建値</span><b id="todayEntry">--</b></div>
+      <div><span>含み損益</span><b id="todayUnrealized">--</b></div>
+        
     </div>
   </section>
 
@@ -1501,7 +1506,10 @@ async function loadJson(path, def={}){
 (async()=>{
   const perf = await loadJson('./performance_dashboard.json',{});
   const ai = await loadJson('./winrate_filter.json',{});
+  
   const price = await loadJson('./live_price.json',{});
+  const pos = await loadJson('./shadow_position.json',{});
+    
 
   document.getElementById('perfWR').innerText = (perf.win_rate || 0) + '%';
   document.getElementById('perfWL').innerText = (perf.wins || 0) + '勝' + (perf.losses || 0) + '敗';
@@ -1544,7 +1552,37 @@ async function loadJson(path, def={}){
   document.getElementById('todayOrder').innerText = order;
   document.getElementById('todayStop').innerText = stop;
   document.getElementById('todayTarget').innerText = target;
+  
   document.getElementById('todayPrice').innerText = price.price ? price.price + '円' : '--';
+
+  const current = Number(price.price || 0);
+  const entry = Number(pos.entry_price || 0);
+  const side = pos.side || null;
+  const position = Number(pos.position || 0);
+
+  let posText = 'なし';
+  let entryText = '--';
+  let unrealText = '--';
+
+  if(side && position !== 0 && entry > 0 && current > 0){
+    posText = side === 'SHORT' ? '売り保有中' : '買い保有中';
+    entryText = entry + '円';
+
+    let pnlPct = 0;
+
+    if(side === 'SHORT'){
+      pnlPct = ((entry - current) / entry) * 100;
+    }else{
+      pnlPct = ((current - entry) / entry) * 100;
+    }
+
+    unrealText = pnlPct.toFixed(2) + '%';
+  }
+
+  document.getElementById('todayPosition').innerText = posText;
+  document.getElementById('todayEntry').innerText = entryText;
+  document.getElementById('todayUnrealized').innerText = unrealText;
+
 })();
 </script>
 
