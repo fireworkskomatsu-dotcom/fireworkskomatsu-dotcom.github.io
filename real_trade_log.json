@@ -9,5 +9,28 @@
     "confidence": 40.0,
     "reason": "ロング禁止 (NORMAL)",
     "regime": "TREND_UP_PULLBACK"
+  },
+  {
+    "time": "2026-05-27 16:46:07",
+    "type": "EXIT",
+    "side": "SHORT",
+    "size": 0.04,
+    "entry_price": 67960.0,
+    "exit_price": 68120.0,
+    "pnl_pct": -0.00235,
+    "pnl": -0.0001,
+    "reason": "OPPOSITE_SIGNAL",
+    "regime": "TREND_UP"
+  },
+  {
+    "time": "2026-05-27 16:47:31",
+    "type": "ENTER",
+    "side": "LONG",
+    "size": 0.1,
+    "entry_price": 68120.0,
+    "decision": "LIGHT",
+    "confidence": 40.0,
+    "reason": "ショート禁止 (NORMAL)",
+    "regime": "TREND_UP"
   }
 ]
