@@ -1392,400 +1392,159 @@
 
 </head>
 <body>
+<div class="main">
 
-
-<div class="perf-panel">
-
-  <div class="perf-title">
-    AI成績
-  </div>
-
-  <div class="perf-grid">
-
-    <div class="perf-box">
-      <div>勝率</div>
-      <div id="perfWR">--</div>
+  <section class="card perf">
+    <h1>AI成績</h1>
+    <div class="grid">
+      <div class="box">勝率<br><b id="perfWR">--</b><small id="perfWL">--</small></div>
+      <div class="box">総損益<br><b id="perfPNL">--</b><small id="perfClosed">--</small></div>
+      <div class="box">LONG勝率<br><b id="perfLONG">--</b></div>
+      <div class="box">SHORT勝率<br><b id="perfSHORT">--</b></div>
     </div>
+  </section>
 
-    <div class="perf-box">
-      <div>総損益</div>
-      <div id="perfPNL">--</div>
+  <section class="card instruction">
+    <h1>今日の判断</h1>
+    <div id="todayAction" class="action">待機</div>
+
+    <div class="detail">
+      <div><span>銘柄</span><b id="todaySymbol">1321 日経225ETF</b></div>
+      <div><span>数量</span><b id="todaySize">0株</b></div>
+      <div><span>注文</span><b id="todayOrder">なし</b></div>
+      <div><span>損切</span><b id="todayStop">なし</b></div>
+      <div><span>利確</span><b id="todayTarget">なし</b></div>
+      <div><span>実価格</span><b id="todayPrice">--</b></div>
     </div>
-
-    <div class="perf-box">
-      <div>LONG勝率</div>
-      <div id="perfLONG">--</div>
-    </div>
-
-    <div class="perf-box">
-      <div>SHORT勝率</div>
-      <div id="perfSHORT">--</div>
-    </div>
-
-  </div>
-
-</div>
-
-<div class="today-panel">
-  <div class="today-title">今日の指示</div>
-  <div id="todayAction" class="today-action">待機</div>
-
-  <div class="today-box">
-    <div><span>銘柄</span><b id="todaySymbol">1321 日経225ETF</b></div>
-    <div><span>数量</span><b id="todaySize">0株</b></div>
-    <div><span>注文</span><b id="todayOrder">なし</b></div>
-    <div><span>損切</span><b id="todayStop">なし</b></div>
-    <div><span>利確</span><b id="todayTarget">なし</b></div>
-  </div>
-</div>
-
-
-
-
-<div class="tradeplan-panel">
-
-  <div class="tradeplan-title">
-    TRADE PLAN
-  </div>
-
-  <div class="tradeplan-grid">
-
-    <div class="tradeplan-box">
-      <div class="tp-label">ENTRY</div>
-      <div id="tpEntry" class="tp-big">--</div>
-    </div>
-
-    <div class="tradeplan-box">
-      <div class="tp-label">STOP</div>
-      <div id="tpStop" class="tp-big">--</div>
-    </div>
-
-    <div class="tradeplan-box">
-      <div class="tp-label">TARGET</div>
-      <div id="tpTarget" class="tp-big">--</div>
-    </div>
-
-    <div class="tradeplan-box">
-      <div class="tp-label">SIZE</div>
-      <div id="tpSize" class="tp-big">--</div>
-    </div>
-
-  </div>
-
-</div>
-
-<div class="mode-panel">
-
-  <div class="mode-title">
-    EXECUTION MODE
-  </div>
-
-  <div id="modeStatus">
-    MANUAL
-  </div>
-
-  <div id="modeDesc"></div>
-
-</div>
-
-<div class="exec-panel">
-
-  <div class="exec-title">
-    EXECUTION PANEL
-  </div>
-
-  <div class="exec-grid">
-
-    <div class="exec-box">
-      <div class="exec-label">ACTION</div>
-      <div id="execAction" class="exec-big">待機</div>
-    </div>
-
-    <div class="exec-box">
-      <div class="exec-label">SYMBOL</div>
-      <div id="execSymbol" class="exec-mid">1321 日経225ETF</div>
-    </div>
-
-    <div class="exec-box">
-      <div class="exec-label">SIZE</div>
-      <div id="execSize" class="exec-mid">1株</div>
-    </div>
-
-    <div class="exec-box">
-      <div class="exec-label">MODE</div>
-      <div id="execMode" class="exec-mid">MANUAL</div>
-    </div>
-
-  </div>
-</div>
-
-
-<div class="alert-panel">
-  <div class="alert-title">AI ALERTS</div>
-  <div id="alertBox"></div>
-</div>
-
-
-<div class="command-center">
-
-  <div class="command-title">
-    
-
-<div class="simple-ai">
-
-  <div class="simple-title">
-    今日の指示
-  </div>
-
-  <div id="simpleAction" class="simple-action">
-    待機
-  </div>
-
-  <div class="simple-box">
-
-    <div class="simple-line">
-      <span>銘柄</span>
-      <span id="simpleSymbol">1321 日経225ETF</span>
-    </div>
-
-    <div class="simple-line">
-      <span>数量</span>
-      <span id="simpleSize">1株</span>
-    </div>
-
-    <div class="simple-line">
-      <span>注文</span>
-      <span id="simpleOrder">成行</span>
-    </div>
-
-    <div class="simple-line">
-      <span>損切</span>
-      <span id="simpleStop">-1.5%</span>
-    </div>
-
-    <div class="simple-line">
-      <span>利確</span>
-      <span id="simpleTarget">+3.0%</span>
-    </div>
-
-    <div class="simple-line">
-      <span>AI信頼度</span>
-      <span id="simpleConfidence">0%</span>
-    </div>
-
-  </div>
+  </section>
 
 </div>
 
 <style>
-
-.simple-ai{
-  padding:40px;
-  margin:20px;
-  background:#071427;
-  border-radius:40px;
+body{
+  margin:0;
+  background:#06206f;
+  color:white;
+  font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
 }
-
-.simple-title{
-  font-size:28px;
-  font-weight:900;
-  opacity:0.7;
-  margin-bottom:30px;
+.main{
+  padding:28px 20px 80px;
 }
-
-.simple-action{
-  font-size:120px;
-  font-weight:900;
-  margin-bottom:40px;
-}
-
-.simple-box{
-  background:#0d1d36;
-  border-radius:30px;
-  padding:30px;
-}
-
-.simple-line{
-  display:flex;
-  justify-content:space-between;
-  font-size:30px;
-  margin-bottom:25px;
-}
-
-
-.today-panel{
-  background:#050816;
-  border-radius:40px;
-  padding:40px;
-  margin:20px;
-  border:3px solid #26385f;
-}
-
-.today-title{
-  font-size:32px;
-  font-weight:900;
-  opacity:.75;
-  margin-bottom:25px;
-}
-
-.today-action{
-  font-size:110px;
-  font-weight:900;
-  line-height:1;
-  margin-bottom:35px;
-  color:#ffd84d;
-}
-
-.today-box{
-  background:#101a30;
-  border-radius:28px;
-  padding:28px;
-}
-
-.today-box div{
-  display:flex;
-  justify-content:space-between;
-  font-size:34px;
-  margin-bottom:22px;
-}
-
-
-.perf-panel{
-  background:#081018;
-  border-radius:35px;
-  padding:35px;
-  margin:20px;
-}
-
-.perf-title{
-  font-size:28px;
-  font-weight:900;
-  margin-bottom:25px;
-}
-
-.perf-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:20px;
-}
-
-.perf-box{
-  background:#121d30;
-  border-radius:20px;
-  padding:20px;
-  font-size:28px;
-}
-
-
-.perf-panel{
-  box-sizing:border-box;
-  width:calc(100% - 40px);
-  margin:20px;
-  padding:35px;
+.card{
   background:#071018;
   border-radius:36px;
-  overflow:hidden;
+  padding:34px;
+  margin-bottom:28px;
+  box-sizing:border-box;
 }
-
-.perf-grid{
+h1{
+  font-size:40px;
+  margin:0 0 28px;
+}
+.grid{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:18px;
 }
-
-.perf-box{
-  box-sizing:border-box;
-  min-width:0;
+.box{
   background:#121d30;
   border-radius:22px;
   padding:22px;
   font-size:28px;
   line-height:1.25;
 }
-
-.perf-box span{
+.box b{
   display:block;
-  font-size:42px;
+  font-size:48px;
+  margin-top:10px;
+}
+.box small{
+  display:block;
+  font-size:24px;
+  opacity:.7;
+  margin-top:8px;
+}
+.action{
+  font-size:120px;
   font-weight:900;
-  margin-top:8px;
-  word-break:break-word;
+  line-height:1;
+  color:#ffd84d;
+  margin-bottom:35px;
 }
-
-.perf-sub{
-  display:block;
-  font-size:24px !important;
-  font-weight:700 !important;
-  opacity:.75;
-  margin-top:8px;
+.detail{
+  background:#121d30;
+  border-radius:28px;
+  padding:28px;
 }
-
+.detail div{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  font-size:32px;
+  margin-bottom:22px;
+}
+.detail b{
+  text-align:right;
+}
 </style>
 
 <script>
-
-async function loadJson(path,d={}){
+async function loadJson(path, def={}){
   try{
     const r = await fetch(path + '?t=' + Date.now());
     return await r.json();
   }catch(e){
-    return d;
+    return def;
   }
 }
 
 (async()=>{
+  const perf = await loadJson('./performance_dashboard.json',{});
+  const ai = await loadJson('./winrate_filter.json',{});
+  const price = await loadJson('./live_price.json',{});
 
-  const ai =
-    await loadJson('./ai_report.json',{});
+  document.getElementById('perfWR').innerText = (perf.win_rate || 0) + '%';
+  document.getElementById('perfWL').innerText = (perf.wins || 0) + '勝' + (perf.losses || 0) + '敗';
+  document.getElementById('perfPNL').innerText = perf.total_pnl || 0;
+  document.getElementById('perfClosed').innerText = '決済 ' + (perf.closed || 0) + '件';
+  document.getElementById('perfLONG').innerText = (perf.long_win_rate || 0) + '%';
+  document.getElementById('perfSHORT').innerText = (perf.short_win_rate || 0) + '%';
 
-  const plan =
-    await loadJson('./trade_plan.json',{});
+  const d = ai.final_decision || ai.original_decision || 'SKIP';
+  let jp = '待機';
+  let qty = '0株';
+  let order = 'なし';
+  let stop = 'なし';
+  let target = 'なし';
 
-  const action =
-    ai.weighted_agent_decision || '待機';
-
-  document.getElementById('simpleAction')
-    .innerText = action;
-
-  document.getElementById('simpleConfidence')
-    .innerText =
-      (ai.confidence || 0) + '%';
-
-})();
-</script>
-
-
-<script>
-async function forcePerformance(){
-
-  try{
-
-    const res = await fetch('./performance_dashboard.json?t=' + Date.now());
-    const perf = await res.json();
-
-    const cards = document.querySelectorAll('.perf-box');
-
-    if(cards.length >= 4){
-
-      cards[0].innerHTML =
-        '勝率<br><span>' + perf.win_rate + '%</span>' +
-        '<span class="perf-sub">' + perf.wins + '勝' + perf.losses + '敗</span>';
-
-      cards[1].innerHTML =
-        '総損益<br><span>' + perf.total_pnl + '</span>' +
-        '<span class="perf-sub">決済 ' + perf.closed + '件</span>';
-
-      cards[2].innerHTML =
-        'LONG勝率<br><span>' + perf.long_win_rate + '%</span>';
-
-      cards[3].innerHTML =
-        'SHORT勝率<br><span>' + perf.short_win_rate + '%</span>';
+  if(d === 'LONG'){
+    jp = '買い';
+    qty = '1株';
+    order = '成行';
+    stop = '-1.5%';
+    target = '+3.0%';
+  }else if(d === 'SHORT' || ai.allowed_direction === 'SHORT_ONLY'){
+    if(ai.blocked){
+      jp = '待機';
+    }else{
+      jp = '売り';
+      qty = '1株';
+      order = '成行';
+      stop = '-1.5%';
+      target = '+3.0%';
     }
-
-  }catch(e){
-    console.log("PERF ERROR", e);
   }
-}
 
-forcePerformance();
+  const action = document.getElementById('todayAction');
+  action.innerText = jp;
+  action.style.color = jp === '買い' ? '#57ff98' : jp === '売り' ? '#ff5c6c' : '#ffd84d';
+
+  document.getElementById('todaySymbol').innerText = '1321 日経225ETF';
+  document.getElementById('todaySize').innerText = qty;
+  document.getElementById('todayOrder').innerText = order;
+  document.getElementById('todayStop').innerText = stop;
+  document.getElementById('todayTarget').innerText = target;
+  document.getElementById('todayPrice').innerText = price.price ? price.price + '円' : '--';
+})();
 </script>
 
