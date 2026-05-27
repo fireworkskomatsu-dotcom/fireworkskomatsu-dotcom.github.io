@@ -1,0 +1,12 @@
+{
+  "time": "2026-05-27 14:52:45",
+  "original_decision": "LIGHT",
+  "allowed_direction": "LONG_ONLY",
+  "original_size": 0.05,
+  "blocked": true,
+  "final_decision": "SKIP",
+  "final_size": 0,
+  "reason": "LONG負け率高め",
+  "closed": 4,
+  "win_rate": 75.0
+}

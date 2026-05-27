@@ -1,0 +1,13 @@
+[
+  {
+    "time": "2026-05-26 17:25:25",
+    "type": "ENTER",
+    "side": "SHORT",
+    "size": 0.04,
+    "entry_price": 67960.0,
+    "decision": "LIGHT",
+    "confidence": 40.0,
+    "reason": "ロング禁止 (NORMAL)",
+    "regime": "TREND_UP_PULLBACK"
+  }
+]
