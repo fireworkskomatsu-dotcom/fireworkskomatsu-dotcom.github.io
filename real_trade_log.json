@@ -32,5 +32,17 @@
     "confidence": 40.0,
     "reason": "ショート禁止 (NORMAL)",
     "regime": "TREND_UP"
+  },
+  {
+    "time": "2026-05-28 15:41:53",
+    "type": "EXIT",
+    "side": "LONG",
+    "size": 0.1,
+    "entry_price": 68120.0,
+    "exit_price": 67690.0,
+    "pnl_pct": -0.00631,
+    "pnl": -0.0006,
+    "reason": "DYNAMIC_RISK_EXIT",
+    "regime": "TREND_UP"
   }
 ]

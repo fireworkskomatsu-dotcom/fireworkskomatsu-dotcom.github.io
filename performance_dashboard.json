@@ -1,9 +1,9 @@
 {
-  "closed": 1,
+  "closed": 2,
   "wins": 0,
-  "losses": 1,
+  "losses": 2,
   "win_rate": 0.0,
-  "total_pnl": -0.0001,
+  "total_pnl": -0.0007,
   "long_win_rate": 0.0,
   "short_win_rate": 0.0
 }
