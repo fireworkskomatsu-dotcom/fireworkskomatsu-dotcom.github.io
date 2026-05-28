@@ -1,8 +1,8 @@
 {
-  "time": "2026-05-27 17:01:54",
-  "original_decision": "LIGHT",
+  "time": "2026-05-28 15:33:04",
+  "original_decision": "SKIP",
   "allowed_direction": "LONG_ONLY",
-  "original_size": 0.05,
+  "original_size": 0,
   "blocked": true,
   "final_decision": "SKIP",
   "final_size": 0,
