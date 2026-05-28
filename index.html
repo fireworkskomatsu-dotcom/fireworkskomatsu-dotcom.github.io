@@ -1418,7 +1418,12 @@
       <div><span>実価格</span><b id="todayPrice">--</b></div>
       <div><span>保有状態</span><b id="todayPosition">--</b></div>
       <div><span>建値</span><b id="todayEntry">--</b></div>
+      
       <div><span>含み損益</span><b id="todayUnrealized">--</b></div>
+      <div><span>回復モード</span><b id="recoveryMode">--</b></div>
+      <div><span>AI合意率</span><b id="consensusRate">--</b></div>
+      <div><span>推奨サイズ</span><b id="recommendedSize">--</b></div>
+        
         
     </div>
   </section>
@@ -1507,7 +1512,12 @@ async function loadJson(path, def={}){
   const perf = await loadJson('./performance_dashboard.json',{});
   const ai = await loadJson('./winrate_filter.json',{});
   
+  
   const price = await loadJson('./live_price.json',{});
+  const recovery = await loadJson('./recovery_mode.json',{});
+  const consensus = await loadJson('./consensus.json',{});
+  const sizing = await loadJson('./position_sizing.json',{});
+        
   const pos = await loadJson('./shadow_position.json',{});
     
 
@@ -1553,7 +1563,18 @@ async function loadJson(path, def={}){
   document.getElementById('todayStop').innerText = stop;
   document.getElementById('todayTarget').innerText = target;
   
+  
   document.getElementById('todayPrice').innerText = price.price ? price.price + '円' : '--';
+
+  document.getElementById('recoveryMode').innerText =
+    recovery.recovery_mode ? 'ON' : 'OFF';
+
+  document.getElementById('consensusRate').innerText =
+    consensus.ratio !== undefined ? Math.round(consensus.ratio * 100) + '%' : '--';
+
+  document.getElementById('recommendedSize').innerText =
+    sizing.recommended_size !== undefined ? sizing.recommended_size : '--';
+        
 
   const current = Number(price.price || 0);
   const entry = Number(pos.entry_price || 0);
