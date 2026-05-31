@@ -4,5 +4,9 @@
   "reason": "リアルログ不足",
   "closed": 2,
   "win_rate": 0.0,
-  "total_pnl": -0.0007
+  "total_pnl": -0.0007,
+  "expectancy": -0.00035,
+  "consensus": 0.5,
+  "quality_score": 0,
+  "recovery_mode": true
 }

@@ -1,0 +1,21 @@
+{
+  "time": "2026-05-31 08:09:18",
+  "memory": {
+    "TREND_UP_PULLBACK_SHORT": {
+      "trades": 1,
+      "wins": 0,
+      "losses": 1,
+      "total_pnl": -0.0001,
+      "win_rate": 0.0,
+      "mode": "LEARNING"
+    },
+    "TREND_UP_LONG": {
+      "trades": 1,
+      "wins": 0,
+      "losses": 1,
+      "total_pnl": -0.0006,
+      "win_rate": 0.0,
+      "mode": "LEARNING"
+    }
+  }
+}
