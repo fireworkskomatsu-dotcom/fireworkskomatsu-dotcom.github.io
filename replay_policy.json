@@ -1,0 +1,17 @@
+{
+  "time": "2026-05-31 17:46:22",
+  "policy": {
+    "boost": [
+      "TREND_UP_LONG"
+    ],
+    "ban": [
+      "TREND_DOWN_SHORT",
+      "TREND_UP_SHORT"
+    ],
+    "reduce": [
+      "TREND_DOWN_SHORT"
+    ]
+  },
+  "source_closed": 54,
+  "source_total_pnl": 0.026123
+}
