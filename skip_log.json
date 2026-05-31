@@ -1,0 +1,20 @@
+[
+  {
+    "time": "2026-05-31 08:26:54",
+    "symbol": "1321.T",
+    "price": 69310.0,
+    "reason": [
+      "市場温度異常 / OVERHEAT",
+      "信頼度低い",
+      "AI合意不足",
+      "回復モード",
+      "危険撤退優先"
+    ],
+    "filter_reason": "市場温度異常 / OVERHEAT",
+    "regime": "TREND_UP",
+    "confidence": 35,
+    "consensus_ratio": 0.5,
+    "recovery_mode": true,
+    "checked": false
+  }
+]
