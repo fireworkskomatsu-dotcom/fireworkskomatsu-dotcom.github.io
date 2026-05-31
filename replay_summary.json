@@ -1,0 +1,42 @@
+{
+  "time": "2026-05-31 15:42:19",
+  "closed": 54,
+  "wins": 26,
+  "losses": 28,
+  "win_rate": 48.1,
+  "total_pnl": 0.026123,
+  "ranking": [
+    {
+      "pattern": "TREND_UP_LONG",
+      "trades": 34,
+      "wins": 18,
+      "losses": 16,
+      "win_rate": 52.9,
+      "pnl": 0.037679
+    },
+    {
+      "pattern": "TREND_DOWN_LONG",
+      "trades": 4,
+      "wins": 2,
+      "losses": 2,
+      "win_rate": 50.0,
+      "pnl": 0.001628
+    },
+    {
+      "pattern": "TREND_DOWN_SHORT",
+      "trades": 12,
+      "wins": 4,
+      "losses": 8,
+      "win_rate": 33.3,
+      "pnl": -0.005317
+    },
+    {
+      "pattern": "TREND_UP_SHORT",
+      "trades": 4,
+      "wins": 2,
+      "losses": 2,
+      "win_rate": 50.0,
+      "pnl": -0.007867
+    }
+  ]
+}
