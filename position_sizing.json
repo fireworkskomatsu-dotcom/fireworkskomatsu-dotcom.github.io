@@ -1,7 +1,9 @@
 {
-  "time": "2026-06-01 18:05:56",
-  "recommended_size": 0.0075,
+  "time": "2026-06-01 18:10:29",
+  "recommended_size": 0.0094,
   "confidence": 35,
   "win_rate": 0,
-  "vol_mode": "DANGER"
+  "vol_mode": "DANGER",
+  "replay_size_mult": 1.25,
+  "replay_action": "BOOST_SIZE"
 }

@@ -1,0 +1,9 @@
+{
+  "time": "2026-06-01 18:10:29",
+  "replay_key": "TREND_UP_LONG",
+  "expectancy": 0.001108,
+  "trades": 34,
+  "mode": "POSITIVE",
+  "size_mult": 1.25,
+  "action": "BOOST_SIZE"
+}
