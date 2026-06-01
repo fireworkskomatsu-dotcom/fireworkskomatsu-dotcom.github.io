@@ -1,12 +1,12 @@
 {
-  "time": "2026-05-31 18:15:50",
+  "time": "2026-06-01 18:01:35",
   "final_decision": "SKIP",
   "direction": "LONG_ONLY",
   "size": 0,
   "score": 0,
   "grade": "D",
   "reasons": [
-    "市場温度異常 / OVERHEAT",
+    "市場温度異常 / OVERHEAT / Replay Policy BOOST TREND_UP_LONG",
     "信頼度低い",
     "AI合意不足",
     "回復モード",
