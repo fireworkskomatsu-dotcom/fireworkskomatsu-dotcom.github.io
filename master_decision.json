@@ -1,8 +1,9 @@
 {
-  "time": "2026-06-01 18:10:29",
+  "time": "2026-06-01 18:12:40",
   "final_decision": "SKIP",
   "direction": "LONG_ONLY",
   "size": 0,
+  "candidate_size": 0.0094,
   "score": 0,
   "grade": "D",
   "reasons": [
@@ -16,5 +17,7 @@
   "confidence": 35,
   "consensus_ratio": 0.5,
   "recovery_mode": true,
-  "risk_exit": true
+  "risk_exit": true,
+  "replay_size_mult": 1.25,
+  "replay_action": "BOOST_SIZE"
 }
