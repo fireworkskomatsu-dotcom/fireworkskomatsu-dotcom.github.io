@@ -1,5 +1,5 @@
 {
-  "time": "2026-06-01 18:50:22",
+  "time": "2026-06-02 04:58:17",
   "final_decision": "SKIP",
   "direction": "LONG_ONLY",
   "size": 0,
@@ -7,7 +7,7 @@
   "score": 0,
   "grade": "D",
   "reasons": [
-    "市場温度異常 / OVERHEAT / Replay Policy BOOST TREND_UP_LONG / Replay Expectancy POSITIVE TREND_UP_LONG",
+    "時間帯ブロック / SLEEP_BLOCK / Replay Policy BOOST TREND_UP_LONG / Replay Expectancy POSITIVE TREND_UP_LONG",
     "信頼度低い",
     "AI合意不足",
     "回復モード",

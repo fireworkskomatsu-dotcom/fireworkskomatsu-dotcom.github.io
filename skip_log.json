@@ -52,5 +52,24 @@
     "consensus_ratio": 0.5,
     "recovery_mode": true,
     "checked": false
+  },
+  {
+    "time": "2026-06-02 04:58:17",
+    "symbol": "1321.T",
+    "price": 69830.0,
+    "reason": [
+      "時間帯ブロック / SLEEP_BLOCK / Replay Policy BOOST TREND_UP_LONG / Replay Expectancy POSITIVE TREND_UP_LONG",
+      "信頼度低い",
+      "AI合意不足",
+      "回復モード",
+      "危険撤退優先",
+      "重み付きAI会議SKIP"
+    ],
+    "filter_reason": "時間帯ブロック / SLEEP_BLOCK / Replay Policy BOOST TREND_UP_LONG / Replay Expectancy POSITIVE TREND_UP_LONG",
+    "regime": "TREND_UP",
+    "confidence": 35,
+    "consensus_ratio": 0.5,
+    "recovery_mode": true,
+    "checked": false
   }
 ]
