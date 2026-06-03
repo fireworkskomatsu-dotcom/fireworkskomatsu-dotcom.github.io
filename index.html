@@ -1392,6 +1392,47 @@
 
 </head>
 <body>
+
+<section class="card">
+  <h2 class="title">AI統合脳</h2>
+  <div class="actionbox">
+    <div class="line">AI脳 <b id="brainStatus">--</b></div>
+    <div class="line">Brain Score <b id="brainScore">--</b></div>
+    <div class="line">本番ロック <b id="productionLock">--</b></div>
+    <div class="line">実弾許可 <b id="allowRealTrade">--</b></div>
+    <div class="line">Go Live <b id="goLiveStatus">--</b></div>
+  </div>
+</section>
+
+<section class="card">
+  <h2 class="title">Replay / 期待値</h2>
+  <div class="actionbox">
+    <div class="line">Replay Key <b id="replayKey">--</b></div>
+    <div class="line">Policy <b id="replayPolicyAction">--</b></div>
+    <div class="line">期待値 <b id="replayExpectancy">--</b></div>
+    <div class="line">Expectancy Action <b id="replayExpectancyAction">--</b></div>
+    <div class="line">Size倍率 <b id="replaySizeMult">--</b></div>
+  </div>
+</section>
+
+<section class="card">
+  <h2 class="title">重み付きAI会議</h2>
+  <div class="actionbox">
+    <div class="line">会議判断 <b id="weightedAgentDecision">--</b></div>
+    <div class="line">LONG <b id="voteLong">--</b></div>
+    <div class="line">SHORT <b id="voteShort">--</b></div>
+    <div class="line">SKIP <b id="voteSkip">--</b></div>
+    <div class="line">HOLD <b id="voteHold">--</b></div>
+  </div>
+</section>
+
+<section class="card">
+  <h2 class="title">ロック理由</h2>
+  <div class="actionbox">
+    <div class="line" id="lockReasons">--</div>
+  </div>
+</section>
+
 <div class="main">
 
   <section class="card perf">
@@ -1497,6 +1538,7 @@ h1{
   text-align:right;
 }
 </style>
+
 
 <script>
 async function loadJson(path, def={}){
@@ -1607,3 +1649,41 @@ async function loadJson(path, def={}){
 })();
 </script>
 
+
+
+<script>
+(async function(){
+  try{
+    const dash = await fetch("dashboard_summary.json?ts=" + Date.now()).then(r => r.json());
+
+    const set = (id, val) => {
+      const el = document.getElementById(id);
+      if(el) el.innerText = (val === undefined || val === null) ? "--" : val;
+    };
+
+    set("brainStatus", dash.brain_status);
+    set("brainScore", dash.brain_score);
+    set("productionLock", dash.production_locked ? "ON" : "OFF");
+    set("allowRealTrade", dash.allow_real_trade ? "YES" : "NO");
+    set("goLiveStatus", dash.go_live);
+
+    set("replayKey", dash.replay_key);
+    set("replayPolicyAction", dash.replay_policy_action);
+    set("replayExpectancy", dash.replay_expectancy);
+    set("replayExpectancyAction", dash.replay_expectancy_action);
+    set("replaySizeMult", dash.replay_size_mult);
+
+    set("weightedAgentDecision", dash.weighted_agent_decision);
+
+    const votes = dash.weighted_votes || {};
+    set("voteLong", votes.LONG);
+    set("voteShort", votes.SHORT);
+    set("voteSkip", votes.SKIP);
+    set("voteHold", votes.HOLD);
+
+    set("lockReasons", (dash.lock_reasons || []).join(" / "));
+  }catch(e){
+    console.log("dashboard_summary load error", e);
+  }
+})();
+</script>
