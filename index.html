@@ -1393,152 +1393,46 @@
 </head>
 <body>
 
-<section class="card">
-  <h2 class="title">AI統合脳</h2>
-  <div class="actionbox">
-    <div class="line">AI脳 <b id="brainStatus">--</b></div>
-    <div class="line">Brain Score <b id="brainScore">--</b></div>
-    <div class="line">本番ロック <b id="productionLock">--</b></div>
-    <div class="line">実弾許可 <b id="allowRealTrade">--</b></div>
-    <div class="line">Go Live <b id="goLiveStatus">--</b></div>
+
+<div class="card">
+  <h1>AI統合脳</h1>
+  <div class="detail">
+    <div><span>AI脳</span><b id="brainStatus">--</b></div>
+    <div><span>Brain Score</span><b id="brainScore">--</b></div>
+    <div><span>本番ロック</span><b id="productionLock">--</b></div>
+    <div><span>実弾許可</span><b id="allowRealTrade">--</b></div>
+    <div><span>Go Live</span><b id="goLiveStatus">--</b></div>
   </div>
-</section>
-
-<section class="card">
-  <h2 class="title">Replay / 期待値</h2>
-  <div class="actionbox">
-    <div class="line">Replay Key <b id="replayKey">--</b></div>
-    <div class="line">Policy <b id="replayPolicyAction">--</b></div>
-    <div class="line">期待値 <b id="replayExpectancy">--</b></div>
-    <div class="line">Expectancy Action <b id="replayExpectancyAction">--</b></div>
-    <div class="line">Size倍率 <b id="replaySizeMult">--</b></div>
-  </div>
-</section>
-
-<section class="card">
-  <h2 class="title">重み付きAI会議</h2>
-  <div class="actionbox">
-    <div class="line">会議判断 <b id="weightedAgentDecision">--</b></div>
-    <div class="line">LONG <b id="voteLong">--</b></div>
-    <div class="line">SHORT <b id="voteShort">--</b></div>
-    <div class="line">SKIP <b id="voteSkip">--</b></div>
-    <div class="line">HOLD <b id="voteHold">--</b></div>
-  </div>
-</section>
-
-<section class="card">
-  <h2 class="title">ロック理由</h2>
-  <div class="actionbox">
-    <div class="line" id="lockReasons">--</div>
-  </div>
-</section>
-
-<div class="main">
-
-  <section class="card perf">
-    <h1>AI成績</h1>
-    <div class="grid">
-      <div class="box">勝率<br><b id="perfWR">--</b><small id="perfWL">--</small></div>
-      <div class="box">総損益<br><b id="perfPNL">--</b><small id="perfClosed">--</small></div>
-      <div class="box">LONG勝率<br><b id="perfLONG">--</b></div>
-      <div class="box">SHORT勝率<br><b id="perfSHORT">--</b></div>
-    </div>
-  </section>
-
-  <section class="card instruction">
-    <h1>今日の判断</h1>
-    <div id="todayAction" class="action">待機</div>
-
-    <div class="detail">
-      <div><span>銘柄</span><b id="todaySymbol">1321 日経225ETF</b></div>
-      <div><span>数量</span><b id="todaySize">0株</b></div>
-      <div><span>注文</span><b id="todayOrder">なし</b></div>
-      <div><span>損切</span><b id="todayStop">なし</b></div>
-      <div><span>利確</span><b id="todayTarget">なし</b></div>
-      
-      <div><span>実価格</span><b id="todayPrice">--</b></div>
-      <div><span>保有状態</span><b id="todayPosition">--</b></div>
-      <div><span>建値</span><b id="todayEntry">--</b></div>
-      
-      <div><span>含み損益</span><b id="todayUnrealized">--</b></div>
-      <div><span>回復モード</span><b id="recoveryMode">--</b></div>
-      <div><span>AI合意率</span><b id="consensusRate">--</b></div>
-      <div><span>推奨サイズ</span><b id="recommendedSize">--</b></div>
-        
-        
-    </div>
-  </section>
-
 </div>
 
-<style>
-body{
-  margin:0;
-  background:#06206f;
-  color:white;
-  font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
-}
-.main{
-  padding:28px 20px 80px;
-}
-.card{
-  background:#071018;
-  border-radius:36px;
-  padding:34px;
-  margin-bottom:28px;
-  box-sizing:border-box;
-}
-h1{
-  font-size:40px;
-  margin:0 0 28px;
-}
-.grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:18px;
-}
-.box{
-  background:#121d30;
-  border-radius:22px;
-  padding:22px;
-  font-size:28px;
-  line-height:1.25;
-}
-.box b{
-  display:block;
-  font-size:48px;
-  margin-top:10px;
-}
-.box small{
-  display:block;
-  font-size:24px;
-  opacity:.7;
-  margin-top:8px;
-}
-.action{
-  font-size:120px;
-  font-weight:900;
-  line-height:1;
-  color:#ffd84d;
-  margin-bottom:35px;
-}
-.detail{
-  background:#121d30;
-  border-radius:28px;
-  padding:28px;
-}
-.detail div{
-  display:flex;
-  justify-content:space-between;
-  gap:20px;
-  font-size:32px;
-  margin-bottom:22px;
-}
-.detail b{
-  text-align:right;
-}
-</style>
+<div class="card">
+  <h1>Replay / 期待値</h1>
+  <div class="detail">
+    <div><span>Replay Key</span><b id="replayKey">--</b></div>
+    <div><span>Policy</span><b id="replayPolicyAction">--</b></div>
+    <div><span>期待値</span><b id="replayExpectancy">--</b></div>
+    <div><span>Expectancy</span><b id="replayExpectancyAction">--</b></div>
+    <div><span>Size倍率</span><b id="replaySizeMult">--</b></div>
+  </div>
+</div>
 
+<div class="card">
+  <h1>重み付きAI会議</h1>
+  <div class="detail">
+    <div><span>会議判断</span><b id="weightedAgentDecision">--</b></div>
+    <div><span>LONG</span><b id="voteLong">--</b></div>
+    <div><span>SHORT</span><b id="voteShort">--</b></div>
+    <div><span>SKIP</span><b id="voteSkip">--</b></div>
+    <div><span>HOLD</span><b id="voteHold">--</b></div>
+  </div>
+</div>
+
+<div class="card">
+  <h1>ロック理由</h1>
+  <div class="detail">
+    <div><span>理由</span><b id="lockReasons">--</b></div>
+  </div>
+</div>
 
 <script>
 async function loadJson(path, def={}){
