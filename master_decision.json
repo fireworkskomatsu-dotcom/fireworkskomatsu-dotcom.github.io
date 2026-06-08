@@ -1,31 +1,29 @@
 {
-  "time": "2026-06-02 05:04:16",
+  "time": "2026-06-08 14:36:57",
   "final_decision": "SKIP",
   "direction": "LONG_ONLY",
   "size": 0,
-  "candidate_size": 0.0094,
+  "candidate_size": 0.0187,
   "score": 0,
   "grade": "D",
   "reasons": [
-    "時間帯ブロック / SLEEP_BLOCK / Replay Policy BOOST TREND_UP_LONG / Replay Expectancy POSITIVE TREND_UP_LONG",
-    "信頼度低い",
+    "市場温度異常 / PANIC / Replay Policy BOOST TREND_UP_LONG / Replay Expectancy POSITIVE TREND_UP_LONG",
     "AI合意不足",
     "回復モード",
-    "危険撤退優先",
-    "重み付きAI会議SKIP"
+    "危険撤退優先"
   ],
   "raw_filter_decision": "SKIP",
-  "confidence": 35,
+  "confidence": 50,
   "consensus_ratio": 0.5,
   "recovery_mode": true,
   "risk_exit": true,
   "replay_size_mult": 1.25,
   "replay_action": "BOOST_SIZE",
-  "weighted_agent_decision": "SKIP",
+  "weighted_agent_decision": "SHORT",
   "weighted_votes": {
-    "LONG": 1.0,
-    "SHORT": 1.3,
-    "SKIP": 2.4,
+    "LONG": 1.13,
+    "SHORT": 1.64,
+    "SKIP": 0.6,
     "HOLD": 0.0
   }
 }
