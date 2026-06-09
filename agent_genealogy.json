@@ -1,0 +1,26 @@
+{
+  "time": "2026-06-09 09:37:31",
+  "genealogy": {
+    "TREND_AGENT": {
+      "generation": 1,
+      "parent": null,
+      "rank": "PROBATION",
+      "power_score": 30.0,
+      "children": []
+    },
+    "DEFENSE_AGENT": {
+      "generation": 1,
+      "parent": null,
+      "rank": "PROBATION",
+      "power_score": 30.0,
+      "children": []
+    },
+    "CONTRARIAN_AGENT": {
+      "generation": 1,
+      "parent": null,
+      "rank": "PROBATION",
+      "power_score": 30.0,
+      "children": []
+    }
+  }
+}

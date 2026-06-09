@@ -1,22 +1,25 @@
 {
   "time": "2026-06-09 09:37:30",
-  "agent_power": {
+  "agent_memory": {
     "TREND_AGENT": {
       "trades": 0,
       "win_rate": 0,
       "total_pnl": 0,
+      "expectancy": 0,
       "power_score": 30.0
     },
     "DEFENSE_AGENT": {
       "trades": 0,
       "win_rate": 0,
       "total_pnl": 0,
+      "expectancy": 0,
       "power_score": 30.0
     },
     "CONTRARIAN_AGENT": {
       "trades": 0,
       "win_rate": 0,
       "total_pnl": 0,
+      "expectancy": 0,
       "power_score": 30.0
     }
   }

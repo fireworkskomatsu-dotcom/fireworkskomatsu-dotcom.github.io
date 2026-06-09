@@ -1,0 +1,9 @@
+{
+  "time": "2026-06-09 09:37:30",
+  "capital_allocation": {
+    "TREND_AGENT": 0.3333,
+    "DEFENSE_AGENT": 0.3333,
+    "CONTRARIAN_AGENT": 0.3333
+  },
+  "total_power": 90.0
+}

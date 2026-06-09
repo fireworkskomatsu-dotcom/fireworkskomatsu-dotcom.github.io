@@ -1,18 +1,19 @@
 {
-  "time": "2026-06-08 14:36:56",
-  "confidence": 50,
+  "time": "2026-06-09 09:37:30",
+  "confidence": 60,
   "mode": "MID",
   "reasons": [
     "TREND_UP +10",
     "VOL_DANGER -30",
     "REPLAY_EXPECTANCY_POSITIVE +10",
-    "WEIGHTED_AGENT_SHORT +10"
+    "WEIGHTED_AGENT_SHORT +10",
+    "BRAIN_SCORE_MID +10"
   ],
   "replay_key": "TREND_UP_LONG",
   "replay_expectancy": 0.001108,
   "replay_trades": 34,
   "weighted_agent_decision": "SHORT",
-  "brain_score": 50,
+  "brain_score": 60,
   "closed": 2,
   "win_rate": 0.0,
   "total_pnl": -0.0007

@@ -1,0 +1,22 @@
+[
+  {
+    "time": "2026-06-08 15:15:12",
+    "price": 66740.0,
+    "ceo_decision": "SKIP",
+    "ceo_confidence": 71.0,
+    "meta_decision": "SHORT",
+    "production_locked": true,
+    "allow_real_trade": false,
+    "summary": "CEO=SKIP confidence=71.0 meta=SHORT lock=True"
+  },
+  {
+    "time": "2026-06-09 09:37:31",
+    "price": 67380.0,
+    "ceo_decision": "SKIP",
+    "ceo_confidence": 74.0,
+    "meta_decision": "SHORT",
+    "production_locked": true,
+    "allow_real_trade": false,
+    "summary": "CEO=SKIP confidence=74.0 meta=SHORT lock=True"
+  }
+]

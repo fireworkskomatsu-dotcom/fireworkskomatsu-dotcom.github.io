@@ -1,0 +1,29 @@
+{
+  "time": "2026-06-09 09:37:30",
+  "committee_decisions": {
+    "TREND_AGENT": {
+      "current_rank": "PROBATION",
+      "power_score": 30.0,
+      "trades": 0,
+      "expectancy": 0,
+      "action": "DEMOTE",
+      "reason": "低powerまたは期待値マイナス"
+    },
+    "DEFENSE_AGENT": {
+      "current_rank": "PROBATION",
+      "power_score": 30.0,
+      "trades": 0,
+      "expectancy": 0,
+      "action": "DEMOTE",
+      "reason": "低powerまたは期待値マイナス"
+    },
+    "CONTRARIAN_AGENT": {
+      "current_rank": "PROBATION",
+      "power_score": 30.0,
+      "trades": 0,
+      "expectancy": 0,
+      "action": "DEMOTE",
+      "reason": "低powerまたは期待値マイナス"
+    }
+  }
+}

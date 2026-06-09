@@ -1,0 +1,14 @@
+{
+  "time": "2026-06-09 09:37:31",
+  "profit_priority_score": 60,
+  "notes": [
+    "META_HIGH",
+    "MISSED_OPPORTUNITY",
+    "REAL_LOG_SHORTAGE",
+    "REAL_PNL_NEGATIVE"
+  ],
+  "meta_score": 74.0,
+  "missed_opportunity": true,
+  "closed": 2,
+  "total_pnl": -0.0007
+}

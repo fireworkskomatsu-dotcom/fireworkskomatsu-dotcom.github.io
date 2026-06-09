@@ -1,7 +1,7 @@
 {
-  "time": "2026-06-08 14:36:57",
+  "time": "2026-06-09 09:37:31",
   "status": "NOT_READY",
-  "reason": "Trade Brain NO_GO / ['REAL_NOT_READY', 'MASTER_SKIP', 'AGENT_SKIP']",
+  "reason": "Trade Brain NO_GO / ['REAL_NOT_READY', 'MASTER_SKIP']",
   "closed": 2,
   "win_rate": 0.0,
   "total_pnl": -0.0007,
@@ -10,10 +10,9 @@
   "quality_score": 0,
   "recovery_mode": true,
   "brain_status": "NO_GO",
-  "brain_score": 50,
+  "brain_score": 60,
   "brain_flags": [
     "REAL_NOT_READY",
-    "MASTER_SKIP",
-    "AGENT_SKIP"
+    "MASTER_SKIP"
   ]
 }

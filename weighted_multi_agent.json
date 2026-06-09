@@ -1,5 +1,5 @@
 {
-  "time": "2026-06-08 14:36:57",
+  "time": "2026-06-09 09:37:30",
   "final_decision": "SHORT",
   "weighted_votes": {
     "LONG": 1.13,
@@ -14,10 +14,10 @@
       "confidence": 75,
       "reason": "弱気トレンド",
       "weight": 1.64,
-      "trust_mode": "LEARNING",
-      "agent_trades": 2,
-      "agent_win_rate": 100.0,
-      "agent_total_pnl": 0.041999999999999996,
+      "trust_mode": "NO_DATA",
+      "agent_trades": 0,
+      "agent_win_rate": 0,
+      "agent_total_pnl": 0,
       "power_score": 82.0
     },
     {
@@ -38,10 +38,10 @@
       "confidence": 35,
       "reason": "逆張り監視",
       "weight": 1.13,
-      "trust_mode": "LEARNING",
-      "agent_trades": 2,
-      "agent_win_rate": 50.0,
-      "agent_total_pnl": 0.021,
+      "trust_mode": "NO_DATA",
+      "agent_trades": 0,
+      "agent_win_rate": 0,
+      "agent_total_pnl": 0,
       "power_score": 56.5
     }
   ]

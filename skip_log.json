@@ -88,5 +88,21 @@
     "consensus_ratio": 0.5,
     "recovery_mode": true,
     "checked": false
+  },
+  {
+    "time": "2026-06-09 09:37:31",
+    "symbol": "1321.T",
+    "price": 67380.0,
+    "reason": [
+      "VOLATILITY_DANGER_STOP / Replay Policy BOOST TREND_UP_LONG / Replay Expectancy POSITIVE TREND_UP_LONG",
+      "AI合意不足",
+      "回復モード"
+    ],
+    "filter_reason": "VOLATILITY_DANGER_STOP / Replay Policy BOOST TREND_UP_LONG / Replay Expectancy POSITIVE TREND_UP_LONG",
+    "regime": "TREND_UP",
+    "confidence": 60,
+    "consensus_ratio": 0.5,
+    "recovery_mode": true,
+    "checked": false
   }
 ]

@@ -1,0 +1,18 @@
+[
+  {
+    "time": "2026-06-08 15:15:12",
+    "price": 66740.0,
+    "meta_score": 71.0,
+    "meta_decision": "SHORT",
+    "agent_decision": "SHORT",
+    "replay_action": "BOOST"
+  },
+  {
+    "time": "2026-06-09 09:37:31",
+    "price": 67380.0,
+    "meta_score": 74.0,
+    "meta_decision": "SHORT",
+    "agent_decision": "SHORT",
+    "replay_action": "BOOST"
+  }
+]
