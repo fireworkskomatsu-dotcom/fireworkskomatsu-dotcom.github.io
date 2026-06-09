@@ -1,0 +1,20 @@
+{
+  "time": "2026-06-09 09:37:33",
+  "organization_mode": "LEARNING_ORGANIZATION",
+  "overall_score": 46.9,
+  "profit_score": 15.0,
+  "evolution_score": 89,
+  "organization_score": 99,
+  "meta_rank": "LEARNING",
+  "retirement_candidates": [
+    "DEFENSE_AGENT"
+  ],
+  "watchlist": [],
+  "market_dna": "TREND_UP|PANIC|DANGER|CONF_MID|RISK_HIGH",
+  "capital_rotation": {
+    "TREND_AGENT": 0.7425,
+    "DEFENSE_AGENT": 0.0136,
+    "CONTRARIAN_AGENT": 0.2438
+  },
+  "summary": "mode=LEARNING_ORGANIZATION overall=46.9 dna=TREND_UP|PANIC|DANGER|CONF_MID|RISK_HIGH"
+}

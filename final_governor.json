@@ -1,0 +1,15 @@
+{
+  "time": "2026-06-09 09:37:33",
+  "governor_decision": "SKIP",
+  "governor_size": 0,
+  "master_decision": "SKIP",
+  "ceo_override_decision": "SKIP",
+  "ceo_override": false,
+  "risk_mode": "HIGH",
+  "risk_score": 100,
+  "allow_real_trade": false,
+  "reasons": [
+    "RISK_COUNCIL_HIGH",
+    "REAL_TRADE_LOCKED"
+  ]
+}

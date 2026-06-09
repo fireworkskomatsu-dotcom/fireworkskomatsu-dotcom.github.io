@@ -1,0 +1,36 @@
+{
+  "time": "2026-06-09 09:37:33",
+  "symbol": "1321.T",
+  "price": 67380.0,
+  "final_decision": "SKIP",
+  "governor_decision": "SKIP",
+  "execution_status": "NO_EXECUTION",
+  "organization_mode": "LEARNING_ORGANIZATION",
+  "overall_score": 46.9,
+  "profit_score": 15.0,
+  "evolution_score": 89,
+  "organization_score": 99,
+  "primary_focus": "DECISION_CONFLICT_VALIDATION",
+  "incubator_stage": "INCUBATING",
+  "shadow_consensus": "SKIP",
+  "shadow_votes": {
+    "SKIP": 1,
+    "LONG": 1,
+    "SHORT": 1
+  },
+  "capital_rotation": {
+    "TREND_AGENT": 0.7425,
+    "DEFENSE_AGENT": 0.0136,
+    "CONTRARIAN_AGENT": 0.2438
+  },
+  "conflicts": [
+    "META_CEO_CONFLICT",
+    "META_GOVERNOR_CONFLICT"
+  ],
+  "conflict_count": 2,
+  "profit_guard": "STRICT",
+  "attack_permission": false,
+  "attack_level": "NO_ATTACK",
+  "final_trade_size": 0,
+  "summary": "decision=SKIP org=LEARNING_ORGANIZATION profit=15.0 focus=DECISION_CONFLICT_VALIDATION exec=NO_EXECUTION"
+}
