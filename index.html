@@ -1390,9 +1390,64 @@
 
 </style>
 
+
+<style>
+.heroAction{
+  font-size:64px;
+  font-weight:900;
+  margin:20px 0;
+  letter-spacing:2px;
+}
+.detail div{
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  margin:10px 0;
+}
+.detail span{
+  opacity:.8;
+}
+.detail b{
+  text-align:right;
+}
+</style>
+
 </head>
 <body>
 
+
+
+<div class="card">
+  <h1>本日の売買指示</h1>
+  <div class="heroAction" id="humanAction">--</div>
+  <div class="detail">
+    <div><span>銘柄</span><b id="humanSymbol">--</b></div>
+    <div><span>現在値</span><b id="humanPrice">--</b></div>
+    <div><span>数量</span><b id="humanQty">--</b></div>
+    <div><span>想定金額</span><b id="humanAmount">--</b></div>
+    <div><span>注文</span><b id="humanOrder">--</b></div>
+    <div><span>損切り</span><b id="humanStop">--</b></div>
+    <div><span>利確</span><b id="humanTarget">--</b></div>
+  </div>
+</div>
+
+<div class="card">
+  <h1>仮想口座</h1>
+  <div class="detail">
+    <div><span>仮想残高</span><b id="shadowEquity">--</b></div>
+    <div><span>損益率</span><b id="shadowReturn">--</b></div>
+    <div><span>建玉</span><b id="shadowPosition">--</b></div>
+    <div><span>数量</span><b id="shadowQty">--</b></div>
+    <div><span>含み損益</span><b id="shadowUnreal">--</b></div>
+  </div>
+</div>
+
+<div class="card">
+  <h1>理由</h1>
+  <div class="detail">
+    <div><span>理由</span><b id="humanReasons">--</b></div>
+  </div>
+</div>
 
 <div class="card">
   <h1>AI統合脳</h1>

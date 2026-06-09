@@ -1,0 +1,27 @@
+{
+  "time": "2026-06-09 12:42:42",
+  "today_action": "見送り",
+  "decision": "SKIP",
+  "symbol": "1321 日経225ETF",
+  "price": 67380.0,
+  "qty": 0,
+  "estimated_amount": 0.0,
+  "order_type": "なし",
+  "stop_loss": "なし",
+  "take_profit": "なし",
+  "real_trade_allowed": false,
+  "production_locked": true,
+  "risk_mode": "HIGH",
+  "risk_score": 100,
+  "shadow_equity": 1000000,
+  "shadow_return_pct": 0.0,
+  "shadow_position": "なし",
+  "shadow_position_qty": 0,
+  "shadow_unrealized_pct": 0,
+  "reason_short": [
+    "市場脳: SKIP",
+    "リスク: HIGH / 100",
+    "実弾許可: NO"
+  ],
+  "headline": "見送り / 0株 / 実弾禁止 / 仮想残高1000000円"
+}

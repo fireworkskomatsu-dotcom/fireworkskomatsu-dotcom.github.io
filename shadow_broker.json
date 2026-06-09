@@ -1,0 +1,19 @@
+{
+  "time": "2026-06-09 12:42:42",
+  "start_capital": 1000000,
+  "cash": 1000000,
+  "equity": 1000000,
+  "realized_pnl": 0,
+  "return_pct": 0.0,
+  "position": 0,
+  "side": null,
+  "entry_price": 0,
+  "current_price": 67380.0,
+  "unrealized_pct": 0,
+  "decision": "SKIP",
+  "event": "HOLD",
+  "trade_size_pct": 0.0,
+  "target_pct": 0.03,
+  "stop_pct": -0.015,
+  "trades": []
+}
