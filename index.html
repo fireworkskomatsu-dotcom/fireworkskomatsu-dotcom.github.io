@@ -1636,3 +1636,46 @@ async function loadJson(path, def={}){
   }
 })();
 </script>
+
+<script>
+async function loadHumanTrade(){
+  try{
+    const h = await fetch("./human_trade_view.json?ts=" + Date.now()).then(r => r.json());
+
+    const set = (id, v) => {
+      const el = document.getElementById(id);
+      if(el) el.innerText = (v === null || v === undefined || v === "") ? "--" : v;
+    };
+
+    const action = document.getElementById("humanAction");
+    if(action){
+      action.innerText = h.today_action || "--";
+      action.style.color =
+        h.decision === "LONG" ? "#57ff98" :
+        h.decision === "SHORT" ? "#ff5c6c" :
+        "#ffd84d";
+    }
+
+    set("humanSymbol", h.symbol);
+    set("humanPrice", h.price ? h.price + "円" : "--");
+    set("humanQty", (h.qty ?? 0) + "株");
+    set("humanAmount", h.estimated_amount ? Number(h.estimated_amount).toLocaleString() + "円" : "0円");
+    set("humanOrder", h.order_type);
+    set("humanStop", h.stop_loss);
+    set("humanTarget", h.take_profit);
+
+    set("shadowEquity", h.shadow_equity ? Number(h.shadow_equity).toLocaleString() + "円" : "--");
+    set("shadowReturn", (h.shadow_return_pct ?? 0) + "%");
+    set("shadowPosition", h.shadow_position || "なし");
+    set("shadowQty", (h.shadow_position_qty ?? 0) + "株");
+    set("shadowUnreal", (h.shadow_unrealized_pct ?? 0) + "%");
+
+    set("humanReasons", (h.reason_short || []).join(" / "));
+  }catch(e){
+    console.log("human trade view error", e);
+  }
+}
+
+loadHumanTrade();
+setInterval(loadHumanTrade, 60000);
+</script>
