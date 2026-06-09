@@ -1,0 +1,13 @@
+{
+  "time": "2026-06-09 09:38:48",
+  "headline": "decision=SKIP org=LEARNING_ORGANIZATION profit=15.0 focus=DECISION_CONFLICT_VALIDATION exec=NO_EXECUTION",
+  "decision": "SKIP",
+  "execution_status": "NO_EXECUTION",
+  "overall_score": 46.9,
+  "profit_score": 15.0,
+  "evolution_score": 89,
+  "primary_focus": "DECISION_CONFLICT_VALIDATION",
+  "pipeline_status": "OK",
+  "decision_integrity": "OK",
+  "self_improvement_score": 61.6
+}
