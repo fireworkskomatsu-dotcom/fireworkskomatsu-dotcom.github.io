@@ -1,0 +1,9 @@
+{
+  "time": "2026-06-09 11:30:10",
+  "market_dna": "TREND_UP|PANIC|DANGER|CONF_MID|RISK_HIGH",
+  "regime_class": "PANIC_REGIME",
+  "future_regime": "TREND_UP",
+  "memory_quality": "LOW",
+  "learning_policy": "ACCUMULATE_MEMORY",
+  "summary": "market memory active"
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "time": "2026-06-09 11:30:10",
+    "dna": "TREND_UP|PANIC|DANGER|CONF_MID|RISK_HIGH",
+    "meta": {
+      "time": "2026-06-09 09:37:30",
+      "meta_score": 74.0,
+      "meta_decision": "SHORT",
+      "brain_score": 60,
+      "confidence": 60,
+      "agent_decision": "SHORT",
+      "replay_action": "BOOST",
+      "reasons": [
+        "AGENT_DIRECTION_OK",
+        "REPLAY_EXPECTANCY_BOOST"
+      ]
+    },
+    "governor": {
+      "time": "2026-06-09 09:37:33",
+      "governor_decision": "SKIP",
+      "governor_size": 0,
+      "master_decision": "SKIP",
+      "ceo_override_decision": "SKIP",
+      "ceo_override": false,
+      "risk_mode": "HIGH",
+      "risk_score": 100,
+      "allow_real_trade": false,
+      "reasons": [
+        "RISK_COUNCIL_HIGH",
+        "REAL_TRADE_LOCKED"
+      ]
+    },
+    "outcome": {
+      "time": "2026-06-09 09:59:19",
+      "evaluated": 1,
+      "rows": [
+        {
+          "source": "META",
+          "time": "2026-06-09 09:59:19",
+          "price": 67380.0,
+          "decision": "SHORT",
+          "score": 74.0,
+          "status": "WAITING_OUTCOME",
+          "current_price": 67380.0,
+          "pnl": 0.0,
+          "result": "FLAT"
+        }
+      ]
+    }
+  }
+]
