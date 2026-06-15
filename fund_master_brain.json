@@ -1,8 +1,8 @@
 {
-  "time": "2026-06-15 15:36:57",
+  "time": "2026-06-15 15:39:09",
   "fund_action": "WAIT",
   "cio": {
-    "time": "2026-06-15 15:36:56",
+    "time": "2026-06-15 15:39:09",
     "cio_decision": "SKIP",
     "approved": false,
     "investment_committee": "SKIP",
@@ -13,7 +13,7 @@
     ]
   },
   "risk": {
-    "time": "2026-06-15 15:36:56",
+    "time": "2026-06-15 15:39:09",
     "risk_approval": false,
     "risk_mode": "HIGH",
     "risk_score": 100,
@@ -23,10 +23,10 @@
     ]
   },
   "portfolio": {
-    "time": "2026-06-15 15:36:56",
+    "time": "2026-06-15 15:39:09",
     "target_qty": 0,
     "target_yen": 0,
-    "price": 72490.0,
+    "price": 72520.0,
     "position_pct": 0
   },
   "aum": null,

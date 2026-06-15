@@ -1,5 +1,5 @@
 {
-  "time": "2026-06-15 15:36:52",
+  "time": "2026-06-15 15:39:04",
   "digest": {
     "time": "2026-06-09 09:38:48",
     "headline": "decision=SKIP org=LEARNING_ORGANIZATION profit=15.0 focus=DECISION_CONFLICT_VALIDATION exec=NO_EXECUTION",
@@ -14,7 +14,7 @@
     "self_improvement_score": 61.6
   },
   "master": {
-    "time": "2026-06-15 15:36:48",
+    "time": "2026-06-15 15:39:01",
     "final_decision": "SKIP",
     "direction": "LONG_ONLY",
     "size": 0,
@@ -42,7 +42,7 @@
     }
   },
   "meta": {
-    "time": "2026-06-15 15:36:48",
+    "time": "2026-06-15 15:39:00",
     "meta_score": 75.5,
     "meta_decision": "LONG",
     "brain_score": 60,
@@ -55,7 +55,7 @@
     ]
   },
   "ceo": {
-    "time": "2026-06-15 15:36:48",
+    "time": "2026-06-15 15:39:00",
     "ceo_decision": "SKIP",
     "ceo_confidence": 75.5,
     "meta_score": 75.5,
@@ -101,7 +101,7 @@
     "summary": "CEO=SKIP confidence=75.5 meta=LONG lock=True"
   },
   "governor": {
-    "time": "2026-06-15 15:36:50",
+    "time": "2026-06-15 15:39:03",
     "governor_decision": "SKIP",
     "governor_size": 0,
     "master_decision": "SKIP",
@@ -116,10 +116,10 @@
     ]
   },
   "price": {
-    "time": "2026-06-15 15:36:47",
+    "time": "2026-06-15 15:39:00",
     "symbol": "1321.T",
     "name": "1321 日経225ETF",
-    "price": 72490.0,
+    "price": 72520.0,
     "source": "yahoo_finance"
   }
 }

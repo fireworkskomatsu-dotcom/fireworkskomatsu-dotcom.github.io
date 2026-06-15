@@ -1,7 +1,7 @@
 {
-  "time": "2026-06-15 15:36:53",
+  "time": "2026-06-15 15:39:05",
   "current_dna": "TREND_UP|PANIC|DANGER|CONF_MID|RISK_HIGH",
-  "matched_patterns": 2,
+  "matched_patterns": 3,
   "latest_patterns": [
     {
       "time": "2026-06-09 11:30:10",
@@ -128,6 +128,70 @@
         "symbol": "1321.T",
         "name": "1321 日経225ETF",
         "price": 72490.0,
+        "source": "yahoo_finance"
+      }
+    },
+    {
+      "time": "2026-06-15 15:39:05",
+      "regime": {
+        "regime": "TREND_UP_PULLBACK",
+        "bias": "LONG",
+        "size_mult": 0.5,
+        "reason": "上昇基調の押し目",
+        "mom_mode": "STRONG_UP",
+        "mom_3d": 5.09,
+        "mom_5d": 4.39,
+        "confirm_long": false,
+        "confirm_short": false,
+        "soft_long": false,
+        "soft_short": false,
+        "above_ma5": true,
+        "below_ma5": false,
+        "last2_up": false,
+        "last2_down": true
+      },
+      "market_dna": {
+        "time": "2026-06-09 09:05:48",
+        "market_dna": "TREND_UP|PANIC|DANGER|CONF_MID|RISK_HIGH",
+        "regime": "TREND_UP",
+        "temperature": "PANIC",
+        "vol_mode": "DANGER",
+        "confidence": 60,
+        "risk_score": 100
+      },
+      "decision": {
+        "time": "2026-06-15 15:39:01",
+        "final_decision": "SKIP",
+        "direction": "LONG_ONLY",
+        "size": 0,
+        "candidate_size": 0.0187,
+        "score": 0,
+        "grade": "D",
+        "reasons": [
+          "市場温度異常 / OVERHEAT / Replay Policy BOOST TREND_UP_LONG / Replay Expectancy POSITIVE TREND_UP_LONG",
+          "回復モード",
+          "危険撤退優先"
+        ],
+        "raw_filter_decision": "SKIP",
+        "confidence": 65,
+        "consensus_ratio": 0.75,
+        "recovery_mode": true,
+        "risk_exit": true,
+        "replay_size_mult": 1.25,
+        "replay_action": "BOOST_SIZE",
+        "weighted_agent_decision": "LONG",
+        "weighted_votes": {
+          "LONG": 0.6,
+          "SHORT": 0.6,
+          "SKIP": 0.6,
+          "HOLD": 0.0
+        }
+      },
+      "price": {
+        "time": "2026-06-15 15:39:00",
+        "symbol": "1321.T",
+        "name": "1321 日経225ETF",
+        "price": 72520.0,
         "source": "yahoo_finance"
       }
     }

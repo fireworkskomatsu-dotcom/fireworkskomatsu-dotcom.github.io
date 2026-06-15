@@ -1,5 +1,5 @@
 {
-  "time": "2026-06-15 15:36:52",
+  "time": "2026-06-15 15:39:04",
   "validation_queue": [
     {
       "source": "META",
@@ -16,7 +16,15 @@
       "decision": "LONG",
       "score": 75.5,
       "status": "WAITING_OUTCOME"
+    },
+    {
+      "source": "META",
+      "time": "2026-06-15 15:39:04",
+      "price": 72520.0,
+      "decision": "LONG",
+      "score": 75.5,
+      "status": "WAITING_OUTCOME"
     }
   ],
-  "count": 2
+  "count": 3
 }

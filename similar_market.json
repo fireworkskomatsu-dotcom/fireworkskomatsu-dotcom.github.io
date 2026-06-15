@@ -1,5 +1,5 @@
 {
-  "time": "2026-06-15 15:36:53",
+  "time": "2026-06-15 15:39:05",
   "similar_markets": [
     {
       "time": "2026-06-09 11:30:10",
@@ -8,6 +8,11 @@
     },
     {
       "time": "2026-06-15 15:36:53",
+      "dna": "TREND_UP|PANIC|DANGER|CONF_MID|RISK_HIGH",
+      "score": 5
+    },
+    {
+      "time": "2026-06-15 15:39:05",
       "dna": "TREND_UP|PANIC|DANGER|CONF_MID|RISK_HIGH",
       "score": 5
     }

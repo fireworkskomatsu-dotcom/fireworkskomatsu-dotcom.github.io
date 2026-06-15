@@ -1,28 +1,29 @@
 {
-  "time": "2026-06-15 15:39:01",
-  "final_decision": "SKIP",
-  "direction": "LONG_ONLY",
-  "size": 0,
-  "candidate_size": 0.0187,
-  "score": 0,
-  "grade": "D",
+  "time": "2026-06-15 16:57:10",
+  "final_decision": "LONG",
+  "symbol": "1321.T",
+  "name": "1321 日経225ETF",
+  "price": 72620.0,
+  "qty": 1,
+  "size": 1,
+  "candidate_size": 1,
+  "score": 55,
+  "grade": "B",
   "reasons": [
-    "市場温度異常 / OVERHEAT / Replay Policy BOOST TREND_UP_LONG / Replay Expectancy POSITIVE TREND_UP_LONG",
-    "回復モード",
-    "危険撤退優先"
+    "RECOVERY_WARNING_NOT_VETO"
   ],
-  "raw_filter_decision": "SKIP",
-  "confidence": 65,
-  "consensus_ratio": 0.75,
-  "recovery_mode": true,
-  "risk_exit": true,
-  "replay_size_mult": 1.25,
-  "replay_action": "BOOST_SIZE",
+  "raw_filter_decision": "LONG",
+  "filter_reason": "LEARNING_VOL_OVERRIDE / VOLATILITY_DANGER_STOP / Replay Policy BOOST TREND_UP_LONG / Replay Expectancy POSITIVE TREND_UP_LONG",
+  "confidence": 55,
+  "market_temperature": "NORMAL",
+  "vol_mode": "DANGER",
+  "replay_key": "TREND_UP_LONG",
+  "replay_policy_action": "BOOST",
+  "replay_expectancy": 0.001108,
+  "replay_expectancy_action": "BOOST",
   "weighted_agent_decision": "LONG",
-  "weighted_votes": {
-    "LONG": 0.6,
-    "SHORT": 0.6,
-    "SKIP": 0.6,
-    "HOLD": 0.0
-  }
+  "recovery_mode": true,
+  "risk_exit": false,
+  "mode": "SHADOW_ONLY",
+  "real_trade_allowed": false
 }

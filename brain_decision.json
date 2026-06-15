@@ -1,7 +1,8 @@
 {
-  "time": "2026-06-15 15:36:54",
-  "brain_decision": "SKIP",
-  "brain_priority": "GOVERNOR",
-  "fusion_decision": "SKIP",
-  "governor_decision": "SKIP"
+  "time": "2026-06-15 16:57:10",
+  "brain_decision": "LONG",
+  "brain_priority": "CORE_MASTER",
+  "fusion_decision": "LONG",
+  "governor_decision": "LONG",
+  "source": "master_decision.json"
 }

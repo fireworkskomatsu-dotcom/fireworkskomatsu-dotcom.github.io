@@ -1,12 +1,12 @@
 {
-  "time": "2026-06-15 15:39:01",
+  "time": "2026-06-15 16:57:10",
   "symbol": "1321.T",
-  "price": 72520.0,
-  "final_decision": "SKIP",
-  "actual_size": 0,
-  "candidate_size": 0.0187,
+  "price": 72620.0,
+  "final_decision": "LONG",
+  "actual_size": 1,
+  "candidate_size": 1,
   "brain_status": "NO_GO",
-  "brain_score": 60,
+  "brain_score": 80,
   "production_locked": true,
   "allow_real_trade": false,
   "go_live": "NOT_READY",
@@ -29,16 +29,13 @@
     "HOLD": 0.0
   },
   "main_reasons": [
-    "市場温度異常 / OVERHEAT / Replay Policy BOOST TREND_UP_LONG / Replay Expectancy POSITIVE TREND_UP_LONG",
-    "回復モード",
-    "危険撤退優先"
+    "RECOVERY_WARNING_NOT_VETO"
   ],
   "lock_reasons": [
     "MANUAL_UNLOCK_FILE_MISSING",
     "TRADE_BRAIN_NOT_GO",
     "REAL_GO_LIVE_NOT_READY",
-    "GO_LIVE_V2_NOT_READY",
-    "MASTER_SKIP"
+    "GO_LIVE_V2_NOT_READY"
   ],
-  "summary": "1321.T price=72520.0 decision=SKIP brain=NO_GO lock=True go=NOT_READY"
+  "summary": "1321.T price=72620.0 decision=LONG brain=NO_GO lock=True go=NOT_READY"
 }

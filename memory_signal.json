@@ -1,7 +1,7 @@
 {
-  "time": "2026-06-15 15:36:53",
+  "time": "2026-06-15 15:39:06",
   "memory_signal": "SKIP",
   "reason": "LOW_MEMORY",
-  "similar_count": 2,
+  "similar_count": 3,
   "market_dna": "TREND_UP|PANIC|DANGER|CONF_MID|RISK_HIGH"
 }

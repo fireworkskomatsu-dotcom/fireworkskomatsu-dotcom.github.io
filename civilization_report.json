@@ -1,22 +1,22 @@
 {
-  "time": "2026-06-15 15:36:54",
+  "time": "2026-06-15 15:39:07",
   "dashboard": {
-    "time": "2026-06-15 15:36:54",
+    "time": "2026-06-15 15:39:07",
     "stage": {
-      "time": "2026-06-15 15:36:54",
+      "time": "2026-06-15 15:39:07",
       "civilization_stage": 2,
       "civilization_score": 50.0
     },
     "score": {
-      "time": "2026-06-15 15:36:54",
+      "time": "2026-06-15 15:39:07",
       "civilization_score": 50.0
     },
     "growth": {
-      "time": "2026-06-15 15:36:54",
+      "time": "2026-06-15 15:39:07",
       "civilization_growth": 7
     },
     "species": {
-      "time": "2026-06-15 15:36:54",
+      "time": "2026-06-15 15:39:07",
       "species_registry": {
         "TREND": [
           "TREND_AGENT"
@@ -31,15 +31,15 @@
       "species_count": 3
     },
     "genome": {
-      "time": "2026-06-15 15:36:54",
+      "time": "2026-06-15 15:39:06",
       "health": {
-        "time": "2026-06-15 15:36:54",
+        "time": "2026-06-15 15:39:06",
         "genome_health": 30.0,
         "genome_count": 3,
         "mode": "LOW"
       },
       "scores": {
-        "time": "2026-06-15 15:36:54",
+        "time": "2026-06-15 15:39:06",
         "genome_scores": {
           "TREND_AGENT": 30.0,
           "DEFENSE_AGENT": 30.0,
@@ -47,23 +47,23 @@
         }
       },
       "mutations": {
-        "time": "2026-06-15 15:36:54",
+        "time": "2026-06-15 15:39:06",
         "mutations": [],
         "count": 0
       }
     }
   },
   "policy": {
-    "time": "2026-06-15 15:36:54",
+    "time": "2026-06-15 15:39:07",
     "civilization_policy": "LEARN_ONLY",
     "stage": 2
   },
   "evolution": {
-    "time": "2026-06-15 15:36:54",
+    "time": "2026-06-15 15:39:07",
     "module": "evolution_dashboard_ai.py",
     "division": "EVOLUTION_MGMT",
     "status": "ACTIVE",
-    "capital": 1000000.0,
+    "capital": 1075839.0,
     "experience_count": 2,
     "strategy_count": 2,
     "fund_action": "WAIT",
@@ -76,7 +76,7 @@
     "evolution_stage": "COMPANY_TO_CIVILIZATION"
   },
   "family_tree": {
-    "time": "2026-06-15 15:36:54",
+    "time": "2026-06-15 15:39:07",
     "tree": {
       "TREND_AGENT_CONTRARIAN_AGENT_CHILD": {
         "parents": [
@@ -84,7 +84,7 @@
           "CONTRARIAN_AGENT"
         ],
         "status": "SHADOW_CHILD",
-        "created": "2026-06-15 15:36:54"
+        "created": "2026-06-15 15:39:07"
       }
     },
     "count": 1

@@ -1,9 +1,9 @@
 {
-  "time": "2026-06-15 15:36:52",
+  "time": "2026-06-15 15:39:05",
   "module": "agent_bonus_ai.py",
   "division": "HR",
   "status": "ACTIVE",
-  "capital": 1000000.0,
+  "capital": 1075839.0,
   "experience_count": 2,
   "strategy_count": 2,
   "fund_action": "WAIT",

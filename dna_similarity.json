@@ -11,6 +11,18 @@
     {
       "dna": "TREND_UP|PANIC|DANGER|CONF_MID|RISK_HIGH",
       "score": 5
+    },
+    {
+      "dna": "TREND_UP|PANIC|DANGER|CONF_MID|RISK_HIGH",
+      "score": 5
+    },
+    {
+      "dna": "",
+      "score": 0
+    },
+    {
+      "dna": "",
+      "score": 0
     }
   ]
 }

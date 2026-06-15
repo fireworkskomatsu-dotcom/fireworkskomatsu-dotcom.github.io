@@ -1,16 +1,15 @@
 {
-  "time": "2026-06-15 15:39:01",
+  "time": "2026-06-15 16:57:10",
   "production_locked": true,
   "allow_real_trade": false,
   "reasons": [
     "MANUAL_UNLOCK_FILE_MISSING",
     "TRADE_BRAIN_NOT_GO",
     "REAL_GO_LIVE_NOT_READY",
-    "GO_LIVE_V2_NOT_READY",
-    "MASTER_SKIP"
+    "GO_LIVE_V2_NOT_READY"
   ],
   "manual_unlock_file": "/Users/Owner/weather_ai/ALLOW_REAL_TRADE",
-  "final_decision": "SKIP",
+  "final_decision": "LONG",
   "brain_status": "NO_GO",
   "real_go_live": "NOT_READY",
   "go_live_v2": "NOT_READY",

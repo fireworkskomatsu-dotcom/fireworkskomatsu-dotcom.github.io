@@ -1,42 +1,42 @@
 {
-  "time": "2026-06-15 15:36:52",
+  "time": "2026-06-15 15:39:05",
   "mission": {
-    "time": "2026-06-15 15:36:52",
+    "time": "2026-06-15 15:39:05",
     "daily_mission": "RUN_DAILY_AND_ACCUMULATE_DATA",
     "sample_level": "LOW",
-    "total_signal_samples": 6
+    "total_signal_samples": 9
   },
   "learning_loop": {
-    "time": "2026-06-15 15:36:52",
-    "sample_growth": 3.0,
+    "time": "2026-06-15 15:39:04",
+    "sample_growth": 4.5,
     "winner": "META",
     "meta_recalibration": 5,
     "governor_recalibration": -5,
     "loop_status": "ACTIVE"
   },
   "profit_learning": {
-    "time": "2026-06-15 15:36:52",
-    "profit_learning_score": 8.0,
+    "time": "2026-06-15 15:39:05",
+    "profit_learning_score": 9.5,
     "source_count": 1
   },
   "accumulation": {
-    "time": "2026-06-15 15:36:52",
+    "time": "2026-06-15 15:39:05",
     "samples": {
-      "time": "2026-06-15 15:36:52",
-      "meta_samples": 2,
-      "ceo_samples": 2,
-      "governor_samples": 2,
-      "price_samples": 2
+      "time": "2026-06-15 15:39:04",
+      "meta_samples": 3,
+      "ceo_samples": 3,
+      "governor_samples": 3,
+      "price_samples": 3
     },
-    "validation_queue": 2,
-    "evaluated": 2,
+    "validation_queue": 3,
+    "evaluated": 3,
     "source_performance": {
       "META": {
-        "signals": 2,
-        "wins": 0,
+        "signals": 3,
+        "wins": 1,
         "losses": 1,
-        "pnl": -0.07584,
-        "win_rate": 0.0
+        "pnl": -0.07587,
+        "win_rate": 50.0
       }
     }
   }

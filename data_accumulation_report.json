@@ -1,21 +1,21 @@
 {
-  "time": "2026-06-15 15:36:52",
+  "time": "2026-06-15 15:39:05",
   "samples": {
-    "time": "2026-06-15 15:36:52",
-    "meta_samples": 2,
-    "ceo_samples": 2,
-    "governor_samples": 2,
-    "price_samples": 2
+    "time": "2026-06-15 15:39:04",
+    "meta_samples": 3,
+    "ceo_samples": 3,
+    "governor_samples": 3,
+    "price_samples": 3
   },
-  "validation_queue": 2,
-  "evaluated": 2,
+  "validation_queue": 3,
+  "evaluated": 3,
   "source_performance": {
     "META": {
-      "signals": 2,
-      "wins": 0,
+      "signals": 3,
+      "wins": 1,
       "losses": 1,
-      "pnl": -0.07584,
-      "win_rate": 0.0
+      "pnl": -0.07587,
+      "win_rate": 50.0
     }
   }
 }

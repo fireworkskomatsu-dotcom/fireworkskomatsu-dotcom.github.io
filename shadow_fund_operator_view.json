@@ -1,5 +1,5 @@
 {
-  "time": "2026-06-15 15:36:56",
+  "time": "2026-06-15 15:39:08",
   "module": "shadow_fund_operator_view_ai.py",
   "status": "ACTIVE",
   "shadow_capital": 1075839.0,
@@ -21,7 +21,7 @@
   "go_live_score": 25,
   "learning_score": 0,
   "position": 0,
-  "event": "TAKE_PROFIT",
+  "event": "HOLD",
   "summary": "capital=1075839.0 return=7.58% target=94.8% ready=False",
   "mode": "SHADOW_FUND_30_EVOLUTION"
 }

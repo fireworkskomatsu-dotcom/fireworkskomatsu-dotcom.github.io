@@ -1,5 +1,5 @@
 {
-  "time": "2026-06-15 15:36:52",
+  "time": "2026-06-15 15:39:04",
   "audit": {
     "time": "2026-06-09 11:23:33",
     "pipeline_status": "OK",
@@ -23,7 +23,7 @@
     "self_improvement_score": 61.6
   },
   "civilization": {
-    "time": "2026-06-15 15:36:51",
+    "time": "2026-06-15 15:39:04",
     "civilization_level": 2,
     "spawned_agents": 3,
     "species_count": 3,
@@ -31,7 +31,7 @@
     "status": "AI_CIVILIZATION_SEED"
   },
   "sample_quality": {
-    "time": "2026-06-15 15:36:51",
+    "time": "2026-06-15 15:39:04",
     "sample_quality_score": 1.1,
     "real_closed": 2,
     "meta_signals": 1,
@@ -39,7 +39,7 @@
     "mode": "LOW_SAMPLE"
   },
   "hr": {
-    "time": "2026-06-15 15:36:51",
+    "time": "2026-06-15 15:39:04",
     "allowed_promotions": 0,
     "blocked_promotions": 2,
     "demotions": [],
@@ -53,13 +53,13 @@
     ]
   },
   "capital_policy": {
-    "time": "2026-06-15 15:36:51",
+    "time": "2026-06-15 15:39:04",
     "capital_policy": "DEFENSIVE",
     "max_size_mult": 0.1,
     "sample_quality_score": 1.1
   },
   "next_priority": {
-    "time": "2026-06-15 15:36:52",
+    "time": "2026-06-15 15:39:04",
     "next_build_priority": "ACCUMULATE_PROFIT_DATA",
     "sample_quality_score": 1.1,
     "civilization_level": 2

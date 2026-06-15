@@ -10,5 +10,11 @@
     "price": 72490.0,
     "decision": "SKIP",
     "confidence": 75.5
+  },
+  {
+    "time": "2026-06-15 15:39:04",
+    "price": 72520.0,
+    "decision": "SKIP",
+    "confidence": 75.5
   }
 ]

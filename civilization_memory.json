@@ -54,5 +54,33 @@
       },
       "species_count": 3
     }
+  },
+  {
+    "time": "2026-06-15 15:39:07",
+    "growth": {
+      "time": "2026-06-15 15:39:07",
+      "civilization_growth": 7
+    },
+    "genome": {
+      "time": "2026-06-15 15:39:06",
+      "genome_health": 30.0,
+      "genome_count": 3,
+      "mode": "LOW"
+    },
+    "species": {
+      "time": "2026-06-15 15:39:07",
+      "species_registry": {
+        "TREND": [
+          "TREND_AGENT"
+        ],
+        "DEFENSE": [
+          "DEFENSE_AGENT"
+        ],
+        "CONTRARIAN": [
+          "CONTRARIAN_AGENT"
+        ]
+      },
+      "species_count": 3
+    }
   }
 ]

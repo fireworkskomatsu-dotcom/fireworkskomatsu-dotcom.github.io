@@ -1,6 +1,6 @@
 {
-  "time": "2026-06-15 15:36:52",
-  "evaluated": 2,
+  "time": "2026-06-15 15:39:04",
+  "evaluated": 3,
   "rows": [
     {
       "source": "META",
@@ -9,8 +9,8 @@
       "decision": "SHORT",
       "score": 74.0,
       "status": "WAITING_OUTCOME",
-      "current_price": 72490.0,
-      "pnl": -0.07584,
+      "current_price": 72520.0,
+      "pnl": -0.07628,
       "result": "LOSS"
     },
     {
@@ -20,7 +20,18 @@
       "decision": "LONG",
       "score": 75.5,
       "status": "WAITING_OUTCOME",
-      "current_price": 72490.0,
+      "current_price": 72520.0,
+      "pnl": 0.00041,
+      "result": "WIN"
+    },
+    {
+      "source": "META",
+      "time": "2026-06-15 15:39:04",
+      "price": 72520.0,
+      "decision": "LONG",
+      "score": 75.5,
+      "status": "WAITING_OUTCOME",
+      "current_price": 72520.0,
       "pnl": 0.0,
       "result": "FLAT"
     }

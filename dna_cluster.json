@@ -1,5 +1,6 @@
 {
   "dna_clusters": {
-    "TREND_UP": 3
+    "TREND_UP": 4,
+    "UNKNOWN": 2
   }
 }

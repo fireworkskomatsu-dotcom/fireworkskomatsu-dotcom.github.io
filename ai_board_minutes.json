@@ -1,8 +1,8 @@
 {
-  "time": "2026-06-15 15:36:51",
+  "time": "2026-06-15 15:39:04",
   "headline": "decision=SKIP org=LEARNING_ORGANIZATION profit=15.0 focus=DECISION_CONFLICT_VALIDATION exec=NO_EXECUTION",
   "hr": {
-    "time": "2026-06-15 15:36:51",
+    "time": "2026-06-15 15:39:04",
     "allowed_promotions": 0,
     "blocked_promotions": 2,
     "demotions": [],
@@ -16,7 +16,7 @@
     ]
   },
   "civilization": {
-    "time": "2026-06-15 15:36:51",
+    "time": "2026-06-15 15:39:04",
     "civilization_level": 2,
     "spawned_agents": 3,
     "species_count": 3,
