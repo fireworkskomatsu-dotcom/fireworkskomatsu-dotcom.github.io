@@ -1,5 +1,5 @@
 {
-  "time": "2026-06-15 17:21:17",
+  "time": "2026-06-15 17:22:30",
   "today_action": "買い",
   "decision": "LONG",
   "symbol": "1321.T",
@@ -9,8 +9,8 @@
   "estimated_amount": 72620.0,
   "order_instruction": "SBIで1321.Tを成行買い 1株",
   "order_type": "成行",
-  "stop_loss": "-1.5%",
-  "take_profit": "+3.0%",
+  "stop_loss": "-1.0%",
+  "take_profit": "2.2%",
   "real_trade_allowed": false,
   "mode": "SHADOW_ONLY",
   "shadow_equity": 1075839.0,
