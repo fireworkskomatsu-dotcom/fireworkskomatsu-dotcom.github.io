@@ -1,5 +1,5 @@
 {
-  "time": "2026-06-15 17:22:30",
+  "time": "2026-06-15 17:29:45",
   "start_capital": 1000000,
   "cash": 1075839.0,
   "equity": 1075839.0,
@@ -13,8 +13,8 @@
   "decision": "LONG",
   "event": "HOLD",
   "trade_size_pct": 0.01,
-  "target_pct": 0.03,
-  "stop_pct": -0.015,
+  "target_pct": 0.022,
+  "stop_pct": -0.01,
   "trades": [
     {
       "time": "2026-06-11 13:28:41",
