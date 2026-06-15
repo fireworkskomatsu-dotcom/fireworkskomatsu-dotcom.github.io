@@ -1,0 +1,19 @@
+{
+  "time": "2026-06-15 17:53:24",
+  "core_decision": "LONG",
+  "core_symbol": "1321.T",
+  "core_order": "SBIで1321.Tを成行買い 1株",
+  "multi_asset_mode": "SHADOW_OBSERVATION",
+  "asset_count": 0,
+  "strategy_count": 0,
+  "experience": {
+    "time": "2026-06-15 17:53:24",
+    "multi_asset_experience_count": 0,
+    "added": 0,
+    "asset_count": 0,
+    "mode": "OBSERVATION_LEARNING"
+  },
+  "ranking": [],
+  "top_asset": null,
+  "status": "OK"
+}
