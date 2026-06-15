@@ -1,5 +1,5 @@
 {
-  "time": "2026-06-15 16:57:10",
+  "time": "2026-06-15 17:01:01",
   "start_capital": 1000000,
   "cash": 1075839.0,
   "equity": 1075839.0,
@@ -11,7 +11,7 @@
   "current_price": 72620.0,
   "unrealized_pct": 0.0,
   "decision": "LONG",
-  "event": "ENTER_LONG",
+  "event": "HOLD",
   "trade_size_pct": 0.01,
   "target_pct": 0.03,
   "stop_pct": -0.015,
