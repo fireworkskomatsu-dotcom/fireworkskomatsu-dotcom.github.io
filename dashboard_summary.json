@@ -1,5 +1,5 @@
 {
-  "time": "2026-06-15 17:01:01",
+  "time": "2026-06-15 17:21:17",
   "symbol": "1321.T",
   "price": 72620.0,
   "final_decision": "LONG",
@@ -23,9 +23,9 @@
   "replay_size_mult": 1.25,
   "weighted_agent_decision": "LONG",
   "weighted_votes": {
-    "LONG": 0.6,
-    "SHORT": 0.6,
-    "SKIP": 0.6,
+    "LONG": 5.2,
+    "SHORT": 0.0,
+    "SKIP": 0.0,
     "HOLD": 0.0
   },
   "main_reasons": [

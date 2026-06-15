@@ -1,0 +1,39 @@
+{
+  "time": "2026-06-15 17:21:17",
+  "headline": "買い / 1株 / 約72620.0円 / SHADOW_ONLY",
+  "decision": "LONG",
+  "symbol": "1321.T",
+  "price": 72620.0,
+  "qty": 1,
+  "amount": 72620.0,
+  "order_instruction": "SBIで1321.Tを成行買い 1株",
+  "shadow_equity": 1075839.0,
+  "shadow_return_pct": 7.58,
+  "shadow_position": "LONG",
+  "experience_count": 7,
+  "experience_level": "BEGINNER",
+  "strategy_5x10_decision": "LONG",
+  "strategy_5x10_votes": {
+    "LONG": 28.7,
+    "SHORT": 0.0,
+    "SKIP": 7.0
+  },
+  "exit_engine": {
+    "time": "2026-06-15 17:21:17",
+    "exit_now": false,
+    "exit_reason": "HOLD",
+    "side": "LONG",
+    "entry_price": 72620.0,
+    "current_price": 72620.0,
+    "unrealized_pct": 0.0,
+    "stop_pct": -0.01,
+    "take_profit_pct": 0.022,
+    "trail_pct": 0.012,
+    "vol_mode": "DANGER"
+  },
+  "brain_status": "NO_GO",
+  "brain_score": 80,
+  "real_trade_allowed": false,
+  "mode": "SHADOW_ONLY_CORE_5x10",
+  "status": "OK"
+}

@@ -1,0 +1,13 @@
+{
+  "time": "2026-06-15 17:21:17",
+  "exit_now": false,
+  "exit_reason": "HOLD",
+  "side": "LONG",
+  "entry_price": 72620.0,
+  "current_price": 72620.0,
+  "unrealized_pct": 0.0,
+  "stop_pct": -0.01,
+  "take_profit_pct": 0.022,
+  "trail_pct": 0.012,
+  "vol_mode": "DANGER"
+}
