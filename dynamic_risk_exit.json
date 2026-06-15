@@ -1,5 +1,5 @@
 {
-  "time": "2026-06-09 09:37:30",
-  "exit_now": false,
-  "reason": "HOLD_OK"
+  "time": "2026-06-15 15:36:48",
+  "exit_now": true,
+  "reason": "市場温度異常"
 }

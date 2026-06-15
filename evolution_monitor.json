@@ -1,5 +1,5 @@
 {
-  "time": "2026-06-09 09:37:30",
+  "time": "2026-06-15 15:36:48",
   "best_agent": "TREND_AGENT",
   "worst_agent": "CONTRARIAN_AGENT",
   "promotion_candidates": [],
@@ -8,7 +8,7 @@
     "DEFENSE_AGENT",
     "CONTRARIAN_AGENT"
   ],
-  "meta_score": 74.0,
-  "meta_decision": "SHORT",
-  "summary": "best=TREND_AGENT worst=CONTRARIAN_AGENT meta=74.0 decision=SHORT"
+  "meta_score": 75.5,
+  "meta_decision": "LONG",
+  "summary": "best=TREND_AGENT worst=CONTRARIAN_AGENT meta=75.5 decision=LONG"
 }

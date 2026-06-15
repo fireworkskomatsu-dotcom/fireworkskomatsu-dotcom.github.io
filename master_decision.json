@@ -1,5 +1,5 @@
 {
-  "time": "2026-06-09 09:37:31",
+  "time": "2026-06-15 15:36:48",
   "final_decision": "SKIP",
   "direction": "LONG_ONLY",
   "size": 0,
@@ -7,21 +7,21 @@
   "score": 0,
   "grade": "D",
   "reasons": [
-    "VOLATILITY_DANGER_STOP / Replay Policy BOOST TREND_UP_LONG / Replay Expectancy POSITIVE TREND_UP_LONG",
-    "AI合意不足",
-    "回復モード"
+    "市場温度異常 / OVERHEAT / Replay Policy BOOST TREND_UP_LONG / Replay Expectancy POSITIVE TREND_UP_LONG",
+    "回復モード",
+    "危険撤退優先"
   ],
   "raw_filter_decision": "SKIP",
-  "confidence": 60,
-  "consensus_ratio": 0.5,
+  "confidence": 65,
+  "consensus_ratio": 0.75,
   "recovery_mode": true,
-  "risk_exit": false,
+  "risk_exit": true,
   "replay_size_mult": 1.25,
   "replay_action": "BOOST_SIZE",
-  "weighted_agent_decision": "SHORT",
+  "weighted_agent_decision": "LONG",
   "weighted_votes": {
-    "LONG": 1.13,
-    "SHORT": 1.64,
+    "LONG": 0.6,
+    "SHORT": 0.6,
     "SKIP": 0.6,
     "HOLD": 0.0
   }

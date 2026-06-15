@@ -1,12 +1,12 @@
 {
-  "time": "2026-06-09 09:37:31",
+  "time": "2026-06-15 15:36:48",
   "missed_opportunity": true,
   "reasons": [
     "MASTER_SKIPPED_META_SIGNAL",
     "CEO_SKIPPED_META_SIGNAL"
   ],
   "master_decision": "SKIP",
-  "meta_decision": "SHORT",
+  "meta_decision": "LONG",
   "ceo_decision": "SKIP",
-  "meta_score": 74.0
+  "meta_score": 75.5
 }

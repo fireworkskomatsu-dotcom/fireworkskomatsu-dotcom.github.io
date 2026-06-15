@@ -1,9 +1,9 @@
 {
-  "time": "2026-06-09 09:37:30",
-  "final_decision": "SHORT",
+  "time": "2026-06-15 15:36:48",
+  "final_decision": "LONG",
   "weighted_votes": {
-    "LONG": 1.13,
-    "SHORT": 1.64,
+    "LONG": 0.6,
+    "SHORT": 0.6,
     "SKIP": 0.6,
     "HOLD": 0.0
   },
@@ -13,12 +13,12 @@
       "vote": "SHORT",
       "confidence": 75,
       "reason": "弱気トレンド",
-      "weight": 1.64,
+      "weight": 0.6,
       "trust_mode": "NO_DATA",
       "agent_trades": 0,
       "agent_win_rate": 0,
       "agent_total_pnl": 0,
-      "power_score": 82.0
+      "power_score": 30.0
     },
     {
       "name": "DEFENSE_AGENT",
@@ -37,12 +37,12 @@
       "vote": "LONG",
       "confidence": 35,
       "reason": "逆張り監視",
-      "weight": 1.13,
+      "weight": 0.6,
       "trust_mode": "NO_DATA",
       "agent_trades": 0,
       "agent_win_rate": 0,
       "agent_total_pnl": 0,
-      "power_score": 56.5
+      "power_score": 30.0
     }
   ]
 }

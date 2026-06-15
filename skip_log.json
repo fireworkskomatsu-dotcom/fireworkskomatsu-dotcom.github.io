@@ -104,5 +104,21 @@
     "consensus_ratio": 0.5,
     "recovery_mode": true,
     "checked": false
+  },
+  {
+    "time": "2026-06-15 15:36:48",
+    "symbol": "1321.T",
+    "price": 72490.0,
+    "reason": [
+      "市場温度異常 / OVERHEAT / Replay Policy BOOST TREND_UP_LONG / Replay Expectancy POSITIVE TREND_UP_LONG",
+      "回復モード",
+      "危険撤退優先"
+    ],
+    "filter_reason": "市場温度異常 / OVERHEAT / Replay Policy BOOST TREND_UP_LONG / Replay Expectancy POSITIVE TREND_UP_LONG",
+    "regime": "TREND_UP",
+    "confidence": 65,
+    "consensus_ratio": 0.75,
+    "recovery_mode": true,
+    "checked": false
   }
 ]

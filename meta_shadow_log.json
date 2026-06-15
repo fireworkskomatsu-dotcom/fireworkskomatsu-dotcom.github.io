@@ -14,5 +14,13 @@
     "meta_decision": "SHORT",
     "agent_decision": "SHORT",
     "replay_action": "BOOST"
+  },
+  {
+    "time": "2026-06-15 15:36:48",
+    "price": 72490.0,
+    "meta_score": 75.5,
+    "meta_decision": "LONG",
+    "agent_decision": "LONG",
+    "replay_action": "BOOST"
   }
 ]

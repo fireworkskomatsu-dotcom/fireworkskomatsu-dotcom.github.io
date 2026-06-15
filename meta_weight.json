@@ -1,10 +1,10 @@
 {
-  "time": "2026-06-09 09:37:30",
-  "meta_score": 74.0,
-  "meta_decision": "SHORT",
+  "time": "2026-06-15 15:36:48",
+  "meta_score": 75.5,
+  "meta_decision": "LONG",
   "brain_score": 60,
-  "confidence": 60,
-  "agent_decision": "SHORT",
+  "confidence": 65,
+  "agent_decision": "LONG",
   "replay_action": "BOOST",
   "reasons": [
     "AGENT_DIRECTION_OK",

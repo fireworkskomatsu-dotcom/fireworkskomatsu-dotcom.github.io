@@ -1,5 +1,5 @@
 {
-  "time": "2026-06-09 09:37:31",
+  "time": "2026-06-15 15:36:49",
   "brain_status": "NO_GO",
   "brain_score": 60,
   "flags": [
@@ -14,15 +14,15 @@
   "replay_expectancy": 0.001108,
   "replay_expectancy_action": "BOOST",
   "replay_size_mult": 1.25,
-  "weighted_agent_decision": "SHORT",
+  "weighted_agent_decision": "LONG",
   "weighted_votes": {
-    "LONG": 1.13,
-    "SHORT": 1.64,
+    "LONG": 0.6,
+    "SHORT": 0.6,
     "SKIP": 0.6,
     "HOLD": 0.0
   },
   "real_go_live": "NOT_READY",
   "health": "OK",
   "emergency_stop": false,
-  "summary": "status=NO_GO score=60 decision=SKIP replay=TREND_UP_LONG agent=SHORT"
+  "summary": "status=NO_GO score=60 decision=SKIP replay=TREND_UP_LONG agent=LONG"
 }
