@@ -1,0 +1,22 @@
+{
+  "time": "2026-06-15 15:36:51",
+  "allowed_promotions": [],
+  "blocked_promotions": [
+    {
+      "name": "TREND_FOLLOW_AGENT",
+      "status": "KEEP_SHADOW",
+      "signals": 1,
+      "win_rate": 0.0,
+      "pnl": 0.0,
+      "blocked_reason": "LOW_SAMPLE"
+    },
+    {
+      "name": "EXPECTANCY_BOOST_AGENT",
+      "status": "KEEP_SHADOW",
+      "signals": 1,
+      "win_rate": 0.0,
+      "pnl": 0.0,
+      "blocked_reason": "LOW_SAMPLE"
+    }
+  ]
+}

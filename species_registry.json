@@ -1,0 +1,15 @@
+{
+  "time": "2026-06-15 15:36:54",
+  "species_registry": {
+    "TREND": [
+      "TREND_AGENT"
+    ],
+    "DEFENSE": [
+      "DEFENSE_AGENT"
+    ],
+    "CONTRARIAN": [
+      "CONTRARIAN_AGENT"
+    ]
+  },
+  "species_count": 3
+}

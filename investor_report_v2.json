@@ -1,0 +1,33 @@
+{
+  "time": "2026-06-15 15:36:57",
+  "fund_fact_sheet": {
+    "time": "2026-06-15 15:36:57",
+    "fund_name": "1321 AI FUND",
+    "aum": null,
+    "return_pct": null,
+    "max_dd": null,
+    "strategy": "NONE"
+  },
+  "monthly_lp_report": {
+    "time": "2026-06-15 15:36:57",
+    "month": "2026-06",
+    "lp_dashboard": {
+      "time": "2026-06-15 15:36:57",
+      "fact_sheet": {
+        "time": "2026-06-15 15:36:57",
+        "fund_name": "1321 AI FUND",
+        "aum": null,
+        "return_pct": null,
+        "max_dd": null,
+        "strategy": "NONE"
+      },
+      "investor_report": {},
+      "fund_action": "WAIT"
+    },
+    "letter": {
+      "time": "2026-06-15 15:36:57",
+      "letter": "1321 AI FUND update: AUM None JPY, return None%, strategy NONE."
+    }
+  },
+  "benchmark": {}
+}

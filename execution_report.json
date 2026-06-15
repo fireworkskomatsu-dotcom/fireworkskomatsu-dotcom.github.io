@@ -1,0 +1,31 @@
+{
+  "time": "2026-06-09 11:46:08",
+  "policy": {
+    "time": "2026-06-09 11:46:08",
+    "execution_policy": "BLOCK",
+    "safety": {
+      "time": "2026-06-09 11:46:08",
+      "execution_safe": false,
+      "reasons": [
+        "BRAIN_TRADE_NOT_ALLOWED",
+        "RISK_HIGH",
+        "REAL_LOCKED"
+      ]
+    }
+  },
+  "block": {
+    "time": "2026-06-09 11:46:08",
+    "blocked": true,
+    "reasons": [
+      "BRAIN_TRADE_NOT_ALLOWED",
+      "RISK_HIGH",
+      "REAL_LOCKED"
+    ]
+  },
+  "shadow": {
+    "time": "2026-06-09 11:46:08",
+    "shadow_execution_decision": "SKIP",
+    "mode": "SHADOW_ONLY",
+    "real_trade": false
+  }
+}

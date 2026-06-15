@@ -1,0 +1,53 @@
+{
+  "time": "2026-06-15 15:36:54",
+  "stage": {
+    "time": "2026-06-15 15:36:54",
+    "civilization_stage": 2,
+    "civilization_score": 50.0
+  },
+  "score": {
+    "time": "2026-06-15 15:36:54",
+    "civilization_score": 50.0
+  },
+  "growth": {
+    "time": "2026-06-15 15:36:54",
+    "civilization_growth": 7
+  },
+  "species": {
+    "time": "2026-06-15 15:36:54",
+    "species_registry": {
+      "TREND": [
+        "TREND_AGENT"
+      ],
+      "DEFENSE": [
+        "DEFENSE_AGENT"
+      ],
+      "CONTRARIAN": [
+        "CONTRARIAN_AGENT"
+      ]
+    },
+    "species_count": 3
+  },
+  "genome": {
+    "time": "2026-06-15 15:36:54",
+    "health": {
+      "time": "2026-06-15 15:36:54",
+      "genome_health": 30.0,
+      "genome_count": 3,
+      "mode": "LOW"
+    },
+    "scores": {
+      "time": "2026-06-15 15:36:54",
+      "genome_scores": {
+        "TREND_AGENT": 30.0,
+        "DEFENSE_AGENT": 30.0,
+        "CONTRARIAN_AGENT": 30.0
+      }
+    },
+    "mutations": {
+      "time": "2026-06-15 15:36:54",
+      "mutations": [],
+      "count": 0
+    }
+  }
+}

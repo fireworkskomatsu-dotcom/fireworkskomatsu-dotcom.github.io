@@ -1,0 +1,15 @@
+{
+  "production_readiness": false,
+  "audit": {
+    "go_live_ready": false,
+    "reasons": [
+      "RISK_HIGH",
+      "SHADOW_TRADES_UNDER_50",
+      "REAL_LOCKED"
+    ]
+  },
+  "risk_gate": {
+    "real_risk_gate": false,
+    "risk_mode": "HIGH"
+  }
+}

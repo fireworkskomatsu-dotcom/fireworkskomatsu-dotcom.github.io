@@ -1,0 +1,15 @@
+{
+  "time": "2026-06-15 15:36:51",
+  "species": {
+    "DEFENSE": [
+      "SMART_DEFENSE_AGENT"
+    ],
+    "TREND": [
+      "TREND_FOLLOW_AGENT"
+    ],
+    "EXPECTANCY": [
+      "EXPECTANCY_BOOST_AGENT"
+    ]
+  },
+  "species_count": 3
+}

@@ -1,0 +1,26 @@
+{
+  "time": "2026-06-15 15:36:51",
+  "expectancy_validation": [
+    {
+      "name": "TREND_AGENT",
+      "expectancy": 0.021,
+      "win_rate": 100.0,
+      "power_score": 82.0,
+      "expectancy_status": "VALIDATED"
+    },
+    {
+      "name": "CONTRARIAN_AGENT",
+      "expectancy": 0.0105,
+      "win_rate": 50.0,
+      "power_score": 56.5,
+      "expectancy_status": "LEARNING"
+    },
+    {
+      "name": "DEFENSE_AGENT",
+      "expectancy": 0,
+      "win_rate": 0,
+      "power_score": 30.0,
+      "expectancy_status": "LEARNING"
+    }
+  ]
+}

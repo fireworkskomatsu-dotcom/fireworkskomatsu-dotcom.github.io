@@ -1,0 +1,47 @@
+{
+  "time": "2026-06-09 11:46:09",
+  "score": {
+    "time": "2026-06-09 11:46:08",
+    "market_brain_score": 0.9
+  },
+  "confidence": {
+    "time": "2026-06-09 11:46:08",
+    "market_brain_confidence": 0.9,
+    "mode": "LOW"
+  },
+  "policy": {
+    "time": "2026-06-09 11:46:08",
+    "market_brain_policy": "LEARN_ONLY",
+    "confidence": 0.9,
+    "risk": 99.82
+  },
+  "action": {
+    "time": "2026-06-09 11:46:09",
+    "market_brain_action": "SKIP",
+    "policy": "LEARN_ONLY"
+  },
+  "command": {
+    "time": "2026-06-09 11:46:08",
+    "market_command": "SKIP",
+    "brain": {
+      "time": "2026-06-09 11:37:59",
+      "brain_decision": "SKIP",
+      "brain_priority": "GOVERNOR",
+      "fusion_decision": "SKIP",
+      "governor_decision": "SKIP"
+    },
+    "execution": {
+      "time": "2026-06-09 11:46:08",
+      "execution_policy": "BLOCK",
+      "safety": {
+        "time": "2026-06-09 11:46:08",
+        "execution_safe": false,
+        "reasons": [
+          "BRAIN_TRADE_NOT_ALLOWED",
+          "RISK_HIGH",
+          "REAL_LOCKED"
+        ]
+      }
+    }
+  }
+}

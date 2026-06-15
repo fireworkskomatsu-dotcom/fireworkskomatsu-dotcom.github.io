@@ -1,0 +1,14 @@
+{
+  "time": "2026-06-15 15:36:59",
+  "capital_flow": [
+    {
+      "strategy": "HYPOTHESIS_001",
+      "weight": 0.5
+    },
+    {
+      "strategy": "HYPOTHESIS_003",
+      "weight": 0.5
+    }
+  ],
+  "status": "ACTIVE"
+}

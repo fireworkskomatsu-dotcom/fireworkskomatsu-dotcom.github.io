@@ -1,0 +1,13 @@
+{
+  "time": "2026-06-15 15:36:52",
+  "departments": {
+    "TRADING": [
+      "TREND_AGENT",
+      "CONTRARIAN_AGENT"
+    ],
+    "DEFENSE": [
+      "DEFENSE_AGENT"
+    ],
+    "RESEARCH": []
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "time": "2026-06-15 15:36:56",
+  "fund_constitution_version": 1,
+  "rules": [
+    "PROFIT_FIRST",
+    "NO_REAL_TRADE_WITHOUT_APPROVAL",
+    "RISK_COMMITTEE_VETO",
+    "SHADOW_BEFORE_REAL",
+    "COMPOUND_ONLY_AFTER_PROFIT"
+  ]
+}

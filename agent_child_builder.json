@@ -1,0 +1,11 @@
+{
+  "time": "2026-06-15 15:36:54",
+  "child_agent": {
+    "name": "TREND_AGENT_CONTRARIAN_AGENT_CHILD",
+    "parents": [
+      "TREND_AGENT",
+      "CONTRARIAN_AGENT"
+    ],
+    "status": "SHADOW_CHILD"
+  }
+}

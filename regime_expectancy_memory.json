@@ -1,0 +1,13 @@
+{
+  "time": "2026-06-15 15:36:53",
+  "dna": "TREND_UP|PANIC|DANGER|CONF_MID|RISK_HIGH",
+  "source_performance": {
+    "META": {
+      "signals": 2,
+      "wins": 0,
+      "losses": 1,
+      "pnl": -0.07584,
+      "win_rate": 0.0
+    }
+  }
+}

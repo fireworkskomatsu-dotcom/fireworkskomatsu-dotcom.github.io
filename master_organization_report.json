@@ -1,0 +1,67 @@
+{
+  "time": "2026-06-15 15:36:52",
+  "audit": {
+    "time": "2026-06-09 11:23:33",
+    "pipeline_status": "OK",
+    "decision_integrity": "OK",
+    "stale_count": 0,
+    "possible_typos": [],
+    "self_improvement_score": 61.6,
+    "summary": "pipeline=OK integrity=OK self_improve=61.6"
+  },
+  "digest": {
+    "time": "2026-06-09 09:38:48",
+    "headline": "decision=SKIP org=LEARNING_ORGANIZATION profit=15.0 focus=DECISION_CONFLICT_VALIDATION exec=NO_EXECUTION",
+    "decision": "SKIP",
+    "execution_status": "NO_EXECUTION",
+    "overall_score": 46.9,
+    "profit_score": 15.0,
+    "evolution_score": 89,
+    "primary_focus": "DECISION_CONFLICT_VALIDATION",
+    "pipeline_status": "OK",
+    "decision_integrity": "OK",
+    "self_improvement_score": 61.6
+  },
+  "civilization": {
+    "time": "2026-06-15 15:36:51",
+    "civilization_level": 2,
+    "spawned_agents": 3,
+    "species_count": 3,
+    "overall_score": 46.9,
+    "status": "AI_CIVILIZATION_SEED"
+  },
+  "sample_quality": {
+    "time": "2026-06-15 15:36:51",
+    "sample_quality_score": 1.1,
+    "real_closed": 2,
+    "meta_signals": 1,
+    "shadow_signals": 0,
+    "mode": "LOW_SAMPLE"
+  },
+  "hr": {
+    "time": "2026-06-15 15:36:51",
+    "allowed_promotions": 0,
+    "blocked_promotions": 2,
+    "demotions": [],
+    "sample_shortage": [
+      "TREND_AGENT",
+      "DEFENSE_AGENT",
+      "CONTRARIAN_AGENT"
+    ],
+    "retirements": [
+      "DEFENSE_AGENT"
+    ]
+  },
+  "capital_policy": {
+    "time": "2026-06-15 15:36:51",
+    "capital_policy": "DEFENSIVE",
+    "max_size_mult": 0.1,
+    "sample_quality_score": 1.1
+  },
+  "next_priority": {
+    "time": "2026-06-15 15:36:52",
+    "next_build_priority": "ACCUMULATE_PROFIT_DATA",
+    "sample_quality_score": 1.1,
+    "civilization_level": 2
+  }
+}

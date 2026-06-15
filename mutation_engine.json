@@ -1,0 +1,21 @@
+{
+  "time": "2026-06-15 15:36:51",
+  "mutations": [
+    {
+      "parent": "SMART_DEFENSE_AGENT",
+      "mutation": "SMART_DEFENSE_AGENT_V2",
+      "status": "IDEA"
+    },
+    {
+      "parent": "TREND_FOLLOW_AGENT",
+      "mutation": "TREND_FOLLOW_AGENT_V2",
+      "status": "IDEA"
+    },
+    {
+      "parent": "EXPECTANCY_BOOST_AGENT",
+      "mutation": "EXPECTANCY_BOOST_AGENT_V2",
+      "status": "IDEA"
+    }
+  ],
+  "count": 3
+}

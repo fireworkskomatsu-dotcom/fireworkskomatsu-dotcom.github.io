@@ -1,0 +1,6 @@
+{
+  "time": "2026-06-15 15:36:51",
+  "low_sample_guard": true,
+  "sample_quality_score": 1.1,
+  "rule": "SAMPLE_UNDER_20_NO_REAL_PROMOTION"
+}

@@ -1,0 +1,17 @@
+{
+  "time": "2026-06-15 15:36:56",
+  "votes": [
+    "SKIP",
+    "LONG",
+    "SKIP",
+    "SKIP",
+    "SKIP"
+  ],
+  "vote_count": {
+    "LONG": 1,
+    "SHORT": 0,
+    "SKIP": 4
+  },
+  "committee_decision": "SKIP",
+  "approval": false
+}

@@ -1,7 +1,7 @@
 {
-  "time": "2026-06-15 15:36:49",
+  "time": "2026-06-15 15:39:01",
   "symbol": "1321.T",
-  "price": 72490.0,
+  "price": 72520.0,
   "final_decision": "SKIP",
   "actual_size": 0,
   "candidate_size": 0.0187,
@@ -40,5 +40,5 @@
     "GO_LIVE_V2_NOT_READY",
     "MASTER_SKIP"
   ],
-  "summary": "1321.T price=72490.0 decision=SKIP brain=NO_GO lock=True go=NOT_READY"
+  "summary": "1321.T price=72520.0 decision=SKIP brain=NO_GO lock=True go=NOT_READY"
 }

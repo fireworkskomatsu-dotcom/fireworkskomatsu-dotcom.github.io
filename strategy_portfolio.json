@@ -1,0 +1,13 @@
+{
+  "portfolio": [
+    {
+      "strategy": "HYPOTHESIS_001",
+      "weight": 0.5
+    },
+    {
+      "strategy": "HYPOTHESIS_003",
+      "weight": 0.5
+    }
+  ],
+  "count": 2
+}

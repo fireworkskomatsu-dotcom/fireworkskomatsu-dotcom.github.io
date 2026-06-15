@@ -1,0 +1,33 @@
+{
+  "time": "2026-06-15 15:36:52",
+  "source_performance": {
+    "META": {
+      "signals": 2,
+      "wins": 0,
+      "losses": 1,
+      "pnl": -0.07584,
+      "win_rate": 0.0
+    }
+  },
+  "shadow_agent_rank": {
+    "TREND_FOLLOW_AGENT": {
+      "signals": 1,
+      "wins": 0,
+      "losses": 0,
+      "pnl": 0.0,
+      "win_rate": 0.0,
+      "shadow_power": 50.0,
+      "status": "SHADOW_LEARNING"
+    },
+    "EXPECTANCY_BOOST_AGENT": {
+      "signals": 1,
+      "wins": 0,
+      "losses": 0,
+      "pnl": 0.0,
+      "win_rate": 0.0,
+      "shadow_power": 50.0,
+      "status": "SHADOW_LEARNING"
+    }
+  },
+  "result_status": "LEARNING"
+}

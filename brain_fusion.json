@@ -1,0 +1,15 @@
+{
+  "time": "2026-06-15 15:36:54",
+  "brain_votes": {
+    "LONG": 0.35,
+    "SKIP": 0.503
+  },
+  "brain_fusion_decision": "SKIP",
+  "sources": {
+    "meta": "LONG",
+    "ceo": "SKIP",
+    "governor": "SKIP",
+    "memory": "SKIP",
+    "regime": "SKIP"
+  }
+}

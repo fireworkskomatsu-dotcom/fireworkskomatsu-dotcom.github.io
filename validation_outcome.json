@@ -1,0 +1,28 @@
+{
+  "time": "2026-06-15 15:36:52",
+  "evaluated": 2,
+  "rows": [
+    {
+      "source": "META",
+      "time": "2026-06-09 09:59:19",
+      "price": 67380.0,
+      "decision": "SHORT",
+      "score": 74.0,
+      "status": "WAITING_OUTCOME",
+      "current_price": 72490.0,
+      "pnl": -0.07584,
+      "result": "LOSS"
+    },
+    {
+      "source": "META",
+      "time": "2026-06-15 15:36:52",
+      "price": 72490.0,
+      "decision": "LONG",
+      "score": 75.5,
+      "status": "WAITING_OUTCOME",
+      "current_price": 72490.0,
+      "pnl": 0.0,
+      "result": "FLAT"
+    }
+  ]
+}

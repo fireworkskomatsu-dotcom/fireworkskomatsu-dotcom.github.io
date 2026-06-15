@@ -1,0 +1,7 @@
+{
+  "agent_budget_v2": {
+    "TREND_AGENT": 333333.0,
+    "DEFENSE_AGENT": 333333.0,
+    "CONTRARIAN_AGENT": 333333.0
+  }
+}

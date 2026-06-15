@@ -1,0 +1,10 @@
+{
+  "time": "2026-06-15 15:36:51",
+  "capital_policy": "DEFENSIVE",
+  "capital_rotation": {
+    "TREND_AGENT": 0.7425,
+    "DEFENSE_AGENT": 0.0136,
+    "CONTRARIAN_AGENT": 0.2438
+  },
+  "profit_guard": "STRICT"
+}

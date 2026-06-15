@@ -1,0 +1,22 @@
+{
+  "time": "2026-06-15 15:36:54",
+  "health": {
+    "time": "2026-06-15 15:36:54",
+    "genome_health": 30.0,
+    "genome_count": 3,
+    "mode": "LOW"
+  },
+  "scores": {
+    "time": "2026-06-15 15:36:54",
+    "genome_scores": {
+      "TREND_AGENT": 30.0,
+      "DEFENSE_AGENT": 30.0,
+      "CONTRARIAN_AGENT": 30.0
+    }
+  },
+  "mutations": {
+    "time": "2026-06-15 15:36:54",
+    "mutations": [],
+    "count": 0
+  }
+}

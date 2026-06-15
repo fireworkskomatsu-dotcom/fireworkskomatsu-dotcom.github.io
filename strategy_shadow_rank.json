@@ -1,0 +1,14 @@
+{
+  "ranking": [
+    {
+      "strategy": "HYPOTHESIS_001",
+      "shadow_pnl": 0,
+      "status": "LEARNING"
+    },
+    {
+      "strategy": "HYPOTHESIS_003",
+      "shadow_pnl": 0,
+      "status": "LEARNING"
+    }
+  ]
+}

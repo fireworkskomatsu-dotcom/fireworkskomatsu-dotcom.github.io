@@ -1,0 +1,22 @@
+{
+  "time": "2026-06-15 15:36:52",
+  "factory_agents": [
+    {
+      "name": "TREND_FOLLOW_AGENT",
+      "parent": "TREND_AGENT",
+      "purpose": "トレンド相場専用の順張り判断",
+      "blueprint_status": "DESIGNED",
+      "real_trade": false,
+      "factory_status": "READY_FOR_SHADOW_BUILD"
+    },
+    {
+      "name": "EXPECTANCY_BOOST_AGENT",
+      "parent": "REPLAY_EXPECTANCY",
+      "purpose": "期待値プラス局面で攻撃参加を判断",
+      "blueprint_status": "DESIGNED",
+      "real_trade": false,
+      "factory_status": "READY_FOR_SHADOW_BUILD"
+    }
+  ],
+  "count": 2
+}

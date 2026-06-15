@@ -1,0 +1,18 @@
+{
+  "time": "2026-06-15 15:36:52",
+  "mutations": [
+    {
+      "parent": "TREND_FOLLOW_AGENT",
+      "mutation": "TREND_FOLLOW_AGENT_MUTATION_01",
+      "status": "IDEA_ONLY",
+      "real_trade": false
+    },
+    {
+      "parent": "EXPECTANCY_BOOST_AGENT",
+      "mutation": "EXPECTANCY_BOOST_AGENT_MUTATION_01",
+      "status": "IDEA_ONLY",
+      "real_trade": false
+    }
+  ],
+  "count": 2
+}

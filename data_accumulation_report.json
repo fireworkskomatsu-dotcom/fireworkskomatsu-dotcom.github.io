@@ -1,0 +1,21 @@
+{
+  "time": "2026-06-15 15:36:52",
+  "samples": {
+    "time": "2026-06-15 15:36:52",
+    "meta_samples": 2,
+    "ceo_samples": 2,
+    "governor_samples": 2,
+    "price_samples": 2
+  },
+  "validation_queue": 2,
+  "evaluated": 2,
+  "source_performance": {
+    "META": {
+      "signals": 2,
+      "wins": 0,
+      "losses": 1,
+      "pnl": -0.07584,
+      "win_rate": 0.0
+    }
+  }
+}

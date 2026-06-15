@@ -1,0 +1,9 @@
+{
+  "time": "2026-06-09 11:46:08",
+  "blocked": true,
+  "reasons": [
+    "BRAIN_TRADE_NOT_ALLOWED",
+    "RISK_HIGH",
+    "REAL_LOCKED"
+  ]
+}

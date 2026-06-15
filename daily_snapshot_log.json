@@ -1,0 +1,252 @@
+[
+  {
+    "time": "2026-06-09 09:59:19",
+    "digest": {
+      "time": "2026-06-09 09:38:48",
+      "headline": "decision=SKIP org=LEARNING_ORGANIZATION profit=15.0 focus=DECISION_CONFLICT_VALIDATION exec=NO_EXECUTION",
+      "decision": "SKIP",
+      "execution_status": "NO_EXECUTION",
+      "overall_score": 46.9,
+      "profit_score": 15.0,
+      "evolution_score": 89,
+      "primary_focus": "DECISION_CONFLICT_VALIDATION",
+      "pipeline_status": "OK",
+      "decision_integrity": "OK",
+      "self_improvement_score": 61.6
+    },
+    "master": {
+      "time": "2026-06-09 09:37:31",
+      "final_decision": "SKIP",
+      "direction": "LONG_ONLY",
+      "size": 0,
+      "candidate_size": 0.0187,
+      "score": 0,
+      "grade": "D",
+      "reasons": [
+        "VOLATILITY_DANGER_STOP / Replay Policy BOOST TREND_UP_LONG / Replay Expectancy POSITIVE TREND_UP_LONG",
+        "AI合意不足",
+        "回復モード"
+      ],
+      "raw_filter_decision": "SKIP",
+      "confidence": 60,
+      "consensus_ratio": 0.5,
+      "recovery_mode": true,
+      "risk_exit": false,
+      "replay_size_mult": 1.25,
+      "replay_action": "BOOST_SIZE",
+      "weighted_agent_decision": "SHORT",
+      "weighted_votes": {
+        "LONG": 1.13,
+        "SHORT": 1.64,
+        "SKIP": 0.6,
+        "HOLD": 0.0
+      }
+    },
+    "meta": {
+      "time": "2026-06-09 09:37:30",
+      "meta_score": 74.0,
+      "meta_decision": "SHORT",
+      "brain_score": 60,
+      "confidence": 60,
+      "agent_decision": "SHORT",
+      "replay_action": "BOOST",
+      "reasons": [
+        "AGENT_DIRECTION_OK",
+        "REPLAY_EXPECTANCY_BOOST"
+      ]
+    },
+    "ceo": {
+      "time": "2026-06-09 09:37:30",
+      "ceo_decision": "SKIP",
+      "ceo_confidence": 74.0,
+      "meta_score": 74.0,
+      "meta_decision": "SHORT",
+      "capital_allocation": {
+        "TREND_AGENT": 0.3333,
+        "DEFENSE_AGENT": 0.3333,
+        "CONTRARIAN_AGENT": 0.3333
+      },
+      "committee": {
+        "TREND_AGENT": {
+          "current_rank": "PROBATION",
+          "power_score": 30.0,
+          "trades": 0,
+          "expectancy": 0,
+          "action": "DEMOTE",
+          "reason": "低powerまたは期待値マイナス"
+        },
+        "DEFENSE_AGENT": {
+          "current_rank": "PROBATION",
+          "power_score": 30.0,
+          "trades": 0,
+          "expectancy": 0,
+          "action": "DEMOTE",
+          "reason": "低powerまたは期待値マイナス"
+        },
+        "CONTRARIAN_AGENT": {
+          "current_rank": "PROBATION",
+          "power_score": 30.0,
+          "trades": 0,
+          "expectancy": 0,
+          "action": "DEMOTE",
+          "reason": "低powerまたは期待値マイナス"
+        }
+      },
+      "production_locked": true,
+      "allow_real_trade": false,
+      "reasons": [
+        "PRODUCTION_LOCKED",
+        "META_APPROVED",
+        "REAL_TRADE_NOT_ALLOWED"
+      ],
+      "summary": "CEO=SKIP confidence=74.0 meta=SHORT lock=True"
+    },
+    "governor": {
+      "time": "2026-06-09 09:37:33",
+      "governor_decision": "SKIP",
+      "governor_size": 0,
+      "master_decision": "SKIP",
+      "ceo_override_decision": "SKIP",
+      "ceo_override": false,
+      "risk_mode": "HIGH",
+      "risk_score": 100,
+      "allow_real_trade": false,
+      "reasons": [
+        "RISK_COUNCIL_HIGH",
+        "REAL_TRADE_LOCKED"
+      ]
+    },
+    "price": {
+      "time": "2026-06-09 09:37:30",
+      "symbol": "1321.T",
+      "name": "1321 日経225ETF",
+      "price": 67380.0,
+      "source": "yahoo_finance"
+    }
+  },
+  {
+    "time": "2026-06-15 15:36:52",
+    "digest": {
+      "time": "2026-06-09 09:38:48",
+      "headline": "decision=SKIP org=LEARNING_ORGANIZATION profit=15.0 focus=DECISION_CONFLICT_VALIDATION exec=NO_EXECUTION",
+      "decision": "SKIP",
+      "execution_status": "NO_EXECUTION",
+      "overall_score": 46.9,
+      "profit_score": 15.0,
+      "evolution_score": 89,
+      "primary_focus": "DECISION_CONFLICT_VALIDATION",
+      "pipeline_status": "OK",
+      "decision_integrity": "OK",
+      "self_improvement_score": 61.6
+    },
+    "master": {
+      "time": "2026-06-15 15:36:48",
+      "final_decision": "SKIP",
+      "direction": "LONG_ONLY",
+      "size": 0,
+      "candidate_size": 0.0187,
+      "score": 0,
+      "grade": "D",
+      "reasons": [
+        "市場温度異常 / OVERHEAT / Replay Policy BOOST TREND_UP_LONG / Replay Expectancy POSITIVE TREND_UP_LONG",
+        "回復モード",
+        "危険撤退優先"
+      ],
+      "raw_filter_decision": "SKIP",
+      "confidence": 65,
+      "consensus_ratio": 0.75,
+      "recovery_mode": true,
+      "risk_exit": true,
+      "replay_size_mult": 1.25,
+      "replay_action": "BOOST_SIZE",
+      "weighted_agent_decision": "LONG",
+      "weighted_votes": {
+        "LONG": 0.6,
+        "SHORT": 0.6,
+        "SKIP": 0.6,
+        "HOLD": 0.0
+      }
+    },
+    "meta": {
+      "time": "2026-06-15 15:36:48",
+      "meta_score": 75.5,
+      "meta_decision": "LONG",
+      "brain_score": 60,
+      "confidence": 65,
+      "agent_decision": "LONG",
+      "replay_action": "BOOST",
+      "reasons": [
+        "AGENT_DIRECTION_OK",
+        "REPLAY_EXPECTANCY_BOOST"
+      ]
+    },
+    "ceo": {
+      "time": "2026-06-15 15:36:48",
+      "ceo_decision": "SKIP",
+      "ceo_confidence": 75.5,
+      "meta_score": 75.5,
+      "meta_decision": "LONG",
+      "capital_allocation": {
+        "TREND_AGENT": 0.3333,
+        "DEFENSE_AGENT": 0.3333,
+        "CONTRARIAN_AGENT": 0.3333
+      },
+      "committee": {
+        "TREND_AGENT": {
+          "current_rank": "PROBATION",
+          "power_score": 30.0,
+          "trades": 0,
+          "expectancy": 0,
+          "action": "DEMOTE",
+          "reason": "低powerまたは期待値マイナス"
+        },
+        "DEFENSE_AGENT": {
+          "current_rank": "PROBATION",
+          "power_score": 30.0,
+          "trades": 0,
+          "expectancy": 0,
+          "action": "DEMOTE",
+          "reason": "低powerまたは期待値マイナス"
+        },
+        "CONTRARIAN_AGENT": {
+          "current_rank": "PROBATION",
+          "power_score": 30.0,
+          "trades": 0,
+          "expectancy": 0,
+          "action": "DEMOTE",
+          "reason": "低powerまたは期待値マイナス"
+        }
+      },
+      "production_locked": true,
+      "allow_real_trade": false,
+      "reasons": [
+        "PRODUCTION_LOCKED",
+        "META_APPROVED",
+        "REAL_TRADE_NOT_ALLOWED"
+      ],
+      "summary": "CEO=SKIP confidence=75.5 meta=LONG lock=True"
+    },
+    "governor": {
+      "time": "2026-06-15 15:36:50",
+      "governor_decision": "SKIP",
+      "governor_size": 0,
+      "master_decision": "SKIP",
+      "ceo_override_decision": "SKIP",
+      "ceo_override": false,
+      "risk_mode": "HIGH",
+      "risk_score": 100,
+      "allow_real_trade": false,
+      "reasons": [
+        "RISK_COUNCIL_HIGH",
+        "REAL_TRADE_LOCKED"
+      ]
+    },
+    "price": {
+      "time": "2026-06-15 15:36:47",
+      "symbol": "1321.T",
+      "name": "1321 日経225ETF",
+      "price": 72490.0,
+      "source": "yahoo_finance"
+    }
+  }
+]

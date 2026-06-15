@@ -1,0 +1,55 @@
+{
+  "time": "2026-06-15 15:36:59",
+  "fund_action": "WAIT",
+  "shadow_capital": 1075839.0,
+  "performance": {
+    "time": "2026-06-15 15:36:58",
+    "module": "fund_snapshot_ai.py",
+    "status": "ACTIVE",
+    "fund_name": "1321 AI FUND",
+    "equity": 1075839.0,
+    "start_capital": 1000000,
+    "return_pct": 7.58,
+    "trades": 0,
+    "closed_trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0,
+    "expectancy_pct": 0,
+    "profit_factor": 0,
+    "sharpe": 0,
+    "sortino": 0,
+    "calmar": 0,
+    "max_drawdown_pct": 0,
+    "alpha_pct": 7.58,
+    "beta": 0,
+    "capital_usage": "LOW",
+    "best_source": "NONE",
+    "profit_source": "NO_CLOSED_PROFIT",
+    "loss_source": "NO_CLOSED_LOSS",
+    "brain_decision": "SKIP",
+    "fund_action": "WAIT",
+    "risk_mode": "HIGH",
+    "memory_score": 0,
+    "market_brain_decision": "SKIP",
+    "fund_score": 72.7,
+    "summary": "equity=1075839.0 return=7.58% win=0% dd=0 score=72.7",
+    "mode": "PERFORMANCE_INTELLIGENCE"
+  },
+  "production": {
+    "production_readiness": false,
+    "audit": {
+      "go_live_ready": false,
+      "reasons": [
+        "RISK_HIGH",
+        "SHADOW_TRADES_UNDER_50",
+        "REAL_LOCKED"
+      ]
+    },
+    "risk_gate": {
+      "real_risk_gate": false,
+      "risk_mode": "HIGH"
+    }
+  },
+  "status": "DAILY_FUND_UPDATED"
+}

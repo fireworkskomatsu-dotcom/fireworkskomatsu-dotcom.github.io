@@ -1,0 +1,35 @@
+{
+  "time": "2026-06-15 15:36:51",
+  "profit_leaderboard": [
+    {
+      "name": "TREND_AGENT",
+      "type": "REAL_AGENT",
+      "score": 0.021,
+      "win_rate": 100.0
+    },
+    {
+      "name": "CONTRARIAN_AGENT",
+      "type": "REAL_AGENT",
+      "score": 0.0105,
+      "win_rate": 50.0
+    },
+    {
+      "name": "DEFENSE_AGENT",
+      "type": "REAL_AGENT",
+      "score": 0,
+      "win_rate": 0
+    },
+    {
+      "name": "TREND_FOLLOW_AGENT",
+      "type": "SHADOW_AGENT",
+      "score": 0.0,
+      "win_rate": 0.0
+    },
+    {
+      "name": "EXPECTANCY_BOOST_AGENT",
+      "type": "SHADOW_AGENT",
+      "score": 0.0,
+      "win_rate": 0.0
+    }
+  ]
+}

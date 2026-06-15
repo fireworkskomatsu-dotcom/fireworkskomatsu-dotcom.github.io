@@ -1,5 +1,5 @@
 {
-  "time": "2026-06-15 15:36:48",
+  "time": "2026-06-15 15:39:00",
   "confidence": 65,
   "mode": "MID",
   "reasons": [
@@ -8,13 +8,13 @@
     "VOL_DANGER -30",
     "OVERHEAT -10",
     "REPLAY_EXPECTANCY_POSITIVE +10",
-    "WEIGHTED_AGENT_SHORT +10",
+    "WEIGHTED_AGENT_LONG +10",
     "BRAIN_SCORE_MID +10"
   ],
   "replay_key": "TREND_UP_LONG",
   "replay_expectancy": 0.001108,
   "replay_trades": 34,
-  "weighted_agent_decision": "SHORT",
+  "weighted_agent_decision": "LONG",
   "brain_score": 60,
   "closed": 2,
   "win_rate": 0.0,

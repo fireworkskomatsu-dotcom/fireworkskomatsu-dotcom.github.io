@@ -1,0 +1,13 @@
+{
+  "time": "2026-06-15 15:36:53",
+  "archive_size": 3,
+  "latest": {
+    "time": "2026-06-11 12:04:36",
+    "dna": "TREND_UP|PANIC|DANGER|CONF_MID|RISK_HIGH",
+    "decision": "SKIP",
+    "risk_mode": "HIGH",
+    "equity": 1000000,
+    "archive_id": "20260615153653",
+    "saved_at": "2026-06-15 15:36:53"
+  }
+}

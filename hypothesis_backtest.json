@@ -1,0 +1,38 @@
+{
+  "time": "2026-06-15 15:36:58",
+  "backtest_results": [
+    {
+      "id": "HYPOTHESIS_001",
+      "name": "DNA_MEMORY_MATCH_STRATEGY",
+      "score": 75,
+      "expectancy": 0.25,
+      "reasons": [
+        "HAS_EXPERIENCE",
+        "DNA_MEMORY_MATCH"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "HYPOTHESIS_002",
+      "name": "RISK_FILTERED_META_STRATEGY",
+      "score": 50,
+      "expectancy": 0.0,
+      "reasons": [
+        "HAS_EXPERIENCE",
+        "RISK_HIGH"
+      ],
+      "status": "WATCH"
+    },
+    {
+      "id": "HYPOTHESIS_003",
+      "name": "TREND_AGENT_PRIORITY_STRATEGY",
+      "score": 72,
+      "expectancy": 0.22,
+      "reasons": [
+        "HAS_EXPERIENCE",
+        "TREND_AGENT_WINNER"
+      ],
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "time": "2026-06-15 15:36:59",
+  "experience": {
+    "experience_count": 2,
+    "experience_level": "BEGINNER",
+    "experience_score": 60,
+    "summary": "BEGINNER / 2 samples"
+  },
+  "market": {
+    "time": "2026-06-15 15:36:58",
+    "dna": "TREND_UP|PANIC|DANGER|CONF_MID|RISK_HIGH",
+    "decision": "SKIP",
+    "risk_mode": "HIGH",
+    "equity": 1075839.0
+  },
+  "shadow": {
+    "time": "2026-06-15 15:36:54",
+    "start_capital": 1000000,
+    "cash": 1075839.0,
+    "equity": 1075839.0,
+    "realized_pnl": 75839.0,
+    "return_pct": 7.58,
+    "position": 0,
+    "side": null,
+    "entry_price": 0,
+    "current_price": 72490.0,
+    "unrealized_pct": 0,
+    "decision": "SKIP",
+    "event": "TAKE_PROFIT",
+    "trade_size_pct": 0.01,
+    "target_pct": 0.03,
+    "stop_pct": -0.015,
+    "trades": [
+      {
+        "time": "2026-06-11 13:28:41",
+        "type": "ENTER",
+        "side": "LONG",
+        "price": 67380.0,
+        "qty": 1,
+        "yen_size": 67380.0
+      },
+      {
+        "time": "2026-06-15 15:36:54",
+        "type": "TAKE_PROFIT",
+        "side": "LONG",
+        "entry": 67380.0,
+        "exit": 72490.0,
+        "pnl_pct": 0.07584,
+        "pnl_yen": 75839.0
+      }
+    ]
+  },
+  "strategy": {
+    "portfolio": [
+      {
+        "strategy": "HYPOTHESIS_001",
+        "weight": 0.5
+      },
+      {
+        "strategy": "HYPOTHESIS_003",
+        "weight": 0.5
+      }
+    ],
+    "count": 2
+  },
+  "fund": {
+    "time": "2026-06-15 15:36:57",
+    "fund_action": "WAIT",
+    "cio": {
+      "time": "2026-06-15 15:36:56",
+      "cio_decision": "SKIP",
+      "approved": false,
+      "investment_committee": "SKIP",
+      "risk_approval": false,
+      "reasons": [
+        "RISK_HIGH",
+        "EXECUTION_NOT_SAFE"
+      ]
+    },
+    "risk": {
+      "time": "2026-06-15 15:36:56",
+      "risk_approval": false,
+      "risk_mode": "HIGH",
+      "risk_score": 100,
+      "reasons": [
+        "RISK_HIGH",
+        "EXECUTION_NOT_SAFE"
+      ]
+    },
+    "portfolio": {
+      "time": "2026-06-15 15:36:56",
+      "target_qty": 0,
+      "target_yen": 0,
+      "price": 72490.0,
+      "position_pct": 0
+    },
+    "aum": null,
+    "summary": "fund=WAIT cio=SKIP risk=False"
+  },
+  "status": "DAILY_EXPERIENCE_RECORDED"
+}

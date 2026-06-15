@@ -1,0 +1,7 @@
+{
+  "agent_survival_v2": {
+    "TREND_AGENT": "SURVIVE",
+    "DEFENSE_AGENT": "SURVIVE",
+    "CONTRARIAN_AGENT": "SURVIVE"
+  }
+}

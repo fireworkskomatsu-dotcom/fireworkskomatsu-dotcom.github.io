@@ -1,0 +1,20 @@
+{
+  "time": "2026-06-15 15:36:54",
+  "pairs": [
+    {
+      "a": "TREND_AGENT",
+      "b": "DEFENSE_AGENT",
+      "similarity": 3.0
+    },
+    {
+      "a": "TREND_AGENT",
+      "b": "CONTRARIAN_AGENT",
+      "similarity": 3.0
+    },
+    {
+      "a": "DEFENSE_AGENT",
+      "b": "CONTRARIAN_AGENT",
+      "similarity": 3.0
+    }
+  ]
+}

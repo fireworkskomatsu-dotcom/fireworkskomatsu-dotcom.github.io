@@ -1,0 +1,12 @@
+{
+  "time": "2026-06-15 15:36:51",
+  "constitution_version": 2,
+  "rules": [
+    "PROFIT_FIRST",
+    "ZERO_TRADE_NO_VETO",
+    "SHADOW_BEFORE_REAL",
+    "AUDIT_REQUIRED",
+    "RETIRE_WEAK_AGENTS",
+    "PROMOTE_BY_EXPECTANCY"
+  ]
+}

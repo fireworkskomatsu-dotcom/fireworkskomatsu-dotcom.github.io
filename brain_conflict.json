@@ -1,0 +1,15 @@
+{
+  "time": "2026-06-15 15:36:54",
+  "brain_conflict": true,
+  "sources": {
+    "meta": "LONG",
+    "ceo": "SKIP",
+    "governor": "SKIP",
+    "memory": "SKIP",
+    "regime": "SKIP"
+  },
+  "unique_decisions": [
+    "LONG",
+    "SKIP"
+  ]
+}

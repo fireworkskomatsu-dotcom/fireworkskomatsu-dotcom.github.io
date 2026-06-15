@@ -1,0 +1,18 @@
+{
+  "time": "2026-06-15 15:36:55",
+  "module": "shadow_fund_status_ai.py",
+  "status": "ACTIVE",
+  "capital": 1075839.0,
+  "start_capital": 1000000,
+  "return_pct": 7.58,
+  "avg_daily_return_pct": 0,
+  "projected_annual_return_pct": 0,
+  "max_drawdown_pct": 0,
+  "shadow_trades": 0,
+  "shadow_win_rate": 0,
+  "market_command": "SKIP",
+  "execution_safe": false,
+  "risk_mode": "HIGH",
+  "shadow_fund_score": 87.9,
+  "mode": "SHADOW_FUND_EVOLUTION"
+}

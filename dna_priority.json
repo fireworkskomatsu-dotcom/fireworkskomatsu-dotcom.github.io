@@ -1,0 +1,7 @@
+{
+  "dna_priority": "USE_MEMORY",
+  "top_similarity": {
+    "dna": "TREND_UP|PANIC|DANGER|CONF_MID|RISK_HIGH",
+    "score": 5
+  }
+}

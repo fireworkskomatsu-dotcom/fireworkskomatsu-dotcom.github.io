@@ -1,0 +1,55 @@
+{
+  "time": "2026-06-15 15:36:52",
+  "core_agents": {
+    "TREND_AGENT": {
+      "trades": 0,
+      "win_rate": 0,
+      "total_pnl": 0,
+      "expectancy": 0,
+      "power_score": 30.0,
+      "rank": "PROBATION"
+    },
+    "DEFENSE_AGENT": {
+      "trades": 0,
+      "win_rate": 0,
+      "total_pnl": 0,
+      "expectancy": 0,
+      "power_score": 30.0,
+      "rank": "PROBATION"
+    },
+    "CONTRARIAN_AGENT": {
+      "trades": 0,
+      "win_rate": 0,
+      "total_pnl": 0,
+      "expectancy": 0,
+      "power_score": 30.0,
+      "rank": "PROBATION"
+    }
+  },
+  "shadow_agents": [
+    {
+      "name": "SMART_DEFENSE_AGENT",
+      "parent": "DEFENSE_AGENT",
+      "mode": "SHADOW_ONLY",
+      "real_weight": 0,
+      "shadow_weight": 1.0,
+      "note": "実弾には使わず仮想評価のみ"
+    },
+    {
+      "name": "TREND_FOLLOW_AGENT",
+      "parent": "TREND_AGENT",
+      "mode": "SHADOW_ONLY",
+      "real_weight": 0,
+      "shadow_weight": 1.0,
+      "note": "実弾には使わず仮想評価のみ"
+    },
+    {
+      "name": "EXPECTANCY_BOOST_AGENT",
+      "parent": "REPLAY_EXPECTANCY",
+      "mode": "SHADOW_ONLY",
+      "real_weight": 0,
+      "shadow_weight": 1.0,
+      "note": "実弾には使わず仮想評価のみ"
+    }
+  ]
+}

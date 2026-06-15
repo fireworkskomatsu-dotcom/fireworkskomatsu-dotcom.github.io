@@ -1,0 +1,38 @@
+{
+  "time": "2026-06-15 15:36:51",
+  "agent_genetics": [
+    {
+      "birth_time": "2026-06-09 09:10:17",
+      "name": "SMART_DEFENSE_AGENT",
+      "parent": "DEFENSE_AGENT",
+      "purpose": "実績ゼロVETOではなく、相場条件と期待値で防御判断する",
+      "status": "CANDIDATE",
+      "generation": 2,
+      "dna": [
+        "DEFENSE"
+      ]
+    },
+    {
+      "birth_time": "2026-06-09 09:10:17",
+      "name": "TREND_FOLLOW_AGENT",
+      "parent": "TREND_AGENT",
+      "purpose": "トレンド相場専用の順張り判断",
+      "status": "CANDIDATE",
+      "generation": 2,
+      "dna": [
+        "TREND"
+      ]
+    },
+    {
+      "birth_time": "2026-06-09 09:10:17",
+      "name": "EXPECTANCY_BOOST_AGENT",
+      "parent": "REPLAY_EXPECTANCY",
+      "purpose": "期待値プラス局面で攻撃参加を判断",
+      "status": "CANDIDATE",
+      "generation": 2,
+      "dna": [
+        "EXPECTANCY"
+      ]
+    }
+  ]
+}

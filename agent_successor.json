@@ -1,0 +1,7 @@
+{
+  "time": "2026-06-15 15:36:52",
+  "successor_plan": {
+    "DEFENSE_AGENT": "SMART_DEFENSE_AGENT"
+  },
+  "replace_defense": true
+}

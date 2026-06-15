@@ -1,0 +1,36 @@
+{
+  "time": "2026-06-15 15:36:54",
+  "registry": {
+    "TREND_AGENT": {
+      "agent": "TREND_AGENT",
+      "entry_rule": "FOLLOW_OWN_VOTE",
+      "exit_rule": "RISK_HIGH_OR_OPPOSITE",
+      "risk_weight": 0.7,
+      "confidence_weight": 0.3,
+      "expectancy": 0,
+      "parent": null,
+      "generation": 1
+    },
+    "DEFENSE_AGENT": {
+      "agent": "DEFENSE_AGENT",
+      "entry_rule": "FOLLOW_OWN_VOTE",
+      "exit_rule": "RISK_HIGH_OR_OPPOSITE",
+      "risk_weight": 0.7,
+      "confidence_weight": 0.3,
+      "expectancy": 0,
+      "parent": null,
+      "generation": 1
+    },
+    "CONTRARIAN_AGENT": {
+      "agent": "CONTRARIAN_AGENT",
+      "entry_rule": "FOLLOW_OWN_VOTE",
+      "exit_rule": "RISK_HIGH_OR_OPPOSITE",
+      "risk_weight": 0.7,
+      "confidence_weight": 0.3,
+      "expectancy": 0,
+      "parent": null,
+      "generation": 1
+    }
+  },
+  "count": 3
+}

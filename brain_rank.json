@@ -1,0 +1,21 @@
+{
+  "time": "2026-06-09 11:46:08",
+  "brain_rank": [
+    {
+      "name": "META",
+      "score": 74.0
+    },
+    {
+      "name": "MEMORY",
+      "score": 3.0
+    },
+    {
+      "name": "GOVERNOR",
+      "score": 0
+    },
+    {
+      "name": "BRAIN",
+      "score": 0
+    }
+  ]
+}

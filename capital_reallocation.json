@@ -1,0 +1,13 @@
+{
+  "time": "2026-06-15 15:36:59",
+  "capital": 1075839.0,
+  "weights": {
+    "HYPOTHESIS_001": 0.5319,
+    "HYPOTHESIS_003": 0.4681
+  },
+  "allocation_yen": {
+    "HYPOTHESIS_001": 572239.0,
+    "HYPOTHESIS_003": 503600.0
+  },
+  "mode": "EXPECTANCY_WEIGHTED"
+}

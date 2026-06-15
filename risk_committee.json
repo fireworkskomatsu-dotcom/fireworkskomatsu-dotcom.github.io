@@ -1,0 +1,10 @@
+{
+  "time": "2026-06-15 15:36:56",
+  "risk_approval": false,
+  "risk_mode": "HIGH",
+  "risk_score": 100,
+  "reasons": [
+    "RISK_HIGH",
+    "EXECUTION_NOT_SAFE"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "time": "2026-06-15 15:36:51",
+  "demotions": [],
+  "retirements": [
+    "DEFENSE_AGENT"
+  ],
+  "succession": "SMART_DEFENSE_AGENT",
+  "board_status": "ACTION_REQUIRED"
+}

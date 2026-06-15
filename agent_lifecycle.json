@@ -1,0 +1,32 @@
+{
+  "time": "2026-06-15 15:36:51",
+  "agent_lifecycle": {
+    "TREND_AGENT": {
+      "trades": 0,
+      "win_rate": 0,
+      "total_pnl": 0,
+      "expectancy": 0,
+      "power_score": 30.0,
+      "rank": "PROBATION",
+      "lifecycle": "NEW"
+    },
+    "DEFENSE_AGENT": {
+      "trades": 0,
+      "win_rate": 0,
+      "total_pnl": 0,
+      "expectancy": 0,
+      "power_score": 30.0,
+      "rank": "PROBATION",
+      "lifecycle": "NEW"
+    },
+    "CONTRARIAN_AGENT": {
+      "trades": 0,
+      "win_rate": 0,
+      "total_pnl": 0,
+      "expectancy": 0,
+      "power_score": 30.0,
+      "rank": "PROBATION",
+      "lifecycle": "NEW"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "time": "2026-06-09 11:46:09",
+  "brain": {
+    "time": "2026-06-09 11:37:59",
+    "brain_decision": "SKIP",
+    "brain_priority": "GOVERNOR",
+    "fusion_decision": "SKIP",
+    "governor_decision": "SKIP"
+  },
+  "market_brain": {
+    "time": "2026-06-09 11:38:00",
+    "market_brain_v2_decision": "SKIP",
+    "market_brain": {
+      "time": "2026-06-09 11:30:10",
+      "market_dna": "TREND_UP|PANIC|DANGER|CONF_MID|RISK_HIGH",
+      "regime_class": "PANIC_REGIME",
+      "future_regime": "TREND_UP",
+      "memory_quality": "LOW",
+      "learning_policy": "ACCUMULATE_MEMORY",
+      "summary": "market memory active"
+    },
+    "memory_score": 3.0,
+    "brain_conflict": true
+  },
+  "memory": {
+    "time": "2026-06-09 11:37:59",
+    "memory_score": 3.0,
+    "confidence": 3,
+    "expectancy": 0.0
+  },
+  "risk": {
+    "time": "2026-06-09 08:48:40",
+    "risk_score": 100,
+    "risk_mode": "HIGH",
+    "reasons": [
+      "PANIC",
+      "VOL_DANGER",
+      "PRODUCTION_LOCKED",
+      "BOARD_HIGH_RISK"
+    ]
+  },
+  "execution": {
+    "time": "2026-06-09 11:46:08",
+    "execution_safe": false,
+    "reasons": [
+      "BRAIN_TRADE_NOT_ALLOWED",
+      "RISK_HIGH",
+      "REAL_LOCKED"
+    ]
+  },
+  "summary": "brain=SKIP risk=HIGH safe=False"
+}

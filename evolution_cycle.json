@@ -1,0 +1,33 @@
+{
+  "time": "2026-06-15 15:36:54",
+  "actions": {
+    "time": "2026-06-15 15:36:54",
+    "evolution_actions": {
+      "TREND_AGENT": "WEAK",
+      "DEFENSE_AGENT": "WEAK",
+      "CONTRARIAN_AGENT": "WEAK"
+    }
+  },
+  "survival": {
+    "time": "2026-06-15 15:36:54",
+    "survival_scores": {
+      "TREND_AGENT": 30.0,
+      "DEFENSE_AGENT": 30.0,
+      "CONTRARIAN_AGENT": 30.0
+    }
+  },
+  "extinction": {
+    "time": "2026-06-15 15:36:54",
+    "extinction_candidates": [],
+    "count": 0
+  },
+  "rebirth": {
+    "time": "2026-06-15 15:36:54",
+    "rebirth_candidates": []
+  },
+  "mutations": {
+    "time": "2026-06-15 15:36:54",
+    "mutations": [],
+    "count": 0
+  }
+}

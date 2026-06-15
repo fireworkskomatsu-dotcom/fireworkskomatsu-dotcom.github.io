@@ -28,5 +28,15 @@
     "production_locked": true,
     "allow_real_trade": false,
     "summary": "CEO=SKIP confidence=75.5 meta=LONG lock=True"
+  },
+  {
+    "time": "2026-06-15 15:39:00",
+    "price": 72520.0,
+    "ceo_decision": "SKIP",
+    "ceo_confidence": 75.5,
+    "meta_decision": "LONG",
+    "production_locked": true,
+    "allow_real_trade": false,
+    "summary": "CEO=SKIP confidence=75.5 meta=LONG lock=True"
   }
 ]

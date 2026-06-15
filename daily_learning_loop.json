@@ -1,0 +1,26 @@
+{
+  "time": "2026-06-15 15:36:59",
+  "policy_update": {
+    "policy_update": "KEEP"
+  },
+  "edge_learning": {
+    "edge_learning": "UNKNOWN",
+    "pnl_yen": 0
+  },
+  "dna_priority": {
+    "dna_priority": "USE_MEMORY",
+    "top_similarity": {
+      "dna": "TREND_UP|PANIC|DANGER|CONF_MID|RISK_HIGH",
+      "score": 5
+    }
+  },
+  "agent_competition": {
+    "winner": "TREND_AGENT",
+    "ranking": [
+      "TREND_AGENT",
+      "DEFENSE_AGENT",
+      "CONTRARIAN_AGENT"
+    ]
+  },
+  "status": "DAILY_LEARNING_UPDATED"
+}

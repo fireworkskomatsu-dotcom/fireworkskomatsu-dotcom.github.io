@@ -1,0 +1,11 @@
+{
+  "time": "2026-06-15 15:36:52",
+  "sample_growth_score": 3.0,
+  "samples": {
+    "time": "2026-06-15 15:36:52",
+    "meta_samples": 2,
+    "ceo_samples": 2,
+    "governor_samples": 2,
+    "price_samples": 2
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "time": "2026-06-15 15:36:56",
+  "compliance_status": "FAIL",
+  "audit": {
+    "time": "2026-06-15 15:36:56",
+    "fund_audit_status": "CHECK",
+    "issues": [
+      "RISK_NOT_APPROVED"
+    ]
+  }
+}

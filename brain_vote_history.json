@@ -1,0 +1,27 @@
+[
+  {
+    "time": "2026-06-09 11:46:08",
+    "fusion": {
+      "time": "2026-06-09 11:37:59",
+      "brain_votes": {
+        "SHORT": 0.35,
+        "SKIP": 0.5015
+      },
+      "brain_fusion_decision": "SKIP",
+      "sources": {
+        "meta": "SHORT",
+        "ceo": "SKIP",
+        "governor": "SKIP",
+        "memory": "SKIP",
+        "regime": "SKIP"
+      }
+    },
+    "decision": {
+      "time": "2026-06-09 11:37:59",
+      "brain_decision": "SKIP",
+      "brain_priority": "GOVERNOR",
+      "fusion_decision": "SKIP",
+      "governor_decision": "SKIP"
+    }
+  }
+]

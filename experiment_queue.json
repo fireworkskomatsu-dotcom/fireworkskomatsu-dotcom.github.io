@@ -1,0 +1,18 @@
+{
+  "time": "2026-06-15 15:36:52",
+  "research_priority": "PROFIT_VALIDATION",
+  "experiment_queue": [
+    {
+      "experiment": "META_VS_GOVERNOR_OUTCOME",
+      "priority": "HIGH"
+    },
+    {
+      "experiment": "SHADOW_AGENT_VALIDATION",
+      "priority": "HIGH"
+    },
+    {
+      "experiment": "REGIME_DNA_EXPECTANCY",
+      "priority": "MID"
+    }
+  ]
+}

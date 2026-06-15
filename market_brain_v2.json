@@ -1,0 +1,15 @@
+{
+  "time": "2026-06-15 15:36:54",
+  "market_brain_v2_decision": "SKIP",
+  "market_brain": {
+    "time": "2026-06-15 15:36:53",
+    "market_dna": "TREND_UP|PANIC|DANGER|CONF_MID|RISK_HIGH",
+    "regime_class": "PANIC_REGIME",
+    "future_regime": "TREND_UP",
+    "memory_quality": "LOW",
+    "learning_policy": "ACCUMULATE_MEMORY",
+    "summary": "market memory active"
+  },
+  "memory_score": 0,
+  "brain_conflict": true
+}

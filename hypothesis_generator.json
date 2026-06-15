@@ -1,0 +1,24 @@
+{
+  "time": "2026-06-15 15:36:58",
+  "hypotheses": [
+    {
+      "id": "HYPOTHESIS_001",
+      "name": "DNA_MEMORY_MATCH_STRATEGY",
+      "rule": "IF dna=TREND_UP|PANIC|DANGER|CONF_MID|RISK_HIGH AND memory=USE_MEMORY THEN FOLLOW_MARKET_BRAIN",
+      "source": "DNA_MEMORY"
+    },
+    {
+      "id": "HYPOTHESIS_002",
+      "name": "RISK_FILTERED_META_STRATEGY",
+      "rule": "IF risk!=HIGH THEN FOLLOW_META_SIGNAL ELSE SKIP",
+      "source": "RISK_META"
+    },
+    {
+      "id": "HYPOTHESIS_003",
+      "name": "TREND_AGENT_PRIORITY_STRATEGY",
+      "rule": "IF TREND_AGENT wins competition THEN PRIORITIZE_TREND_AGENT",
+      "source": "AGENT_COMPETITION"
+    }
+  ],
+  "count": 3
+}

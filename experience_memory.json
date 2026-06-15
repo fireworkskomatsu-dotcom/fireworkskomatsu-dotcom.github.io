@@ -47,5 +47,65 @@
         }
       ]
     }
+  },
+  {
+    "time": "2026-06-15 15:36:53",
+    "dna": "TREND_UP|PANIC|DANGER|CONF_MID|RISK_HIGH",
+    "meta": {
+      "time": "2026-06-15 15:36:48",
+      "meta_score": 75.5,
+      "meta_decision": "LONG",
+      "brain_score": 60,
+      "confidence": 65,
+      "agent_decision": "LONG",
+      "replay_action": "BOOST",
+      "reasons": [
+        "AGENT_DIRECTION_OK",
+        "REPLAY_EXPECTANCY_BOOST"
+      ]
+    },
+    "governor": {
+      "time": "2026-06-15 15:36:50",
+      "governor_decision": "SKIP",
+      "governor_size": 0,
+      "master_decision": "SKIP",
+      "ceo_override_decision": "SKIP",
+      "ceo_override": false,
+      "risk_mode": "HIGH",
+      "risk_score": 100,
+      "allow_real_trade": false,
+      "reasons": [
+        "RISK_COUNCIL_HIGH",
+        "REAL_TRADE_LOCKED"
+      ]
+    },
+    "outcome": {
+      "time": "2026-06-15 15:36:52",
+      "evaluated": 2,
+      "rows": [
+        {
+          "source": "META",
+          "time": "2026-06-09 09:59:19",
+          "price": 67380.0,
+          "decision": "SHORT",
+          "score": 74.0,
+          "status": "WAITING_OUTCOME",
+          "current_price": 72490.0,
+          "pnl": -0.07584,
+          "result": "LOSS"
+        },
+        {
+          "source": "META",
+          "time": "2026-06-15 15:36:52",
+          "price": 72490.0,
+          "decision": "LONG",
+          "score": 75.5,
+          "status": "WAITING_OUTCOME",
+          "current_price": 72490.0,
+          "pnl": 0.0,
+          "result": "FLAT"
+        }
+      ]
+    }
   }
 ]

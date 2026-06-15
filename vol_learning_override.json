@@ -1,0 +1,10 @@
+{
+  "time": "2026-06-15 15:36:47",
+  "triggered": false,
+  "before_decision": "SKIP",
+  "before_size": 0,
+  "before_reason": "市場温度異常 / OVERHEAT / Replay Policy BOOST TREND_UP_LONG / Replay Expectancy POSITIVE TREND_UP_LONG",
+  "after_decision": "SKIP",
+  "after_size": 0,
+  "after_reason": "市場温度異常 / OVERHEAT / Replay Policy BOOST TREND_UP_LONG / Replay Expectancy POSITIVE TREND_UP_LONG"
+}

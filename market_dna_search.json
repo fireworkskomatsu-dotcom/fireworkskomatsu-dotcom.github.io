@@ -1,0 +1,11 @@
+{
+  "time": "2026-06-09 11:30:10",
+  "current_dna": "TREND_UP|PANIC|DANGER|CONF_MID|RISK_HIGH",
+  "similar": [
+    {
+      "dna": "TREND_UP|PANIC|DANGER|CONF_MID|RISK_HIGH",
+      "count": 1,
+      "score": 5
+    }
+  ]
+}

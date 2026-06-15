@@ -1,0 +1,14 @@
+{
+  "time": "2026-06-15 15:36:51",
+  "allowed_promotions": 0,
+  "blocked_promotions": 2,
+  "demotions": [],
+  "sample_shortage": [
+    "TREND_AGENT",
+    "DEFENSE_AGENT",
+    "CONTRARIAN_AGENT"
+  ],
+  "retirements": [
+    "DEFENSE_AGENT"
+  ]
+}

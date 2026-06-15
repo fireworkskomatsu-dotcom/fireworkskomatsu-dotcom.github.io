@@ -1,0 +1,10 @@
+{
+  "time": "2026-06-15 15:36:59",
+  "promote": [
+    "HYPOTHESIS_001",
+    "HYPOTHESIS_003"
+  ],
+  "retire": [],
+  "watch": [],
+  "sample_warning": true
+}
