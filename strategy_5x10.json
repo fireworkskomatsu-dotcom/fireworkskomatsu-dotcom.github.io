@@ -1,70 +1,71 @@
 {
-  "time": "2026-06-15 17:29:45",
-  "mode": "5x10_SHADOW_EVOLUTION_V2",
+  "time": "2026-06-15 17:39:16",
+  "mode": "REAL_5x10_EVOLUTION",
   "strategy_count": 50,
-  "families": [
-    "TREND",
-    "REPLAY",
-    "RISK",
-    "EXIT",
-    "MEMORY"
-  ],
   "votes": {
-    "LONG": 24.0,
+    "LONG": 15.85,
     "SHORT": 0.0,
-    "SKIP": 7.2,
-    "HOLD": 7.8
+    "SKIP": 10.64,
+    "HOLD": 4.82
   },
   "final_decision": "LONG",
+  "family_summary": {
+    "TREND": {
+      "top_score": 76,
+      "longs": 7,
+      "skips": 2,
+      "holds": 1
+    },
+    "REPLAY": {
+      "top_score": 84,
+      "longs": 8,
+      "skips": 2,
+      "holds": 0
+    },
+    "RISK": {
+      "top_score": 75,
+      "longs": 2,
+      "skips": 6,
+      "holds": 2
+    },
+    "EXIT": {
+      "top_score": 73,
+      "longs": 0,
+      "skips": 6,
+      "holds": 4
+    },
+    "MEMORY": {
+      "top_score": 80,
+      "longs": 5,
+      "skips": 5,
+      "holds": 0
+    }
+  },
   "top10": [
+    {
+      "id": "REPLAY_05",
+      "family": "REPLAY",
+      "name": "key_exact_match",
+      "decision": "LONG",
+      "score": 84,
+      "weight": 0.84,
+      "reasons": [
+        "TREND_UP_LONG_EXACT"
+      ],
+      "regime": "TREND_UP",
+      "vol_mode": "DANGER",
+      "replay_key": "TREND_UP_LONG",
+      "status": "ACTIVE_SHADOW"
+    },
     {
       "id": "REPLAY_01",
       "family": "REPLAY",
-      "name": "policy_boost",
+      "name": "expectancy_positive",
       "decision": "LONG",
-      "score": 86.0,
-      "weight": 0.86,
+      "score": 82,
+      "weight": 0.82,
       "reasons": [
-        "REPLAY_LONG_EDGE",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
-      ],
-      "regime": "TREND_UP",
-      "vol_mode": "DANGER",
-      "replay_key": "TREND_UP_LONG",
-      "status": "ACTIVE_SHADOW"
-    },
-    {
-      "id": "REPLAY_02",
-      "family": "REPLAY",
-      "name": "expectancy_boost",
-      "decision": "LONG",
-      "score": 86.0,
-      "weight": 0.86,
-      "reasons": [
-        "REPLAY_LONG_EDGE",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
-      ],
-      "regime": "TREND_UP",
-      "vol_mode": "DANGER",
-      "replay_key": "TREND_UP_LONG",
-      "status": "ACTIVE_SHADOW"
-    },
-    {
-      "id": "REPLAY_03",
-      "family": "REPLAY",
-      "name": "key_match",
-      "decision": "LONG",
-      "score": 86.0,
-      "weight": 0.86,
-      "reasons": [
-        "REPLAY_LONG_EDGE",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "EXPECTANCY_POSITIVE"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -74,15 +75,12 @@
     {
       "id": "REPLAY_04",
       "family": "REPLAY",
-      "name": "trade_count",
+      "name": "expectancy_boost",
       "decision": "LONG",
-      "score": 86.0,
-      "weight": 0.86,
+      "score": 81,
+      "weight": 0.81,
       "reasons": [
-        "REPLAY_LONG_EDGE",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "EXPECTANCY_BOOST"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -90,17 +88,14 @@
       "status": "ACTIVE_SHADOW"
     },
     {
-      "id": "REPLAY_05",
+      "id": "REPLAY_03",
       "family": "REPLAY",
-      "name": "positive_edge",
+      "name": "policy_boost",
       "decision": "LONG",
-      "score": 86.0,
-      "weight": 0.86,
+      "score": 80,
+      "weight": 0.8,
       "reasons": [
-        "REPLAY_LONG_EDGE",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "POLICY_BOOST"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -108,53 +103,14 @@
       "status": "ACTIVE_SHADOW"
     },
     {
-      "id": "REPLAY_06",
-      "family": "REPLAY",
-      "name": "size_boost",
+      "id": "MEMORY_09",
+      "family": "MEMORY",
+      "name": "priority_replay",
       "decision": "LONG",
-      "score": 86.0,
-      "weight": 0.86,
+      "score": 80,
+      "weight": 0.8,
       "reasons": [
-        "REPLAY_LONG_EDGE",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
-      ],
-      "regime": "TREND_UP",
-      "vol_mode": "DANGER",
-      "replay_key": "TREND_UP_LONG",
-      "status": "ACTIVE_SHADOW"
-    },
-    {
-      "id": "REPLAY_07",
-      "family": "REPLAY",
-      "name": "ban_avoid",
-      "decision": "LONG",
-      "score": 86.0,
-      "weight": 0.86,
-      "reasons": [
-        "REPLAY_LONG_EDGE",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
-      ],
-      "regime": "TREND_UP",
-      "vol_mode": "DANGER",
-      "replay_key": "TREND_UP_LONG",
-      "status": "ACTIVE_SHADOW"
-    },
-    {
-      "id": "REPLAY_08",
-      "family": "REPLAY",
-      "name": "reduce_avoid",
-      "decision": "LONG",
-      "score": 86.0,
-      "weight": 0.86,
-      "reasons": [
-        "REPLAY_LONG_EDGE",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "REPLAY_PRIORITY_MEMORY"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -164,15 +120,12 @@
     {
       "id": "REPLAY_09",
       "family": "REPLAY",
-      "name": "replay_consensus",
+      "name": "shadow_profit_override",
       "decision": "LONG",
-      "score": 86.0,
-      "weight": 0.86,
+      "score": 79,
+      "weight": 0.79,
       "reasons": [
-        "REPLAY_LONG_EDGE",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "SHADOW_PROFIT_POSITIVE"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -180,59 +133,14 @@
       "status": "ACTIVE_SHADOW"
     },
     {
-      "id": "REPLAY_10",
+      "id": "REPLAY_02",
       "family": "REPLAY",
-      "name": "replay_rank",
+      "name": "sample_over_30",
       "decision": "LONG",
-      "score": 86.0,
-      "weight": 0.86,
+      "score": 78,
+      "weight": 0.78,
       "reasons": [
-        "REPLAY_LONG_EDGE",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
-      ],
-      "regime": "TREND_UP",
-      "vol_mode": "DANGER",
-      "replay_key": "TREND_UP_LONG",
-      "status": "ACTIVE_SHADOW"
-    }
-  ],
-  "family_summary": {
-    "TREND": {
-      "count": 10,
-      "top_score": 80.0
-    },
-    "REPLAY": {
-      "count": 10,
-      "top_score": 86.0
-    },
-    "RISK": {
-      "count": 10,
-      "top_score": 72.0
-    },
-    "EXIT": {
-      "count": 10,
-      "top_score": 78.0
-    },
-    "MEMORY": {
-      "count": 10,
-      "top_score": 74.0
-    }
-  },
-  "strategies": [
-    {
-      "id": "TREND_01",
-      "family": "TREND",
-      "name": "trend_follow",
-      "decision": "LONG",
-      "score": 80.0,
-      "weight": 0.8,
-      "reasons": [
-        "TREND_UP",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "REPLAY_SAMPLE_30_PLUS"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -240,17 +148,14 @@
       "status": "ACTIVE_SHADOW"
     },
     {
-      "id": "TREND_02",
-      "family": "TREND",
-      "name": "pullback_buy",
+      "id": "MEMORY_05",
+      "family": "MEMORY",
+      "name": "trend_up_long_memory",
       "decision": "LONG",
-      "score": 80.0,
-      "weight": 0.8,
+      "score": 78,
+      "weight": 0.78,
       "reasons": [
-        "TREND_UP",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "DNA_MEMORY_MATCH"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -260,15 +165,74 @@
     {
       "id": "TREND_03",
       "family": "TREND",
-      "name": "breakout_confirm",
+      "name": "trend_breakout",
       "decision": "LONG",
-      "score": 80.0,
-      "weight": 0.8,
+      "score": 76,
+      "weight": 0.76,
       "reasons": [
-        "TREND_UP",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "TREND_CONFIRMED"
+      ],
+      "regime": "TREND_UP",
+      "vol_mode": "DANGER",
+      "replay_key": "TREND_UP_LONG",
+      "status": "ACTIVE_SHADOW"
+    },
+    {
+      "id": "RISK_06",
+      "family": "RISK",
+      "name": "position_exists",
+      "decision": "HOLD",
+      "score": 75,
+      "weight": 0.75,
+      "reasons": [
+        "POSITION_EXISTS"
+      ],
+      "regime": "TREND_UP",
+      "vol_mode": "DANGER",
+      "replay_key": "TREND_UP_LONG",
+      "status": "ACTIVE_SHADOW"
+    }
+  ],
+  "strategies": [
+    {
+      "id": "TREND_01",
+      "family": "TREND",
+      "name": "trend_follow",
+      "decision": "LONG",
+      "score": 72,
+      "weight": 0.72,
+      "reasons": [
+        "TREND_UP"
+      ],
+      "regime": "TREND_UP",
+      "vol_mode": "DANGER",
+      "replay_key": "TREND_UP_LONG",
+      "status": "ACTIVE_SHADOW"
+    },
+    {
+      "id": "TREND_02",
+      "family": "TREND",
+      "name": "trend_pullback",
+      "decision": "LONG",
+      "score": 70,
+      "weight": 0.7,
+      "reasons": [
+        "TREND_UP_NORMAL"
+      ],
+      "regime": "TREND_UP",
+      "vol_mode": "DANGER",
+      "replay_key": "TREND_UP_LONG",
+      "status": "ACTIVE_SHADOW"
+    },
+    {
+      "id": "TREND_03",
+      "family": "TREND",
+      "name": "trend_breakout",
+      "decision": "LONG",
+      "score": 76,
+      "weight": 0.76,
+      "reasons": [
+        "TREND_CONFIRMED"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -278,15 +242,12 @@
     {
       "id": "TREND_04",
       "family": "TREND",
-      "name": "reversal_up_follow",
+      "name": "trend_reversal_up",
       "decision": "LONG",
-      "score": 80.0,
-      "weight": 0.8,
+      "score": 68,
+      "weight": 0.68,
       "reasons": [
-        "TREND_UP",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "REVERSAL_UP"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -298,13 +259,10 @@
       "family": "TREND",
       "name": "trend_memory",
       "decision": "LONG",
-      "score": 80.0,
-      "weight": 0.8,
+      "score": 71,
+      "weight": 0.71,
       "reasons": [
-        "TREND_UP",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "REPLAY_TREND_MATCH"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -314,15 +272,12 @@
     {
       "id": "TREND_06",
       "family": "TREND",
-      "name": "trend_replay",
+      "name": "trend_confidence",
       "decision": "LONG",
-      "score": 80.0,
-      "weight": 0.8,
+      "score": 74,
+      "weight": 0.74,
       "reasons": [
-        "TREND_UP",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "HIGH_CONFIDENCE"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -332,15 +287,12 @@
     {
       "id": "TREND_07",
       "family": "TREND",
-      "name": "trend_confidence",
-      "decision": "LONG",
-      "score": 80.0,
-      "weight": 0.8,
+      "name": "trend_vol_adjust",
+      "decision": "SKIP",
+      "score": 45,
+      "weight": 0.45,
       "reasons": [
-        "TREND_UP",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "CONDITION_FALSE"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -350,15 +302,12 @@
     {
       "id": "TREND_08",
       "family": "TREND",
-      "name": "trend_position_hold",
+      "name": "trend_vol_danger_small",
       "decision": "LONG",
-      "score": 80.0,
-      "weight": 0.8,
+      "score": 62,
+      "weight": 0.62,
       "reasons": [
-        "TREND_UP",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "VOL_DANGER_SMALL"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -368,15 +317,12 @@
     {
       "id": "TREND_09",
       "family": "TREND",
-      "name": "trend_size_boost",
-      "decision": "LONG",
-      "score": 80.0,
-      "weight": 0.8,
+      "name": "trend_hold",
+      "decision": "HOLD",
+      "score": 70,
+      "weight": 0.7,
       "reasons": [
-        "TREND_UP",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "HOLD_EXISTING_LONG"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -386,15 +332,12 @@
     {
       "id": "TREND_10",
       "family": "TREND",
-      "name": "trend_risk_adjust",
-      "decision": "LONG",
-      "score": 80.0,
-      "weight": 0.8,
+      "name": "trend_skip_if_no_edge",
+      "decision": "SKIP",
+      "score": 45,
+      "weight": 0.45,
       "reasons": [
-        "TREND_UP",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "CONDITION_FALSE"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -404,15 +347,12 @@
     {
       "id": "REPLAY_01",
       "family": "REPLAY",
-      "name": "policy_boost",
+      "name": "expectancy_positive",
       "decision": "LONG",
-      "score": 86.0,
-      "weight": 0.86,
+      "score": 82,
+      "weight": 0.82,
       "reasons": [
-        "REPLAY_LONG_EDGE",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "EXPECTANCY_POSITIVE"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -422,15 +362,12 @@
     {
       "id": "REPLAY_02",
       "family": "REPLAY",
-      "name": "expectancy_boost",
+      "name": "sample_over_30",
       "decision": "LONG",
-      "score": 86.0,
-      "weight": 0.86,
+      "score": 78,
+      "weight": 0.78,
       "reasons": [
-        "REPLAY_LONG_EDGE",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "REPLAY_SAMPLE_30_PLUS"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -440,15 +377,12 @@
     {
       "id": "REPLAY_03",
       "family": "REPLAY",
-      "name": "key_match",
+      "name": "policy_boost",
       "decision": "LONG",
-      "score": 86.0,
-      "weight": 0.86,
+      "score": 80,
+      "weight": 0.8,
       "reasons": [
-        "REPLAY_LONG_EDGE",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "POLICY_BOOST"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -458,15 +392,12 @@
     {
       "id": "REPLAY_04",
       "family": "REPLAY",
-      "name": "trade_count",
+      "name": "expectancy_boost",
       "decision": "LONG",
-      "score": 86.0,
-      "weight": 0.86,
+      "score": 81,
+      "weight": 0.81,
       "reasons": [
-        "REPLAY_LONG_EDGE",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "EXPECTANCY_BOOST"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -476,15 +407,12 @@
     {
       "id": "REPLAY_05",
       "family": "REPLAY",
-      "name": "positive_edge",
+      "name": "key_exact_match",
       "decision": "LONG",
-      "score": 86.0,
-      "weight": 0.86,
+      "score": 84,
+      "weight": 0.84,
       "reasons": [
-        "REPLAY_LONG_EDGE",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "TREND_UP_LONG_EXACT"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -496,13 +424,10 @@
       "family": "REPLAY",
       "name": "size_boost",
       "decision": "LONG",
-      "score": 86.0,
-      "weight": 0.86,
+      "score": 66,
+      "weight": 0.66,
       "reasons": [
-        "REPLAY_LONG_EDGE",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "SIZE_CHECK"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -512,15 +437,12 @@
     {
       "id": "REPLAY_07",
       "family": "REPLAY",
-      "name": "ban_avoid",
-      "decision": "LONG",
-      "score": 86.0,
-      "weight": 0.86,
+      "name": "low_pnl_warning",
+      "decision": "SKIP",
+      "score": 62,
+      "weight": 0.62,
       "reasons": [
-        "REPLAY_LONG_EDGE",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "REAL_PNL_NEGATIVE"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -530,15 +452,12 @@
     {
       "id": "REPLAY_08",
       "family": "REPLAY",
-      "name": "reduce_avoid",
-      "decision": "LONG",
-      "score": 86.0,
-      "weight": 0.86,
+      "name": "winrate_warning",
+      "decision": "SKIP",
+      "score": 64,
+      "weight": 0.64,
       "reasons": [
-        "REPLAY_LONG_EDGE",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "REAL_WINRATE_LOW"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -548,15 +467,12 @@
     {
       "id": "REPLAY_09",
       "family": "REPLAY",
-      "name": "replay_consensus",
+      "name": "shadow_profit_override",
       "decision": "LONG",
-      "score": 86.0,
-      "weight": 0.86,
+      "score": 79,
+      "weight": 0.79,
       "reasons": [
-        "REPLAY_LONG_EDGE",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "SHADOW_PROFIT_POSITIVE"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -566,15 +482,12 @@
     {
       "id": "REPLAY_10",
       "family": "REPLAY",
-      "name": "replay_rank",
+      "name": "replay_conflict_guard",
       "decision": "LONG",
-      "score": 86.0,
-      "weight": 0.86,
+      "score": 60,
+      "weight": 0.6,
       "reasons": [
-        "REPLAY_LONG_EDGE",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "REPLAY_POSITIVE_REAL_NEGATIVE_SMALL"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -584,13 +497,12 @@
     {
       "id": "RISK_01",
       "family": "RISK",
-      "name": "vol_guard",
+      "name": "temp_block",
       "decision": "SKIP",
-      "score": 72.0,
-      "weight": 0.72,
+      "score": 40,
+      "weight": 0.4,
       "reasons": [
-        "VOL_DANGER",
-        "HIGH_CONF"
+        "CONDITION_FALSE"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -600,13 +512,12 @@
     {
       "id": "RISK_02",
       "family": "RISK",
-      "name": "temp_guard",
+      "name": "vol_danger_guard",
       "decision": "SKIP",
-      "score": 72.0,
+      "score": 72,
       "weight": 0.72,
       "reasons": [
-        "VOL_DANGER",
-        "HIGH_CONF"
+        "VOL_DANGER"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -616,13 +527,12 @@
     {
       "id": "RISK_03",
       "family": "RISK",
-      "name": "exit_guard",
-      "decision": "SKIP",
-      "score": 72.0,
-      "weight": 0.72,
+      "name": "vol_danger_but_replay",
+      "decision": "LONG",
+      "score": 58,
+      "weight": 0.58,
       "reasons": [
-        "VOL_DANGER",
-        "HIGH_CONF"
+        "VOL_DANGER_REPLAY_OVERRIDE"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -632,13 +542,12 @@
     {
       "id": "RISK_04",
       "family": "RISK",
-      "name": "confidence_guard",
+      "name": "confidence_low",
       "decision": "SKIP",
-      "score": 72.0,
-      "weight": 0.72,
+      "score": 40,
+      "weight": 0.4,
       "reasons": [
-        "VOL_DANGER",
-        "HIGH_CONF"
+        "CONDITION_FALSE"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -648,12 +557,11 @@
     {
       "id": "RISK_05",
       "family": "RISK",
-      "name": "position_guard",
-      "decision": "SKIP",
-      "score": 72.0,
+      "name": "confidence_high",
+      "decision": "LONG",
+      "score": 72,
       "weight": 0.72,
       "reasons": [
-        "VOL_DANGER",
         "HIGH_CONF"
       ],
       "regime": "TREND_UP",
@@ -664,13 +572,12 @@
     {
       "id": "RISK_06",
       "family": "RISK",
-      "name": "drawdown_guard",
-      "decision": "SKIP",
-      "score": 72.0,
-      "weight": 0.72,
+      "name": "position_exists",
+      "decision": "HOLD",
+      "score": 75,
+      "weight": 0.75,
       "reasons": [
-        "VOL_DANGER",
-        "HIGH_CONF"
+        "POSITION_EXISTS"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -680,13 +587,12 @@
     {
       "id": "RISK_07",
       "family": "RISK",
-      "name": "sample_guard",
+      "name": "exit_now",
       "decision": "SKIP",
-      "score": 72.0,
-      "weight": 0.72,
+      "score": 40,
+      "weight": 0.4,
       "reasons": [
-        "VOL_DANGER",
-        "HIGH_CONF"
+        "CONDITION_FALSE"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -696,13 +602,12 @@
     {
       "id": "RISK_08",
       "family": "RISK",
-      "name": "risk_reward",
+      "name": "small_sample",
       "decision": "SKIP",
-      "score": 72.0,
-      "weight": 0.72,
+      "score": 55,
+      "weight": 0.55,
       "reasons": [
-        "VOL_DANGER",
-        "HIGH_CONF"
+        "LOW_SAMPLE_CAUTION"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -712,13 +617,12 @@
     {
       "id": "RISK_09",
       "family": "RISK",
-      "name": "stop_tight",
-      "decision": "SKIP",
-      "score": 72.0,
-      "weight": 0.72,
+      "name": "shadow_profit_safe",
+      "decision": "HOLD",
+      "score": 68,
+      "weight": 0.68,
       "reasons": [
-        "VOL_DANGER",
-        "HIGH_CONF"
+        "SHADOW_PROFIT_SAFE"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -728,13 +632,12 @@
     {
       "id": "RISK_10",
       "family": "RISK",
-      "name": "capital_guard",
+      "name": "capital_protect",
       "decision": "SKIP",
-      "score": 72.0,
-      "weight": 0.72,
+      "score": 70,
+      "weight": 0.7,
       "reasons": [
-        "VOL_DANGER",
-        "HIGH_CONF"
+        "CAPITAL_PROTECT"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -744,13 +647,12 @@
     {
       "id": "EXIT_01",
       "family": "EXIT",
-      "name": "take_profit",
-      "decision": "HOLD",
-      "score": 78.0,
-      "weight": 0.78,
+      "name": "take_profit_check",
+      "decision": "SKIP",
+      "score": 43,
+      "weight": 0.43,
       "reasons": [
-        "POSITION_HOLD",
-        "HIGH_CONF"
+        "CONDITION_FALSE"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -760,13 +662,12 @@
     {
       "id": "EXIT_02",
       "family": "EXIT",
-      "name": "stop_loss",
-      "decision": "HOLD",
-      "score": 78.0,
-      "weight": 0.78,
+      "name": "stop_loss_check",
+      "decision": "SKIP",
+      "score": 43,
+      "weight": 0.43,
       "reasons": [
-        "POSITION_HOLD",
-        "HIGH_CONF"
+        "CONDITION_FALSE"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -776,13 +677,12 @@
     {
       "id": "EXIT_03",
       "family": "EXIT",
-      "name": "hold_winner",
+      "name": "hold_flat_pnl",
       "decision": "HOLD",
-      "score": 78.0,
-      "weight": 0.78,
+      "score": 68,
+      "weight": 0.68,
       "reasons": [
-        "POSITION_HOLD",
-        "HIGH_CONF"
+        "FLAT_HOLD"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -792,13 +692,12 @@
     {
       "id": "EXIT_04",
       "family": "EXIT",
-      "name": "cut_loser",
-      "decision": "HOLD",
-      "score": 78.0,
-      "weight": 0.78,
+      "name": "hold_winner",
+      "decision": "SKIP",
+      "score": 43,
+      "weight": 0.43,
       "reasons": [
-        "POSITION_HOLD",
-        "HIGH_CONF"
+        "CONDITION_FALSE"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -808,13 +707,12 @@
     {
       "id": "EXIT_05",
       "family": "EXIT",
-      "name": "trail_check",
-      "decision": "HOLD",
-      "score": 78.0,
-      "weight": 0.78,
+      "name": "cut_loser",
+      "decision": "SKIP",
+      "score": 43,
+      "weight": 0.43,
       "reasons": [
-        "POSITION_HOLD",
-        "HIGH_CONF"
+        "CONDITION_FALSE"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -824,13 +722,12 @@
     {
       "id": "EXIT_06",
       "family": "EXIT",
-      "name": "vol_exit",
-      "decision": "HOLD",
-      "score": 78.0,
-      "weight": 0.78,
+      "name": "no_position_entry",
+      "decision": "SKIP",
+      "score": 43,
+      "weight": 0.43,
       "reasons": [
-        "POSITION_HOLD",
-        "HIGH_CONF"
+        "CONDITION_FALSE"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -840,13 +737,12 @@
     {
       "id": "EXIT_07",
       "family": "EXIT",
-      "name": "time_exit",
+      "name": "vol_tight_exit",
       "decision": "HOLD",
-      "score": 78.0,
-      "weight": 0.78,
+      "score": 62,
+      "weight": 0.62,
       "reasons": [
-        "POSITION_HOLD",
-        "HIGH_CONF"
+        "VOL_TIGHT_EXIT"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -856,13 +752,12 @@
     {
       "id": "EXIT_08",
       "family": "EXIT",
-      "name": "flat_after_profit",
+      "name": "exit_engine_hold",
       "decision": "HOLD",
-      "score": 78.0,
-      "weight": 0.78,
+      "score": 73,
+      "weight": 0.73,
       "reasons": [
-        "POSITION_HOLD",
-        "HIGH_CONF"
+        "EXIT_ENGINE_HOLD"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -872,13 +767,12 @@
     {
       "id": "EXIT_09",
       "family": "EXIT",
-      "name": "entry_sync",
-      "decision": "HOLD",
-      "score": 78.0,
-      "weight": 0.78,
+      "name": "exit_engine_signal",
+      "decision": "SKIP",
+      "score": 43,
+      "weight": 0.43,
       "reasons": [
-        "POSITION_HOLD",
-        "HIGH_CONF"
+        "CONDITION_FALSE"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -888,13 +782,12 @@
     {
       "id": "EXIT_10",
       "family": "EXIT",
-      "name": "position_lifecycle",
+      "name": "lifecycle_sync",
       "decision": "HOLD",
-      "score": 78.0,
-      "weight": 0.78,
+      "score": 66,
+      "weight": 0.66,
       "reasons": [
-        "POSITION_HOLD",
-        "HIGH_CONF"
+        "LIFECYCLE_SYNC"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -904,15 +797,12 @@
     {
       "id": "MEMORY_01",
       "family": "MEMORY",
-      "name": "experience_count",
-      "decision": "LONG",
-      "score": 74.0,
-      "weight": 0.74,
+      "name": "experience_under_50",
+      "decision": "SKIP",
+      "score": 56,
+      "weight": 0.56,
       "reasons": [
-        "LOW_SAMPLE_REPLAY_LONG",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "LOW_EXPERIENCE"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -922,15 +812,12 @@
     {
       "id": "MEMORY_02",
       "family": "MEMORY",
-      "name": "dna_match",
+      "name": "experience_growth",
       "decision": "LONG",
-      "score": 74.0,
-      "weight": 0.74,
+      "score": 62,
+      "weight": 0.62,
       "reasons": [
-        "LOW_SAMPLE_REPLAY_LONG",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "EXPERIENCE_GROWING"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -940,15 +827,12 @@
     {
       "id": "MEMORY_03",
       "family": "MEMORY",
-      "name": "regime_memory",
+      "name": "shadow_win_memory",
       "decision": "LONG",
-      "score": 74.0,
+      "score": 74,
       "weight": 0.74,
       "reasons": [
-        "LOW_SAMPLE_REPLAY_LONG",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "SHADOW_WIN_MEMORY"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -958,15 +842,12 @@
     {
       "id": "MEMORY_04",
       "family": "MEMORY",
-      "name": "win_memory",
-      "decision": "LONG",
-      "score": 74.0,
-      "weight": 0.74,
+      "name": "real_loss_memory",
+      "decision": "SKIP",
+      "score": 65,
+      "weight": 0.65,
       "reasons": [
-        "LOW_SAMPLE_REPLAY_LONG",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "REAL_LOSS_MEMORY"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -976,15 +857,12 @@
     {
       "id": "MEMORY_05",
       "family": "MEMORY",
-      "name": "loss_memory",
+      "name": "trend_up_long_memory",
       "decision": "LONG",
-      "score": 74.0,
-      "weight": 0.74,
+      "score": 78,
+      "weight": 0.78,
       "reasons": [
-        "LOW_SAMPLE_REPLAY_LONG",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "DNA_MEMORY_MATCH"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -994,15 +872,12 @@
     {
       "id": "MEMORY_06",
       "family": "MEMORY",
-      "name": "success_pattern",
-      "decision": "LONG",
-      "score": 74.0,
-      "weight": 0.74,
+      "name": "mistake_avoid",
+      "decision": "SKIP",
+      "score": 64,
+      "weight": 0.64,
       "reasons": [
-        "LOW_SAMPLE_REPLAY_LONG",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "LOSS_AVOID"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -1012,15 +887,12 @@
     {
       "id": "MEMORY_07",
       "family": "MEMORY",
-      "name": "mistake_avoid",
-      "decision": "LONG",
-      "score": 74.0,
-      "weight": 0.74,
+      "name": "success_pattern",
+      "decision": "SKIP",
+      "score": 44,
+      "weight": 0.44,
       "reasons": [
-        "LOW_SAMPLE_REPLAY_LONG",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "CONDITION_FALSE"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -1030,15 +902,12 @@
     {
       "id": "MEMORY_08",
       "family": "MEMORY",
-      "name": "edge_memory",
-      "decision": "LONG",
-      "score": 74.0,
-      "weight": 0.74,
+      "name": "sample_growth",
+      "decision": "SKIP",
+      "score": 44,
+      "weight": 0.44,
       "reasons": [
-        "LOW_SAMPLE_REPLAY_LONG",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "CONDITION_FALSE"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -1048,15 +917,12 @@
     {
       "id": "MEMORY_09",
       "family": "MEMORY",
-      "name": "sample_growth",
+      "name": "priority_replay",
       "decision": "LONG",
-      "score": 74.0,
-      "weight": 0.74,
+      "score": 80,
+      "weight": 0.8,
       "reasons": [
-        "LOW_SAMPLE_REPLAY_LONG",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "REPLAY_PRIORITY_MEMORY"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -1066,15 +932,12 @@
     {
       "id": "MEMORY_10",
       "family": "MEMORY",
-      "name": "priority_memory",
+      "name": "beginner_limit",
       "decision": "LONG",
-      "score": 74.0,
-      "weight": 0.74,
+      "score": 58,
+      "weight": 0.58,
       "reasons": [
-        "LOW_SAMPLE_REPLAY_LONG",
-        "HIGH_CONF",
-        "LEARNING_OVERRIDE",
-        "VOL_PENALTY"
+        "BEGINNER_SMALL_LOT"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
