@@ -1,9 +1,2944 @@
 {
-  "time": "2026-06-15 17:53:24",
+  "time": "2026-06-19 17:14:41",
   "mode": "MULTI_ASSET_5x10",
-  "asset_count": 0,
-  "strategy_count": 0,
-  "assets": {},
-  "top20": [],
-  "strategies": []
+  "asset_count": 3,
+  "strategy_count": 150,
+  "assets": {
+    "1321.T": {
+      "symbol": "1321.T",
+      "name": "1321 日経225ETF",
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "votes": {
+        "LONG": 19.0,
+        "SHORT": 0.0,
+        "SKIP": 12.2,
+        "HOLD": 0.0
+      },
+      "final_decision": "LONG"
+    },
+    "1306.T": {
+      "symbol": "1306.T",
+      "name": "1306 TOPIX ETF",
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "votes": {
+        "LONG": 0.0,
+        "SHORT": 0.0,
+        "SKIP": 28.8,
+        "HOLD": 0.0
+      },
+      "final_decision": "SKIP"
+    },
+    "1475.T": {
+      "symbol": "1475.T",
+      "name": "1475 iShares TOPIX ETF",
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "votes": {
+        "LONG": 0.0,
+        "SHORT": 0.0,
+        "SKIP": 28.8,
+        "HOLD": 0.0
+      },
+      "final_decision": "SKIP"
+    }
+  },
+  "top20": [
+    {
+      "id": "1306.T_RISK_01",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_RISK_02",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_RISK_03",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_RISK_04",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_RISK_05",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_RISK_06",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_RISK_07",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_RISK_08",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_RISK_09",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_RISK_10",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_RISK_01",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_RISK_02",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_RISK_03",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_RISK_04",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_RISK_05",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_RISK_06",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_RISK_07",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_RISK_08",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_RISK_09",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_RISK_10",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    }
+  ],
+  "strategies": [
+    {
+      "id": "1321.T_TREND_01",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "LONG",
+      "score": 70.0,
+      "weight": 0.7,
+      "reason": [
+        "TREND_UP"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_TREND_02",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "LONG",
+      "score": 70.0,
+      "weight": 0.7,
+      "reason": [
+        "TREND_UP"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_TREND_03",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "LONG",
+      "score": 70.0,
+      "weight": 0.7,
+      "reason": [
+        "TREND_UP"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_TREND_04",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "LONG",
+      "score": 70.0,
+      "weight": 0.7,
+      "reason": [
+        "TREND_UP"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_TREND_05",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "LONG",
+      "score": 70.0,
+      "weight": 0.7,
+      "reason": [
+        "TREND_UP"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_TREND_06",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "LONG",
+      "score": 70.0,
+      "weight": 0.7,
+      "reason": [
+        "TREND_UP"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_TREND_07",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "LONG",
+      "score": 70.0,
+      "weight": 0.7,
+      "reason": [
+        "TREND_UP"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_TREND_08",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "LONG",
+      "score": 70.0,
+      "weight": 0.7,
+      "reason": [
+        "TREND_UP"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_TREND_09",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "LONG",
+      "score": 70.0,
+      "weight": 0.7,
+      "reason": [
+        "TREND_UP"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_TREND_10",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "LONG",
+      "score": 70.0,
+      "weight": 0.7,
+      "reason": [
+        "TREND_UP"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_REPLAY_01",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "LONG",
+      "score": 62,
+      "weight": 0.62,
+      "reason": [
+        "PROXY_REPLAY_TREND"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_REPLAY_02",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "LONG",
+      "score": 62,
+      "weight": 0.62,
+      "reason": [
+        "PROXY_REPLAY_TREND"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_REPLAY_03",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "LONG",
+      "score": 62,
+      "weight": 0.62,
+      "reason": [
+        "PROXY_REPLAY_TREND"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_REPLAY_04",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "LONG",
+      "score": 62,
+      "weight": 0.62,
+      "reason": [
+        "PROXY_REPLAY_TREND"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_REPLAY_05",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "LONG",
+      "score": 62,
+      "weight": 0.62,
+      "reason": [
+        "PROXY_REPLAY_TREND"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_REPLAY_06",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "LONG",
+      "score": 62,
+      "weight": 0.62,
+      "reason": [
+        "PROXY_REPLAY_TREND"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_REPLAY_07",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "LONG",
+      "score": 62,
+      "weight": 0.62,
+      "reason": [
+        "PROXY_REPLAY_TREND"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_REPLAY_08",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "LONG",
+      "score": 62,
+      "weight": 0.62,
+      "reason": [
+        "PROXY_REPLAY_TREND"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_REPLAY_09",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "LONG",
+      "score": 62,
+      "weight": 0.62,
+      "reason": [
+        "PROXY_REPLAY_TREND"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_REPLAY_10",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "LONG",
+      "score": 62,
+      "weight": 0.62,
+      "reason": [
+        "PROXY_REPLAY_TREND"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_RISK_01",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "LONG",
+      "score": 58,
+      "weight": 0.58,
+      "reason": [
+        "RISK_ACCEPTABLE"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_RISK_02",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "LONG",
+      "score": 58,
+      "weight": 0.58,
+      "reason": [
+        "RISK_ACCEPTABLE"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_RISK_03",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "LONG",
+      "score": 58,
+      "weight": 0.58,
+      "reason": [
+        "RISK_ACCEPTABLE"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_RISK_04",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "LONG",
+      "score": 58,
+      "weight": 0.58,
+      "reason": [
+        "RISK_ACCEPTABLE"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_RISK_05",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "LONG",
+      "score": 58,
+      "weight": 0.58,
+      "reason": [
+        "RISK_ACCEPTABLE"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_RISK_06",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "LONG",
+      "score": 58,
+      "weight": 0.58,
+      "reason": [
+        "RISK_ACCEPTABLE"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_RISK_07",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "LONG",
+      "score": 58,
+      "weight": 0.58,
+      "reason": [
+        "RISK_ACCEPTABLE"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_RISK_08",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "LONG",
+      "score": 58,
+      "weight": 0.58,
+      "reason": [
+        "RISK_ACCEPTABLE"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_RISK_09",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "LONG",
+      "score": 58,
+      "weight": 0.58,
+      "reason": [
+        "RISK_ACCEPTABLE"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_RISK_10",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "LONG",
+      "score": 58,
+      "weight": 0.58,
+      "reason": [
+        "RISK_ACCEPTABLE"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_EXIT_01",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_EXIT_02",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_EXIT_03",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_EXIT_04",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_EXIT_05",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_EXIT_06",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_EXIT_07",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_EXIT_08",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_EXIT_09",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_EXIT_10",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_MEMORY_01",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 74,
+      "weight": 0.74,
+      "reason": [
+        "CORE_MEMORY"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_MEMORY_02",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 74,
+      "weight": 0.74,
+      "reason": [
+        "CORE_MEMORY"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_MEMORY_03",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 74,
+      "weight": 0.74,
+      "reason": [
+        "CORE_MEMORY"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_MEMORY_04",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 74,
+      "weight": 0.74,
+      "reason": [
+        "CORE_MEMORY"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_MEMORY_05",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 74,
+      "weight": 0.74,
+      "reason": [
+        "CORE_MEMORY"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_MEMORY_06",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 74,
+      "weight": 0.74,
+      "reason": [
+        "CORE_MEMORY"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_MEMORY_07",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 74,
+      "weight": 0.74,
+      "reason": [
+        "CORE_MEMORY"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_MEMORY_08",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 74,
+      "weight": 0.74,
+      "reason": [
+        "CORE_MEMORY"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_MEMORY_09",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 74,
+      "weight": 0.74,
+      "reason": [
+        "CORE_MEMORY"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1321.T_MEMORY_10",
+      "symbol": "1321.T",
+      "asset_name": "1321 日経225ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 74,
+      "weight": 0.74,
+      "reason": [
+        "CORE_MEMORY"
+      ],
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_TREND_01",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "SKIP",
+      "score": 50,
+      "weight": 0.5,
+      "reason": [
+        "RANGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_TREND_02",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "SKIP",
+      "score": 50,
+      "weight": 0.5,
+      "reason": [
+        "RANGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_TREND_03",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "SKIP",
+      "score": 50,
+      "weight": 0.5,
+      "reason": [
+        "RANGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_TREND_04",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "SKIP",
+      "score": 50,
+      "weight": 0.5,
+      "reason": [
+        "RANGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_TREND_05",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "SKIP",
+      "score": 50,
+      "weight": 0.5,
+      "reason": [
+        "RANGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_TREND_06",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "SKIP",
+      "score": 50,
+      "weight": 0.5,
+      "reason": [
+        "RANGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_TREND_07",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "SKIP",
+      "score": 50,
+      "weight": 0.5,
+      "reason": [
+        "RANGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_TREND_08",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "SKIP",
+      "score": 50,
+      "weight": 0.5,
+      "reason": [
+        "RANGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_TREND_09",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "SKIP",
+      "score": 50,
+      "weight": 0.5,
+      "reason": [
+        "RANGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_TREND_10",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "SKIP",
+      "score": 50,
+      "weight": 0.5,
+      "reason": [
+        "RANGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_REPLAY_01",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "NO_REPLAY_EDGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_REPLAY_02",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "NO_REPLAY_EDGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_REPLAY_03",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "NO_REPLAY_EDGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_REPLAY_04",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "NO_REPLAY_EDGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_REPLAY_05",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "NO_REPLAY_EDGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_REPLAY_06",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "NO_REPLAY_EDGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_REPLAY_07",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "NO_REPLAY_EDGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_REPLAY_08",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "NO_REPLAY_EDGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_REPLAY_09",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "NO_REPLAY_EDGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_REPLAY_10",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "NO_REPLAY_EDGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_RISK_01",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_RISK_02",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_RISK_03",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_RISK_04",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_RISK_05",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_RISK_06",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_RISK_07",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_RISK_08",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_RISK_09",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_RISK_10",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_EXIT_01",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_EXIT_02",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_EXIT_03",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_EXIT_04",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_EXIT_05",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_EXIT_06",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_EXIT_07",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_EXIT_08",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_EXIT_09",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_EXIT_10",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_MEMORY_01",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 52,
+      "weight": 0.52,
+      "reason": [
+        "MEMORY_BUILDING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_MEMORY_02",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 52,
+      "weight": 0.52,
+      "reason": [
+        "MEMORY_BUILDING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_MEMORY_03",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 52,
+      "weight": 0.52,
+      "reason": [
+        "MEMORY_BUILDING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_MEMORY_04",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 52,
+      "weight": 0.52,
+      "reason": [
+        "MEMORY_BUILDING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_MEMORY_05",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 52,
+      "weight": 0.52,
+      "reason": [
+        "MEMORY_BUILDING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_MEMORY_06",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 52,
+      "weight": 0.52,
+      "reason": [
+        "MEMORY_BUILDING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_MEMORY_07",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 52,
+      "weight": 0.52,
+      "reason": [
+        "MEMORY_BUILDING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_MEMORY_08",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 52,
+      "weight": 0.52,
+      "reason": [
+        "MEMORY_BUILDING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_MEMORY_09",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 52,
+      "weight": 0.52,
+      "reason": [
+        "MEMORY_BUILDING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1306.T_MEMORY_10",
+      "symbol": "1306.T",
+      "asset_name": "1306 TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 52,
+      "weight": 0.52,
+      "reason": [
+        "MEMORY_BUILDING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_TREND_01",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "SKIP",
+      "score": 50,
+      "weight": 0.5,
+      "reason": [
+        "RANGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_TREND_02",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "SKIP",
+      "score": 50,
+      "weight": 0.5,
+      "reason": [
+        "RANGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_TREND_03",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "SKIP",
+      "score": 50,
+      "weight": 0.5,
+      "reason": [
+        "RANGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_TREND_04",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "SKIP",
+      "score": 50,
+      "weight": 0.5,
+      "reason": [
+        "RANGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_TREND_05",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "SKIP",
+      "score": 50,
+      "weight": 0.5,
+      "reason": [
+        "RANGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_TREND_06",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "SKIP",
+      "score": 50,
+      "weight": 0.5,
+      "reason": [
+        "RANGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_TREND_07",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "SKIP",
+      "score": 50,
+      "weight": 0.5,
+      "reason": [
+        "RANGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_TREND_08",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "SKIP",
+      "score": 50,
+      "weight": 0.5,
+      "reason": [
+        "RANGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_TREND_09",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "SKIP",
+      "score": 50,
+      "weight": 0.5,
+      "reason": [
+        "RANGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_TREND_10",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "TREND",
+      "decision": "SKIP",
+      "score": 50,
+      "weight": 0.5,
+      "reason": [
+        "RANGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_REPLAY_01",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "NO_REPLAY_EDGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_REPLAY_02",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "NO_REPLAY_EDGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_REPLAY_03",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "NO_REPLAY_EDGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_REPLAY_04",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "NO_REPLAY_EDGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_REPLAY_05",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "NO_REPLAY_EDGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_REPLAY_06",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "NO_REPLAY_EDGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_REPLAY_07",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "NO_REPLAY_EDGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_REPLAY_08",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "NO_REPLAY_EDGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_REPLAY_09",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "NO_REPLAY_EDGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_REPLAY_10",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "REPLAY",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "NO_REPLAY_EDGE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_RISK_01",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_RISK_02",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_RISK_03",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_RISK_04",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_RISK_05",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_RISK_06",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_RISK_07",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_RISK_08",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_RISK_09",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_RISK_10",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "RISK",
+      "decision": "SKIP",
+      "score": 90,
+      "weight": 0.9,
+      "reason": [
+        "DATA_MISSING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_EXIT_01",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_EXIT_02",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_EXIT_03",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_EXIT_04",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_EXIT_05",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_EXIT_06",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_EXIT_07",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_EXIT_08",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_EXIT_09",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_EXIT_10",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "EXIT",
+      "decision": "SKIP",
+      "score": 48,
+      "weight": 0.48,
+      "reason": [
+        "POSITION_LIFECYCLE"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_MEMORY_01",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 52,
+      "weight": 0.52,
+      "reason": [
+        "MEMORY_BUILDING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_MEMORY_02",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 52,
+      "weight": 0.52,
+      "reason": [
+        "MEMORY_BUILDING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_MEMORY_03",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 52,
+      "weight": 0.52,
+      "reason": [
+        "MEMORY_BUILDING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_MEMORY_04",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 52,
+      "weight": 0.52,
+      "reason": [
+        "MEMORY_BUILDING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_MEMORY_05",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 52,
+      "weight": 0.52,
+      "reason": [
+        "MEMORY_BUILDING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_MEMORY_06",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 52,
+      "weight": 0.52,
+      "reason": [
+        "MEMORY_BUILDING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_MEMORY_07",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 52,
+      "weight": 0.52,
+      "reason": [
+        "MEMORY_BUILDING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_MEMORY_08",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 52,
+      "weight": 0.52,
+      "reason": [
+        "MEMORY_BUILDING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_MEMORY_09",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 52,
+      "weight": 0.52,
+      "reason": [
+        "MEMORY_BUILDING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    },
+    {
+      "id": "1475.T_MEMORY_10",
+      "symbol": "1475.T",
+      "asset_name": "1475 iShares TOPIX ETF",
+      "asset_class": "JP_ETF",
+      "family": "MEMORY",
+      "decision": "SKIP",
+      "score": 52,
+      "weight": 0.52,
+      "reason": [
+        "MEMORY_BUILDING"
+      ],
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "mode": "MULTI_ASSET_SHADOW"
+    }
+  ]
 }

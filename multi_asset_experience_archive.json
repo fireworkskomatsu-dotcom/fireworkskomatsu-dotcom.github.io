@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "date": "2026-06-19",
+    "time": "2026-06-19 17:14:41",
+    "symbol": "1321.T",
+    "decision": "LONG",
+    "trend": "TREND_UP",
+    "price": 74630.0,
+    "momentum_5d": 0.0,
+    "votes": {
+      "LONG": 19.0,
+      "SHORT": 0.0,
+      "SKIP": 12.2,
+      "HOLD": 0.0
+    },
+    "type": "OBSERVATION"
+  },
+  {
+    "date": "2026-06-19",
+    "time": "2026-06-19 17:14:41",
+    "symbol": "1306.T",
+    "decision": "SKIP",
+    "trend": "UNKNOWN",
+    "price": 0.0,
+    "momentum_5d": 0.0,
+    "votes": {
+      "LONG": 0.0,
+      "SHORT": 0.0,
+      "SKIP": 28.8,
+      "HOLD": 0.0
+    },
+    "type": "OBSERVATION"
+  },
+  {
+    "date": "2026-06-19",
+    "time": "2026-06-19 17:14:41",
+    "symbol": "1475.T",
+    "decision": "SKIP",
+    "trend": "UNKNOWN",
+    "price": 0.0,
+    "momentum_5d": 0.0,
+    "votes": {
+      "LONG": 0.0,
+      "SHORT": 0.0,
+      "SKIP": 28.8,
+      "HOLD": 0.0
+    },
+    "type": "OBSERVATION"
+  }
+]

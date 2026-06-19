@@ -1,19 +1,75 @@
 {
-  "time": "2026-06-15 17:53:24",
-  "core_decision": "LONG",
+  "time": "2026-06-19 17:14:41",
+  "core_decision": "SKIP",
   "core_symbol": "1321.T",
-  "core_order": "SBIで1321.Tを成行買い 1株",
+  "core_order": "なし",
   "multi_asset_mode": "SHADOW_OBSERVATION",
-  "asset_count": 0,
-  "strategy_count": 0,
+  "asset_count": 3,
+  "strategy_count": 150,
   "experience": {
-    "time": "2026-06-15 17:53:24",
-    "multi_asset_experience_count": 0,
-    "added": 0,
-    "asset_count": 0,
+    "time": "2026-06-19 17:14:41",
+    "multi_asset_experience_count": 3,
+    "added": 3,
+    "asset_count": 3,
     "mode": "OBSERVATION_LEARNING"
   },
-  "ranking": [],
-  "top_asset": null,
+  "ranking": [
+    {
+      "symbol": "1321.T",
+      "name": "1321 日経225ETF",
+      "price": 74630.0,
+      "trend": "TREND_UP",
+      "momentum_5d": 0.0,
+      "votes": {
+        "LONG": 19.0,
+        "SHORT": 0.0,
+        "SKIP": 12.2,
+        "HOLD": 0.0
+      },
+      "final_decision": "LONG"
+    },
+    {
+      "symbol": "1306.T",
+      "name": "1306 TOPIX ETF",
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "votes": {
+        "LONG": 0.0,
+        "SHORT": 0.0,
+        "SKIP": 28.8,
+        "HOLD": 0.0
+      },
+      "final_decision": "SKIP"
+    },
+    {
+      "symbol": "1475.T",
+      "name": "1475 iShares TOPIX ETF",
+      "price": 0.0,
+      "trend": "UNKNOWN",
+      "momentum_5d": 0.0,
+      "votes": {
+        "LONG": 0.0,
+        "SHORT": 0.0,
+        "SKIP": 28.8,
+        "HOLD": 0.0
+      },
+      "final_decision": "SKIP"
+    }
+  ],
+  "top_asset": {
+    "symbol": "1321.T",
+    "name": "1321 日経225ETF",
+    "price": 74630.0,
+    "trend": "TREND_UP",
+    "momentum_5d": 0.0,
+    "votes": {
+      "LONG": 19.0,
+      "SHORT": 0.0,
+      "SKIP": 12.2,
+      "HOLD": 0.0
+    },
+    "final_decision": "LONG"
+  },
   "status": "OK"
 }

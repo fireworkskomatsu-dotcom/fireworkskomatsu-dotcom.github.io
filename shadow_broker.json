@@ -1,20 +1,26 @@
 {
-  "time": "2026-06-15 17:53:24",
+  "updated_at": "2026-06-19 17:14:41",
+  "time": "2026-06-19 17:14:41",
   "start_capital": 1000000,
-  "cash": 1075839.0,
-  "equity": 1075839.0,
-  "realized_pnl": 75839.0,
-  "return_pct": 7.58,
-  "position": 1,
-  "side": "LONG",
-  "entry_price": 72620.0,
-  "current_price": 72620.0,
+  "cash": 1007120.0,
+  "equity": 1007120.0,
+  "realized_pnl": 7120.0,
+  "unrealized_yen": 0.0,
+  "return_pct": 0.71,
+  "position": 0,
+  "side": null,
+  "entry_price": 0.0,
+  "current_price": 74630.0,
   "unrealized_pct": 0.0,
-  "decision": "LONG",
-  "event": "HOLD",
+  "decision": "SKIP",
+  "event": "TAKE_PROFIT",
   "trade_size_pct": 0.01,
   "target_pct": 0.022,
   "stop_pct": -0.01,
+  "closed_trades": 2,
+  "wins": 2,
+  "losses": 0,
+  "win_rate": 100.0,
   "trades": [
     {
       "time": "2026-06-11 13:28:41",
@@ -22,7 +28,9 @@
       "side": "LONG",
       "price": 67380.0,
       "qty": 1,
-      "yen_size": 67380.0
+      "yen_size": 67380.0,
+      "target_pct": 0.022,
+      "stop_pct": -0.01
     },
     {
       "time": "2026-06-15 15:36:54",
@@ -31,7 +39,10 @@
       "entry": 67380.0,
       "exit": 72490.0,
       "pnl_pct": 0.07584,
-      "pnl_yen": 75839.0
+      "pnl_yen": 5110.0,
+      "qty": 1,
+      "target_pct": 0.022,
+      "stop_pct": -0.01
     },
     {
       "time": "2026-06-15 16:57:10",
@@ -39,7 +50,21 @@
       "side": "LONG",
       "price": 72620.0,
       "qty": 1,
-      "yen_size": 72620.0
+      "yen_size": 72620.0,
+      "target_pct": 0.022,
+      "stop_pct": -0.01
+    },
+    {
+      "time": "2026-06-19 17:14:41",
+      "type": "TAKE_PROFIT",
+      "side": "LONG",
+      "entry": 72620.0,
+      "exit": 74630.0,
+      "qty": 1,
+      "pnl_pct": 0.02768,
+      "pnl_yen": 2010.0,
+      "target_pct": 0.022,
+      "stop_pct": -0.01
     }
   ]
 }
