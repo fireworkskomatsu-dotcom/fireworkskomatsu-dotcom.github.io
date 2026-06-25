@@ -1,5 +1,5 @@
 {
-  "time": "2026-06-25 10:08:47",
+  "time": "2026-06-25 10:10:00",
   "brain_status": "NO_GO",
   "brain_score": 50,
   "flags": [
@@ -19,7 +19,7 @@
   "weighted_votes": {
     "LONG": 3.2,
     "SHORT": 0.0,
-    "SKIP": 6.0,
+    "SKIP": 7.5,
     "HOLD": 0.0
   },
   "real_go_live": "NOT_READY",

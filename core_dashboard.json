@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-25 10:08:47",
+  "updated_at": "2026-06-25 10:10:00",
   "headline": "見送り / 0株 / 約0.0円 / 仮想 2勝0敗 / 実弾まで残り98",
   "decision": "SKIP",
   "symbol": "1321.T",
@@ -26,7 +26,7 @@
   "experience_count": 2,
   "experience_level": "BEGINNER",
   "readiness": {
-    "updated_at": "2026-06-25 10:08:47",
+    "updated_at": "2026-06-25 10:09:59",
     "experience_count": 2,
     "closed_trades": 2,
     "wins": 2,
@@ -54,21 +54,21 @@
   "strategy_5x10_votes": {
     "LONG": 10.28,
     "SHORT": 0.0,
-    "SKIP": 18.68,
-    "HOLD": 0.0
+    "SKIP": 15.84,
+    "HOLD": 4.14
   },
   "exit_engine": {
-    "time": "2026-06-25 10:08:47",
+    "time": "2026-06-25 10:09:59",
     "exit_now": false,
     "exit_reason": "HOLD",
-    "side": null,
-    "entry_price": 0.0,
+    "side": "LONG",
+    "entry_price": 75730.0,
     "current_price": 75730.0,
-    "unrealized_pct": 0,
+    "unrealized_pct": 0.0,
     "stop_pct": -0.01,
     "take_profit_pct": 0.022,
     "trail_pct": 0.012,
-    "vol_mode": "DANGER"
+    "vol_mode": "UNKNOWN"
   },
   "brain_status": "NO_GO",
   "brain_score": 50,
