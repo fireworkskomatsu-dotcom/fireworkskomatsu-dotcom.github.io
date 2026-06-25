@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-06-25 10:06:10",
-  "today_action": "見送り",
-  "decision": "SKIP",
+  "updated_at": "2026-06-25 10:07:12",
+  "today_action": "買い",
+  "decision": "LONG",
   "symbol": "1321.T",
   "name": "1321 日経225ETF",
   "price": 75730.0,
-  "qty": 0,
-  "estimated_amount": 0.0,
-  "order_instruction": "なし",
-  "order_type": "なし",
+  "qty": 1,
+  "estimated_amount": 75730.0,
+  "order_instruction": "LONG 1株",
+  "order_type": "成行",
   "stop_loss": "-1.0%",
   "take_profit": "2.2%",
   "real_trade_allowed": false,
@@ -38,14 +38,14 @@
     "real_review_ready": false
   },
   "reason_short": [
-    "最終判断: SKIP",
+    "最終判断: LONG",
     "価格: 75730.0",
-    "数量: 0株",
-    "想定金額: 0.0円",
+    "数量: 1株",
+    "想定金額: 75730.0円",
     "仮想口座: 1007120.0円 / 損益 7120.0円 / 含み 0.0円",
     "勝敗: 2勝 0敗 / 勝率 100.0%",
     "実弾検討まで残り: 98ログ",
     "理由: 市場温度異常 / OVERHEAT / Replay Policy BOOST TREND_UP_LONG / Replay Expectancy POSITIVE TREND_UP_LONG"
   ],
-  "headline": "見送り / 0株 / 約0.0円 / 仮想 2勝0敗 / 実弾まで残り98"
+  "headline": "買い / 1株 / 約75730.0円 / 仮想 2勝0敗 / 実弾まで残り98"
 }

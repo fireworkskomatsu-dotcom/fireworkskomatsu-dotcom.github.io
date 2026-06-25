@@ -1,5 +1,5 @@
 {
-  "time": "2026-06-25 10:06:11",
+  "time": "2026-06-25 10:07:12",
   "mode": "MULTI_ASSET_5x10",
   "asset_count": 3,
   "strategy_count": 150,
@@ -11,9 +11,9 @@
       "trend": "TREND_UP",
       "momentum_5d": 0.0,
       "votes": {
-        "LONG": 19.0,
+        "LONG": 26.4,
         "SHORT": 0.0,
-        "SKIP": 12.2,
+        "SKIP": 4.8,
         "HOLD": 0.0
       },
       "final_decision": "LONG"
@@ -1076,7 +1076,7 @@
       "asset_name": "1321 日経225ETF",
       "asset_class": "JP_ETF",
       "family": "MEMORY",
-      "decision": "SKIP",
+      "decision": "LONG",
       "score": 74,
       "weight": 0.74,
       "reason": [
@@ -1093,7 +1093,7 @@
       "asset_name": "1321 日経225ETF",
       "asset_class": "JP_ETF",
       "family": "MEMORY",
-      "decision": "SKIP",
+      "decision": "LONG",
       "score": 74,
       "weight": 0.74,
       "reason": [
@@ -1110,7 +1110,7 @@
       "asset_name": "1321 日経225ETF",
       "asset_class": "JP_ETF",
       "family": "MEMORY",
-      "decision": "SKIP",
+      "decision": "LONG",
       "score": 74,
       "weight": 0.74,
       "reason": [
@@ -1127,7 +1127,7 @@
       "asset_name": "1321 日経225ETF",
       "asset_class": "JP_ETF",
       "family": "MEMORY",
-      "decision": "SKIP",
+      "decision": "LONG",
       "score": 74,
       "weight": 0.74,
       "reason": [
@@ -1144,7 +1144,7 @@
       "asset_name": "1321 日経225ETF",
       "asset_class": "JP_ETF",
       "family": "MEMORY",
-      "decision": "SKIP",
+      "decision": "LONG",
       "score": 74,
       "weight": 0.74,
       "reason": [
@@ -1161,7 +1161,7 @@
       "asset_name": "1321 日経225ETF",
       "asset_class": "JP_ETF",
       "family": "MEMORY",
-      "decision": "SKIP",
+      "decision": "LONG",
       "score": 74,
       "weight": 0.74,
       "reason": [
@@ -1178,7 +1178,7 @@
       "asset_name": "1321 日経225ETF",
       "asset_class": "JP_ETF",
       "family": "MEMORY",
-      "decision": "SKIP",
+      "decision": "LONG",
       "score": 74,
       "weight": 0.74,
       "reason": [
@@ -1195,7 +1195,7 @@
       "asset_name": "1321 日経225ETF",
       "asset_class": "JP_ETF",
       "family": "MEMORY",
-      "decision": "SKIP",
+      "decision": "LONG",
       "score": 74,
       "weight": 0.74,
       "reason": [
@@ -1212,7 +1212,7 @@
       "asset_name": "1321 日経225ETF",
       "asset_class": "JP_ETF",
       "family": "MEMORY",
-      "decision": "SKIP",
+      "decision": "LONG",
       "score": 74,
       "weight": 0.74,
       "reason": [
@@ -1229,7 +1229,7 @@
       "asset_name": "1321 日経225ETF",
       "asset_class": "JP_ETF",
       "family": "MEMORY",
-      "decision": "SKIP",
+      "decision": "LONG",
       "score": 74,
       "weight": 0.74,
       "reason": [
