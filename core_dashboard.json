@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-25 10:02:13",
-  "headline": "見送り / 0株 / 約0.0円 / 仮想 2勝0敗 / 実弾まで残り97",
+  "updated_at": "2026-06-25 10:06:10",
+  "headline": "見送り / 0株 / 約0.0円 / 仮想 2勝0敗 / 実弾まで残り98",
   "decision": "SKIP",
   "symbol": "1321.T",
   "price": 75730.0,
@@ -23,11 +23,11 @@
     "losses": 0,
     "win_rate": 100.0
   },
-  "experience_count": 3,
+  "experience_count": 2,
   "experience_level": "BEGINNER",
   "readiness": {
-    "updated_at": "2026-06-25 10:02:13",
-    "experience_count": 3,
+    "updated_at": "2026-06-25 10:06:10",
+    "experience_count": 2,
     "closed_trades": 2,
     "wins": 2,
     "losses": 0,
@@ -36,11 +36,10 @@
     "unrealized_yen": 0.0,
     "shadow_equity": 1007120.0,
     "shadow_return_pct": 0.71,
-    "remaining_to_shadow_review": 47,
-    "remaining_to_real_review": 97,
+    "remaining_to_shadow_review": 48,
+    "remaining_to_real_review": 98,
     "shadow_review_ready": false,
     "real_review_ready": false,
-    "multi_asset_experience_count": 6,
     "mode": "SHADOW_ONLY",
     "real_trade_allowed": false,
     "rules": [
@@ -54,11 +53,11 @@
   "strategy_5x10_votes": {
     "LONG": 10.28,
     "SHORT": 0.0,
-    "SKIP": 19.31,
+    "SKIP": 19.13,
     "HOLD": 0.0
   },
   "exit_engine": {
-    "time": "2026-06-25 10:02:12",
+    "time": "2026-06-25 10:06:10",
     "exit_now": false,
     "exit_reason": "HOLD",
     "side": null,
@@ -78,12 +77,6 @@
     "1321.T",
     "1306.T",
     "1475.T"
-  ],
-  "blocked_assets": [
-    "BTC-USD",
-    "USDJPY=X",
-    "QQQ",
-    "SOXX"
   ],
   "mode": "SHADOW_ONLY_CORE_5x10",
   "status": "OK"

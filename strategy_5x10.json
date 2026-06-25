@@ -1,11 +1,11 @@
 {
-  "time": "2026-06-25 10:02:12",
+  "time": "2026-06-25 10:06:10",
   "mode": "REAL_5x10_EVOLUTION",
   "strategy_count": 50,
   "votes": {
     "LONG": 10.28,
     "SHORT": 0.0,
-    "SKIP": 19.31,
+    "SKIP": 19.13,
     "HOLD": 0.0
   },
   "final_decision": "SKIP",
@@ -814,10 +814,10 @@
       "family": "MEMORY",
       "name": "experience_growth",
       "decision": "SKIP",
-      "score": 62,
-      "weight": 0.62,
+      "score": 44,
+      "weight": 0.44,
       "reasons": [
-        "EXPERIENCE_GROWING"
+        "CONDITION_FALSE"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",

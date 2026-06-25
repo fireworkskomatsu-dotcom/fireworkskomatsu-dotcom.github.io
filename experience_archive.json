@@ -3,14 +3,7 @@
     "time": "2026-06-15 15:36:54",
     "decision": "LONG",
     "event": "TAKE_PROFIT",
-    "equity": 1075839.0,
-    "pnl_yen": 75839.0
-  },
-  {
-    "time": "2026-06-15 15:36:54",
-    "decision": "LONG",
-    "event": "TAKE_PROFIT",
-    "equity": 1007120.0,
+    "equity": 1005110.0,
     "pnl_yen": 5110.0
   },
   {

@@ -1,31 +1,12 @@
 {
-  "time": "2026-06-25 10:02:12",
-  "final_decision": "SKIP",
+  "time": "2026-06-25 10:06:10",
   "symbol": "1321.T",
-  "name": "1321 日経225ETF",
   "price": 75730.0,
-  "qty": 0,
-  "size": 0,
+  "final_decision": "SKIP",
   "candidate_size": 0,
-  "score": 0,
-  "grade": "D",
+  "size": 0,
+  "qty": 0,
   "reasons": [
-    "市場温度異常 / OVERHEAT / Replay Policy BOOST TREND_UP_LONG / Replay Expectancy POSITIVE TREND_UP_LONG",
-    "RECOVERY_WARNING_NOT_VETO",
-    "RISK_EXIT_WARNING_NOT_VETO"
-  ],
-  "raw_filter_decision": "SKIP",
-  "filter_reason": "市場温度異常 / OVERHEAT / Replay Policy BOOST TREND_UP_LONG / Replay Expectancy POSITIVE TREND_UP_LONG",
-  "confidence": 50.0,
-  "market_temperature": "OVERHEAT",
-  "vol_mode": "DANGER",
-  "replay_key": "TREND_UP_LONG",
-  "replay_policy_action": "BOOST",
-  "replay_expectancy": 0.001108,
-  "replay_expectancy_action": "BOOST",
-  "weighted_agent_decision": "SKIP",
-  "recovery_mode": true,
-  "risk_exit": true,
-  "mode": "SHADOW_ONLY",
-  "real_trade_allowed": false
+    "RECOVERY_WARNING_NOT_VETO"
+  ]
 }
