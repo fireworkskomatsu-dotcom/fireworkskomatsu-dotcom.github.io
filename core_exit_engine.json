@@ -1,5 +1,5 @@
 {
-  "time": "2026-06-25 10:09:59",
+  "time": "2026-06-25 10:13:08",
   "exit_now": false,
   "exit_reason": "HOLD",
   "side": "LONG",
@@ -9,5 +9,6 @@
   "stop_pct": -0.01,
   "take_profit_pct": 0.022,
   "trail_pct": 0.012,
+  "held_days": 0,
   "vol_mode": "UNKNOWN"
 }

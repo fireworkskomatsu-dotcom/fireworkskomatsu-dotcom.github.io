@@ -1,15 +1,15 @@
 {
-  "time": "2026-06-25 10:10:00",
+  "time": "2026-06-25 10:13:09",
   "status": "NOT_READY",
-  "reason": "Trade Brain NO_GO / ['REAL_NOT_READY', 'MASTER_SKIP', 'AGENT_SKIP']",
-  "closed": 2,
-  "win_rate": 0.0,
-  "total_pnl": -0.0007,
-  "brain_status": "NO_GO",
-  "brain_score": 50,
-  "brain_flags": [
-    "REAL_NOT_READY",
-    "MASTER_SKIP",
-    "AGENT_SKIP"
+  "allow_real_trade": false,
+  "experience_count": 2,
+  "closed_trades": 2,
+  "win_rate": 100.0,
+  "realized_pnl": 7120.0,
+  "rules": [
+    "experience_count >= 20",
+    "closed_trades >= 10",
+    "win_rate >= 45",
+    "realized_pnl > 0"
   ]
 }

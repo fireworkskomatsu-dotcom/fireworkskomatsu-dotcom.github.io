@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-25 10:09:59",
+  "updated_at": "2026-06-25 10:13:09",
   "experience_count": 2,
   "closed_trades": 2,
   "wins": 2,
@@ -9,16 +9,15 @@
   "unrealized_yen": 0.0,
   "shadow_equity": 1007120.0,
   "shadow_return_pct": 0.71,
-  "remaining_to_shadow_review": 48,
-  "remaining_to_real_review": 98,
+  "remaining_to_shadow_review": 8,
+  "remaining_to_real_review": 18,
   "shadow_review_ready": false,
   "real_review_ready": false,
-  "multi_asset_experience_count": 6,
   "mode": "SHADOW_ONLY",
   "real_trade_allowed": false,
   "rules": [
-    "実弾開始は最低100経験以上",
-    "閉じたトレード20件以上",
+    "実弾開始は最低20経験以上",
+    "閉じたトレード10件以上",
     "PnL監査が正常",
     "最大DDと勝率確認後"
   ]
