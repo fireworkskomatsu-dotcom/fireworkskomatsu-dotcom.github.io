@@ -1963,7 +1963,86 @@ setInterval(loadHumanTrade, 60000);
 
 
 
+
+
+
+
 <!-- MOBILE_DASH_APP_START -->
+<style>
+#mobile-dashboard-app{
+  margin:0;
+  padding:10px 10px 28px;
+  color:#fff;
+  font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+}
+#mobile-dashboard-app .md-card{
+  background:#071a63;
+  border-radius:18px;
+  padding:16px;
+  margin:0 0 14px 0;
+  box-shadow:0 8px 24px rgba(0,0,0,.22);
+}
+#mobile-dashboard-app .md-title{
+  font-size:18px;
+  font-weight:900;
+  margin-bottom:12px;
+}
+#mobile-dashboard-app .md-action{
+  font-size:54px;
+  line-height:0.95;
+  font-weight:900;
+  color:#ffd84d;
+  margin:6px 0 16px;
+  word-break:keep-all;
+}
+#mobile-dashboard-app .md-box{
+  background:#0c1f6f;
+  border-radius:14px;
+  padding:12px;
+}
+#mobile-dashboard-app .md-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:12px;
+  padding:10px 0;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+#mobile-dashboard-app .md-row:last-child{
+  border-bottom:none;
+}
+#mobile-dashboard-app .md-label{
+  font-size:14px;
+  opacity:.82;
+  flex:0 0 42%;
+  line-height:1.35;
+}
+#mobile-dashboard-app .md-value{
+  font-size:22px;
+  font-weight:900;
+  text-align:right;
+  flex:1 1 auto;
+  min-width:0;
+  line-height:1.2;
+  word-break:break-word;
+  overflow-wrap:anywhere;
+}
+#mobile-dashboard-app .md-value.sm{
+  font-size:18px;
+}
+#mobile-dashboard-app .md-value.xs{
+  font-size:15px;
+  line-height:1.45;
+  font-weight:700;
+}
+#mobile-dashboard-app .md-note{
+  font-size:15px;
+  line-height:1.6;
+  word-break:break-word;
+  overflow-wrap:anywhere;
+}
+</style>
+
 <script>
 (async function(){
   const j = async (name) => {
@@ -1977,7 +2056,11 @@ setInterval(loadHumanTrade, 60000);
   const real  = await j("./real_go_live.json");
 
   const shadow = core.shadow_account || human.shadow || {};
-  const reasons = Array.isArray(human.reason_short) ? human.reason_short.join(" / ") : (human.reason_short || "--");
+  const readiness = core.readiness || human.readiness || {};
+  const reasons = Array.isArray(human.reason_short)
+    ? human.reason_short.join(" / ")
+    : (human.reason_short || "--");
+
   const lockReasons = [];
   if (!real.allow_real_trade) lockReasons.push("REAL_GO_LIVE_NOT_READY");
   if ((brain.brain_status || core.brain_status) !== "GO") lockReasons.push("TRADE_BRAIN_NOT_GO");
@@ -1988,78 +2071,87 @@ setInterval(loadHumanTrade, 60000);
     (core.decision === "LONG" ? "買い" :
      core.decision === "SHORT" ? "売り" : "見送り");
 
+  const fmtNum = (v) => (v === undefined || v === null || v === "") ? "--" : String(v);
+  const fmtYen = (v) => (v === undefined || v === null || v === "") ? "--" : `${v}円`;
+  const fmtPct = (v) => (v === undefined || v === null || v === "") ? "--" : `${v}%`;
+
   const html = `
-  <div class="today-panel">
-    <div class="today-title">本日の売買指示</div>
-    <div class="today-action">${action}</div>
-    <div class="today-box">
-      <div><span>銘柄</span><span>${core.symbol || human.symbol || "1321.T"}</span></div>
-      <div><span>現在値</span><span>${core.price ?? human.price ?? "--"}円</span></div>
-      <div><span>数量</span><span>${core.qty ?? human.qty ?? 0}株</span></div>
-      <div><span>想定金額</span><span>${core.amount ?? human.estimated_amount ?? 0}円</span></div>
-      <div><span>注文</span><span>${human.order_instruction || core.order_instruction || "なし"}</span></div>
-      <div><span>損切り</span><span>${human.stop_loss || "-1.0%"}</span></div>
-      <div><span>利確</span><span>${human.take_profit || "2.2%"}</span></div>
+  <div class="md-card">
+    <div class="md-title">本日の売買指示</div>
+    <div class="md-action">${action}</div>
+    <div class="md-box">
+      <div class="md-row"><div class="md-label">銘柄</div><div class="md-value sm">${core.symbol || human.symbol || "1321.T"}</div></div>
+      <div class="md-row"><div class="md-label">現在値</div><div class="md-value sm">${fmtYen(core.price ?? human.price)}</div></div>
+      <div class="md-row"><div class="md-label">数量</div><div class="md-value sm">${fmtNum(core.qty ?? human.qty ?? 0)}株</div></div>
+      <div class="md-row"><div class="md-label">想定金額</div><div class="md-value sm">${fmtYen(core.amount ?? human.estimated_amount ?? 0)}</div></div>
+      <div class="md-row"><div class="md-label">注文</div><div class="md-value sm">${human.order_instruction || core.order_instruction || "なし"}</div></div>
+      <div class="md-row"><div class="md-label">損切り</div><div class="md-value sm">${human.stop_loss || "-1.0%"}</div></div>
+      <div class="md-row"><div class="md-label">利確</div><div class="md-value sm">${human.take_profit || "2.2%"}</div></div>
     </div>
   </div>
 
-  <div class="perf-panel">
-    <div class="perf-title">仮想口座</div>
-    <div class="perf-grid">
-      <div class="perf-box">仮想残高<span>${shadow.equity ?? "--"}</span></div>
-      <div class="perf-box">損益率<span>${shadow.return_pct ?? 0}%</span></div>
-      <div class="perf-box">建玉<span>${shadow.position || "なし"}</span></div>
-      <div class="perf-box">数量<span>${shadow.position_qty ?? 0}株</span></div>
-      <div class="perf-box">含み損益<span>${shadow.unrealized_yen ?? 0}</span></div>
-      <div class="perf-box">実現損益<span>${shadow.realized_pnl ?? 0}</span></div>
+  <div class="md-card">
+    <div class="md-title">仮想口座</div>
+    <div class="md-box">
+      <div class="md-row"><div class="md-label">仮想残高</div><div class="md-value">${fmtYen(shadow.equity)}</div></div>
+      <div class="md-row"><div class="md-label">建玉</div><div class="md-value">${shadow.position || "なし"} ${shadow.position_qty ? `${shadow.position_qty}株` : ""}</div></div>
+      <div class="md-row"><div class="md-label">含み損益</div><div class="md-value">${fmtYen(shadow.unrealized_yen ?? 0)}</div></div>
+      <div class="md-row"><div class="md-label">実現損益</div><div class="md-value">${fmtYen(shadow.realized_pnl ?? 0)}</div></div>
+      <div class="md-row"><div class="md-label">損益率</div><div class="md-value">${fmtPct(shadow.return_pct ?? 0)}</div></div>
+      <div class="md-row"><div class="md-label">勝率</div><div class="md-value">${fmtPct(shadow.win_rate ?? 0)}</div></div>
+      <div class="md-row"><div class="md-label">実弾まで残り</div><div class="md-value">${fmtNum(readiness.remaining_to_real_review ?? "--")}</div></div>
     </div>
   </div>
 
-  <div class="perf-panel">
-    <div class="perf-title">理由</div>
-    <div class="perf-box" style="font-size:22px;line-height:1.5">${reasons}</div>
-  </div>
-
-  <div class="perf-panel">
-    <div class="perf-title">AI統合脳</div>
-    <div class="perf-grid">
-      <div class="perf-box">AI脳<span>${brain.brain_status || core.brain_status || "--"}</span></div>
-      <div class="perf-box">Brain Score<span>${brain.brain_score || core.brain_score || "--"}</span></div>
-      <div class="perf-box">本番ロック<span>${core.real_trade_allowed ? "OFF" : "ON"}</span></div>
-      <div class="perf-box">実弾許可<span>${core.real_trade_allowed ? "YES" : "NO"}</span></div>
-      <div class="perf-box">Go Live<span>${real.status || "NOT_READY"}</span></div>
+  <div class="md-card">
+    <div class="md-title">理由</div>
+    <div class="md-box">
+      <div class="md-note">${reasons}</div>
     </div>
   </div>
 
-  <div class="perf-panel">
-    <div class="perf-title">Replay / 期待値</div>
-    <div class="perf-grid">
-      <div class="perf-box">Replay Key<span>${brain.replay_key || "--"}</span></div>
-      <div class="perf-box">Policy<span>${brain.replay_policy_action || "--"}</span></div>
-      <div class="perf-box">期待値<span>${brain.replay_expectancy ?? "--"}</span></div>
-      <div class="perf-box">Expectancy<span>${brain.replay_expectancy_action || "--"}</span></div>
-      <div class="perf-box">Size倍率<span>${brain.replay_size_mult ?? "--"}</span></div>
+  <div class="md-card">
+    <div class="md-title">AI統合脳</div>
+    <div class="md-box">
+      <div class="md-row"><div class="md-label">AI脳</div><div class="md-value sm">${brain.brain_status || core.brain_status || "--"}</div></div>
+      <div class="md-row"><div class="md-label">Brain Score</div><div class="md-value sm">${fmtNum(brain.brain_score || core.brain_score || "--")}</div></div>
+      <div class="md-row"><div class="md-label">本番ロック</div><div class="md-value sm">${core.real_trade_allowed ? "OFF" : "ON"}</div></div>
+      <div class="md-row"><div class="md-label">実弾許可</div><div class="md-value sm">${core.real_trade_allowed ? "YES" : "NO"}</div></div>
+      <div class="md-row"><div class="md-label">Go Live</div><div class="md-value sm">${real.status || "NOT_READY"}</div></div>
     </div>
   </div>
 
-  <div class="perf-panel">
-    <div class="perf-title">重み付きAI会議</div>
-    <div class="perf-grid">
-      <div class="perf-box">会議判断<span>${brain.weighted_agent_decision || "--"}</span></div>
-      <div class="perf-box">LONG<span>${brain.weighted_votes?.LONG ?? 0}</span></div>
-      <div class="perf-box">SHORT<span>${brain.weighted_votes?.SHORT ?? 0}</span></div>
-      <div class="perf-box">SKIP<span>${brain.weighted_votes?.SKIP ?? 0}</span></div>
-      <div class="perf-box">HOLD<span>${brain.weighted_votes?.HOLD ?? 0}</span></div>
+  <div class="md-card">
+    <div class="md-title">Replay / 期待値</div>
+    <div class="md-box">
+      <div class="md-row"><div class="md-label">Replay Key</div><div class="md-value sm">${brain.replay_key || "--"}</div></div>
+      <div class="md-row"><div class="md-label">Policy</div><div class="md-value sm">${brain.replay_policy_action || "--"}</div></div>
+      <div class="md-row"><div class="md-label">期待値</div><div class="md-value sm">${fmtNum(brain.replay_expectancy ?? "--")}</div></div>
+      <div class="md-row"><div class="md-label">Expectancy</div><div class="md-value sm">${brain.replay_expectancy_action || "--"}</div></div>
+      <div class="md-row"><div class="md-label">Size倍率</div><div class="md-value sm">${fmtNum(brain.replay_size_mult ?? "--")}</div></div>
     </div>
   </div>
 
-  <div class="perf-panel">
-    <div class="perf-title">ロック理由</div>
-    <div class="perf-box" style="font-size:22px;line-height:1.5">${lockReasons.join(" / ") || "--"}</div>
+  <div class="md-card">
+    <div class="md-title">重み付きAI会議</div>
+    <div class="md-box">
+      <div class="md-row"><div class="md-label">会議判断</div><div class="md-value sm">${brain.weighted_agent_decision || "--"}</div></div>
+      <div class="md-row"><div class="md-label">LONG</div><div class="md-value sm">${fmtNum(brain.weighted_votes?.LONG ?? 0)}</div></div>
+      <div class="md-row"><div class="md-label">SHORT</div><div class="md-value sm">${fmtNum(brain.weighted_votes?.SHORT ?? 0)}</div></div>
+      <div class="md-row"><div class="md-label">SKIP</div><div class="md-value sm">${fmtNum(brain.weighted_votes?.SKIP ?? 0)}</div></div>
+      <div class="md-row"><div class="md-label">HOLD</div><div class="md-value sm">${fmtNum(brain.weighted_votes?.HOLD ?? 0)}</div></div>
+    </div>
+  </div>
+
+  <div class="md-card">
+    <div class="md-title">ロック理由</div>
+    <div class="md-box">
+      <div class="md-value xs">${lockReasons.join(" / ") || "--"}</div>
+    </div>
   </div>
   `;
 
-  // 旧カード群を全部隠して、新しいアプリを先頭に挿す
+  // 旧カード群は非表示
   const oldTitles = ["本日の売買指示","仮想口座","理由","AI統合脳","Replay / 期待値","重み付きAI会議","ロック理由"];
   [...document.querySelectorAll("h1,h2,h3")].forEach(el=>{
     const t = (el.textContent || "").trim();
@@ -2068,6 +2160,9 @@ setInterval(loadHumanTrade, 60000);
       if (box) box.style.display = "none";
     }
   });
+
+  const old = document.getElementById("mobile-dashboard-app");
+  if (old) old.remove();
 
   const mount = document.createElement("div");
   mount.id = "mobile-dashboard-app";
