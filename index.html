@@ -1961,3 +1961,119 @@ setInterval(loadHumanTrade, 60000);
 </script>
 <!-- MOBILE_DASH_FORCE_RENDER_END -->
 
+
+
+<!-- MOBILE_DASH_APP_START -->
+<script>
+(async function(){
+  const j = async (name) => {
+    const r = await fetch(name + "?ts=" + Date.now(), {cache:"no-store"});
+    return await r.json();
+  };
+
+  const core  = await j("./core_dashboard.json");
+  const human = await j("./human_trade_view.json");
+  const brain = await j("./trade_brain.json");
+  const real  = await j("./real_go_live.json");
+
+  const shadow = core.shadow_account || human.shadow || {};
+  const reasons = Array.isArray(human.reason_short) ? human.reason_short.join(" / ") : (human.reason_short || "--");
+  const lockReasons = [];
+  if (!real.allow_real_trade) lockReasons.push("REAL_GO_LIVE_NOT_READY");
+  if ((brain.brain_status || core.brain_status) !== "GO") lockReasons.push("TRADE_BRAIN_NOT_GO");
+  if ((core.decision || human.decision) === "SKIP") lockReasons.push("MASTER_SKIP");
+
+  const action =
+    human.today_action ||
+    (core.decision === "LONG" ? "買い" :
+     core.decision === "SHORT" ? "売り" : "見送り");
+
+  const html = `
+  <div class="today-panel">
+    <div class="today-title">本日の売買指示</div>
+    <div class="today-action">${action}</div>
+    <div class="today-box">
+      <div><span>銘柄</span><span>${core.symbol || human.symbol || "1321.T"}</span></div>
+      <div><span>現在値</span><span>${core.price ?? human.price ?? "--"}円</span></div>
+      <div><span>数量</span><span>${core.qty ?? human.qty ?? 0}株</span></div>
+      <div><span>想定金額</span><span>${core.amount ?? human.estimated_amount ?? 0}円</span></div>
+      <div><span>注文</span><span>${human.order_instruction || core.order_instruction || "なし"}</span></div>
+      <div><span>損切り</span><span>${human.stop_loss || "-1.0%"}</span></div>
+      <div><span>利確</span><span>${human.take_profit || "2.2%"}</span></div>
+    </div>
+  </div>
+
+  <div class="perf-panel">
+    <div class="perf-title">仮想口座</div>
+    <div class="perf-grid">
+      <div class="perf-box">仮想残高<span>${shadow.equity ?? "--"}</span></div>
+      <div class="perf-box">損益率<span>${shadow.return_pct ?? 0}%</span></div>
+      <div class="perf-box">建玉<span>${shadow.position || "なし"}</span></div>
+      <div class="perf-box">数量<span>${shadow.position_qty ?? 0}株</span></div>
+      <div class="perf-box">含み損益<span>${shadow.unrealized_yen ?? 0}</span></div>
+      <div class="perf-box">実現損益<span>${shadow.realized_pnl ?? 0}</span></div>
+    </div>
+  </div>
+
+  <div class="perf-panel">
+    <div class="perf-title">理由</div>
+    <div class="perf-box" style="font-size:22px;line-height:1.5">${reasons}</div>
+  </div>
+
+  <div class="perf-panel">
+    <div class="perf-title">AI統合脳</div>
+    <div class="perf-grid">
+      <div class="perf-box">AI脳<span>${brain.brain_status || core.brain_status || "--"}</span></div>
+      <div class="perf-box">Brain Score<span>${brain.brain_score || core.brain_score || "--"}</span></div>
+      <div class="perf-box">本番ロック<span>${core.real_trade_allowed ? "OFF" : "ON"}</span></div>
+      <div class="perf-box">実弾許可<span>${core.real_trade_allowed ? "YES" : "NO"}</span></div>
+      <div class="perf-box">Go Live<span>${real.status || "NOT_READY"}</span></div>
+    </div>
+  </div>
+
+  <div class="perf-panel">
+    <div class="perf-title">Replay / 期待値</div>
+    <div class="perf-grid">
+      <div class="perf-box">Replay Key<span>${brain.replay_key || "--"}</span></div>
+      <div class="perf-box">Policy<span>${brain.replay_policy_action || "--"}</span></div>
+      <div class="perf-box">期待値<span>${brain.replay_expectancy ?? "--"}</span></div>
+      <div class="perf-box">Expectancy<span>${brain.replay_expectancy_action || "--"}</span></div>
+      <div class="perf-box">Size倍率<span>${brain.replay_size_mult ?? "--"}</span></div>
+    </div>
+  </div>
+
+  <div class="perf-panel">
+    <div class="perf-title">重み付きAI会議</div>
+    <div class="perf-grid">
+      <div class="perf-box">会議判断<span>${brain.weighted_agent_decision || "--"}</span></div>
+      <div class="perf-box">LONG<span>${brain.weighted_votes?.LONG ?? 0}</span></div>
+      <div class="perf-box">SHORT<span>${brain.weighted_votes?.SHORT ?? 0}</span></div>
+      <div class="perf-box">SKIP<span>${brain.weighted_votes?.SKIP ?? 0}</span></div>
+      <div class="perf-box">HOLD<span>${brain.weighted_votes?.HOLD ?? 0}</span></div>
+    </div>
+  </div>
+
+  <div class="perf-panel">
+    <div class="perf-title">ロック理由</div>
+    <div class="perf-box" style="font-size:22px;line-height:1.5">${lockReasons.join(" / ") || "--"}</div>
+  </div>
+  `;
+
+  // 旧カード群を全部隠して、新しいアプリを先頭に挿す
+  const oldTitles = ["本日の売買指示","仮想口座","理由","AI統合脳","Replay / 期待値","重み付きAI会議","ロック理由"];
+  [...document.querySelectorAll("h1,h2,h3")].forEach(el=>{
+    const t = (el.textContent || "").trim();
+    if (oldTitles.includes(t)) {
+      const box = el.closest("section,div");
+      if (box) box.style.display = "none";
+    }
+  });
+
+  const mount = document.createElement("div");
+  mount.id = "mobile-dashboard-app";
+  mount.innerHTML = html;
+  document.body.prepend(mount);
+})();
+</script>
+<!-- MOBILE_DASH_APP_END -->
+
