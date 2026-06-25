@@ -1,9 +1,8 @@
 {
-  "time": "2026-06-25 10:13:09",
-  "brain_status": "NO_GO",
-  "brain_score": 50,
+  "time": "2026-06-25 11:16:19",
+  "brain_status": "GO",
+  "brain_score": 80,
   "flags": [
-    "REAL_NOT_READY",
     "MASTER_SKIP",
     "AGENT_SKIP"
   ],
@@ -19,11 +18,12 @@
   "weighted_votes": {
     "LONG": 3.2,
     "SHORT": 0.0,
-    "SKIP": 7.5,
+    "SKIP": 6.0,
     "HOLD": 0.0
   },
-  "real_go_live": "NOT_READY",
+  "position": 1,
+  "side": "LONG",
   "health": "OK",
   "emergency_stop": false,
-  "summary": "status=NO_GO score=50 decision=SKIP replay=TREND_UP_LONG agent=SKIP"
+  "summary": "status=GO score=80 decision=SKIP agent=SKIP pos=LONG"
 }

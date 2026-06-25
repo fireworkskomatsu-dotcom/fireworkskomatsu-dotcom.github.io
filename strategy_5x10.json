@@ -1,11 +1,11 @@
 {
-  "time": "2026-06-25 10:13:08",
+  "time": "2026-06-25 11:16:18",
   "mode": "REAL_5x10_EVOLUTION",
   "strategy_count": 50,
   "votes": {
     "LONG": 10.28,
     "SHORT": 0.0,
-    "SKIP": 15.84,
+    "SKIP": 15.57,
     "HOLD": 4.14
   },
   "final_decision": "SKIP",
@@ -51,21 +51,6 @@
       "weight": 0.9,
       "reasons": [
         "TEMP_BLOCK"
-      ],
-      "regime": "TREND_UP",
-      "vol_mode": "DANGER",
-      "replay_key": "TREND_UP_LONG",
-      "status": "ACTIVE_SHADOW"
-    },
-    {
-      "id": "RISK_04",
-      "family": "RISK",
-      "name": "confidence_low",
-      "decision": "SKIP",
-      "score": 85,
-      "weight": 0.85,
-      "reasons": [
-        "LOW_CONF"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -186,6 +171,21 @@
       "weight": 0.75,
       "reasons": [
         "POSITION_EXISTS"
+      ],
+      "regime": "TREND_UP",
+      "vol_mode": "DANGER",
+      "replay_key": "TREND_UP_LONG",
+      "status": "ACTIVE_SHADOW"
+    },
+    {
+      "id": "MEMORY_03",
+      "family": "MEMORY",
+      "name": "shadow_win_memory",
+      "decision": "LONG",
+      "score": 74,
+      "weight": 0.74,
+      "reasons": [
+        "SHADOW_WIN_MEMORY"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -544,10 +544,10 @@
       "family": "RISK",
       "name": "confidence_low",
       "decision": "SKIP",
-      "score": 85,
-      "weight": 0.85,
+      "score": 40,
+      "weight": 0.4,
       "reasons": [
-        "LOW_CONF"
+        "CONDITION_FALSE"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",
@@ -814,10 +814,10 @@
       "family": "MEMORY",
       "name": "experience_growth",
       "decision": "SKIP",
-      "score": 44,
-      "weight": 0.44,
+      "score": 62,
+      "weight": 0.62,
       "reasons": [
-        "CONDITION_FALSE"
+        "EXPERIENCE_GROWING"
       ],
       "regime": "TREND_UP",
       "vol_mode": "DANGER",

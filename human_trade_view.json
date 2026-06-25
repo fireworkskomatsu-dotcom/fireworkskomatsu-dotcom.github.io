@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-25 10:13:09",
+  "updated_at": "2026-06-25 11:16:19",
   "today_action": "見送り",
   "decision": "SKIP",
   "symbol": "1321.T",
@@ -31,9 +31,9 @@
     "win_rate": 100.0
   },
   "readiness": {
-    "experience_count": 2,
-    "remaining_to_shadow_review": 8,
-    "remaining_to_real_review": 18,
+    "experience_count": 6,
+    "remaining_to_shadow_review": 4,
+    "remaining_to_real_review": 14,
     "shadow_review_ready": false,
     "real_review_ready": false
   },
@@ -44,8 +44,8 @@
     "想定金額: 0.0円",
     "仮想口座: 1007120.0円 / 損益 7120.0円 / 含み 0.0円",
     "勝敗: 2勝 0敗 / 勝率 100.0%",
-    "実弾検討まで残り: 18ログ",
+    "実弾検討まで残り: 14ログ",
     "理由: 市場温度異常 / OVERHEAT / Replay Policy BOOST TREND_UP_LONG / Replay Expectancy POSITIVE TREND_UP_LONG"
   ],
-  "headline": "見送り / 0株 / 約0.0円 / 仮想 2勝0敗 / 実弾まで残り18"
+  "headline": "見送り / 0株 / 約0.0円 / 仮想 2勝0敗 / 実弾まで残り14"
 }

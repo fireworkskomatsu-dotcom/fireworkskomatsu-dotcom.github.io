@@ -1,8 +1,8 @@
 {
-  "time": "2026-06-25 10:13:09",
+  "time": "2026-06-25 11:16:19",
   "symbol": "1321.T",
-  "closed_trades_30d": 2,
-  "low_frequency": true,
+  "closed_trades_30d": 6,
+  "low_frequency": false,
   "target_min_closed_30d": 4,
-  "status": "TOO_FEW_TRADES"
+  "status": "OK"
 }

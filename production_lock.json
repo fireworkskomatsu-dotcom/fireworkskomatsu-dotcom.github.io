@@ -1,10 +1,10 @@
 {
-  "time": "2026-06-25 10:13:09",
+  "time": "2026-06-25 11:16:19",
   "production_locked": true,
   "allow_real_trade": false,
+  "shadow_trade_blocked": true,
   "reasons": [
     "REAL_GO_LIVE_NOT_READY",
-    "TRADE_BRAIN_NOT_GO",
     "MASTER_SKIP"
   ]
 }

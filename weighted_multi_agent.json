@@ -1,15 +1,14 @@
 {
-  "time": "2026-06-25 10:13:08",
+  "time": "2026-06-25 11:16:18",
   "final_decision": "SKIP",
   "weighted_votes": {
     "LONG": 3.2,
     "SHORT": 0.0,
-    "SKIP": 7.5,
+    "SKIP": 6.0,
     "HOLD": 0.0
   },
   "reasons": [
     "FILTER_SKIP",
-    "LOW_CONFIDENCE",
     "RISK_EXIT",
     "TEMP_BLOCK"
   ],

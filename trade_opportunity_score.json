@@ -1,9 +1,7 @@
 {
-  "time": "2026-06-25 10:13:09",
+  "time": "2026-06-25 11:16:19",
   "symbol": "1321.T",
   "final_decision": "SKIP",
-  "opportunity_score": 30,
-  "notes": [
-    "frequency boost"
-  ]
+  "opportunity_score": 20,
+  "notes": []
 }
