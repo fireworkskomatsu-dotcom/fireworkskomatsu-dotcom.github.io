@@ -1638,7 +1638,7 @@ async function loadJson(path, def={}){
 </script>
 
 <script>
-async function loadHumanTrade(){
+async function /* disabled: loadHumanTrade() */{
   try{
     const h = await fetch("./human_trade_view.json?ts=" + Date.now()).then(r => r.json());
     const core = await fetch("./core_dashboard.json?ts=" + Date.now()).then(r => r.json());
@@ -1677,8 +1677,8 @@ async function loadHumanTrade(){
   }
 }
 
-loadHumanTrade();
-setInterval(loadHumanTrade, 60000);
+/* disabled: loadHumanTrade() */;
+/* disabled old interval */
 </script>
 
 
