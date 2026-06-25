@@ -16,15 +16,6 @@
     "saved_at": "2026-06-11 12:04:36"
   },
   {
-    "time": "2026-06-11 12:04:36",
-    "dna": "TREND_UP|PANIC|DANGER|CONF_MID|RISK_HIGH",
-    "decision": "SKIP",
-    "risk_mode": "HIGH",
-    "equity": 1000000,
-    "archive_id": "20260615153653",
-    "saved_at": "2026-06-15 15:36:53"
-  },
-  {
     "time": "2026-06-11 13:28:41",
     "decision": "LONG",
     "event": "ENTER",
@@ -48,11 +39,11 @@
     "saved_at": "2026-06-15 15:39:05"
   },
   {
-    "time": "2026-06-15 16:57:10",
+    "time": "2026-06-19 17:14:41",
     "decision": "LONG",
-    "event": "ENTER",
-    "equity": 1075839.0,
-    "pnl_yen": 0
+    "event": "TAKE_PROFIT",
+    "equity": 1007120.0,
+    "pnl_yen": 2010.0
   },
   {
     "time": "2026-06-11 13:28:41",
@@ -74,12 +65,5 @@
     "event": "ENTER",
     "equity": 1007120.0,
     "pnl_yen": 0
-  },
-  {
-    "time": "2026-06-19 17:14:41",
-    "decision": "LONG",
-    "event": "TAKE_PROFIT",
-    "equity": 1007120.0,
-    "pnl_yen": 2010.0
   }
 ]

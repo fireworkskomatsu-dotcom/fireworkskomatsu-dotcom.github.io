@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-06-19 17:14:41",
+  "updated_at": "2026-06-25 09:43:31",
   "assets": {
     "1321.T": {
       "symbol": "1321.T",
       "name": "1321 日経225ETF",
       "class": "JP_ETF",
-      "price": 74630.0,
+      "price": 75730.0,
       "momentum_5d": 0,
       "trend": "TREND_UP",
       "source": "fallback",
