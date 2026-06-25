@@ -1,13 +1,13 @@
 {
-  "time": "2026-06-25 10:07:12",
-  "core_decision": "LONG",
+  "time": "2026-06-25 10:08:48",
+  "core_decision": "SKIP",
   "core_symbol": "1321.T",
-  "core_order": "LONG 1株",
+  "core_order": "なし",
   "multi_asset_mode": "SHADOW_OBSERVATION",
   "asset_count": 3,
   "strategy_count": 150,
   "experience": {
-    "time": "2026-06-25 10:07:12",
+    "time": "2026-06-25 10:08:48",
     "multi_asset_experience_count": 6,
     "added": 0,
     "asset_count": 3,
@@ -21,9 +21,9 @@
       "trend": "TREND_UP",
       "momentum_5d": 0.0,
       "votes": {
-        "LONG": 26.4,
+        "LONG": 19.0,
         "SHORT": 0.0,
-        "SKIP": 4.8,
+        "SKIP": 12.2,
         "HOLD": 0.0
       },
       "final_decision": "LONG"
@@ -64,9 +64,9 @@
     "trend": "TREND_UP",
     "momentum_5d": 0.0,
     "votes": {
-      "LONG": 26.4,
+      "LONG": 19.0,
       "SHORT": 0.0,
-      "SKIP": 4.8,
+      "SKIP": 12.2,
       "HOLD": 0.0
     },
     "final_decision": "LONG"

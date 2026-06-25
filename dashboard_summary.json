@@ -1,12 +1,12 @@
 {
-  "time": "2026-06-25 10:07:12",
+  "time": "2026-06-25 10:08:47",
   "symbol": "1321.T",
   "price": 75730.0,
-  "final_decision": "LONG",
-  "actual_size": 1,
-  "candidate_size": 1,
+  "final_decision": "SKIP",
+  "actual_size": 0,
+  "candidate_size": 0,
   "brain_status": "NO_GO",
-  "brain_score": 70,
+  "brain_score": 50,
   "production_locked": true,
   "allow_real_trade": false,
   "go_live": "NOT_READY",
@@ -30,18 +30,18 @@
   "weighted_votes": {
     "LONG": 3.2,
     "SHORT": 0.0,
-    "SKIP": 7.5,
+    "SKIP": 6.0,
     "HOLD": 0.0
   },
   "main_reasons": [
-    "SHADOW_LOG_ACCELERATION_LONG",
     "RECOVERY_WARNING_NOT_VETO"
   ],
   "lock_reasons": [
     "MANUAL_UNLOCK_FILE_MISSING",
     "TRADE_BRAIN_NOT_GO",
     "REAL_GO_LIVE_NOT_READY",
-    "GO_LIVE_V2_NOT_READY"
+    "GO_LIVE_V2_NOT_READY",
+    "MASTER_SKIP"
   ],
-  "summary": "1321.T price=75730.0 decision=LONG shadow=1007120.0 wins=2 losses=0 go=NOT_READY"
+  "summary": "1321.T price=75730.0 decision=SKIP shadow=1007120.0 wins=2 losses=0 go=NOT_READY"
 }
