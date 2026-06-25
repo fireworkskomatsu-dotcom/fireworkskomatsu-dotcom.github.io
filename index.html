@@ -1680,3 +1680,155 @@ async function loadHumanTrade(){
 loadHumanTrade();
 setInterval(loadHumanTrade, 60000);
 </script>
+
+
+<!-- FORCE_DASHBOARD_RENDERER_START -->
+<script>
+(async function(){
+  function txt(v, d="--"){
+    return (v===undefined || v===null || v==="") ? d : String(v);
+  }
+  async function getJson(name){
+    const r = await fetch(name + "?ts=" + Date.now());
+    return await r.json();
+  }
+
+  function findCard(title){
+    const hs = [...document.querySelectorAll("h1,h2,h3")];
+    const h = hs.find(x => (x.textContent || "").includes(title));
+    return h ? h.closest("section,div") : null;
+  }
+
+  function setBigAction(card, action){
+    if(!card) return;
+    const all = [...card.querySelectorAll("*")];
+    const big = all.find(el=>{
+      const t=(el.textContent||"").trim();
+      return t==="--" || t==="見送り" || t==="買い" || t==="売り";
+    });
+    if(big) big.textContent = action;
+  }
+
+  function rewriteRows(card, rows){
+    if(!card) return;
+    const labels = Object.keys(rows);
+    const els = [...card.querySelectorAll("div,p,span")];
+
+    for (const label of labels){
+      const idx = els.findIndex(el => (el.textContent || "").trim() === label);
+      if (idx >= 0){
+        // 次に来る値っぽい要素を書き換える
+        for (let j = idx + 1; j < Math.min(idx + 6, els.length); j++){
+          const t = (els[j].textContent || "").trim();
+          if (t !== "" && t !== label){
+            els[j].textContent = rows[label];
+            break;
+          }
+        }
+      }
+    }
+  }
+
+  async function render(){
+    const core  = await getJson("./core_dashboard.json");
+    const human = await getJson("./human_trade_view.json");
+    const brain = await getJson("./trade_brain.json");
+    const real  = await getJson("./real_go_live.json");
+
+    const shadow = core.shadow_account || human.shadow || {};
+    const readiness = core.readiness || human.readiness || {};
+
+    // ===== 表示値 =====
+    const todayAction = human.today_action || (
+      core.decision === "LONG" ? "買い" :
+      core.decision === "SHORT" ? "売り" : "見送り"
+    );
+
+    const reasonText = Array.isArray(human.reason_short)
+      ? human.reason_short.join(" / ")
+      : txt(human.reason_short);
+
+    const lockReasons = [];
+    if (!real.allow_real_trade) lockReasons.push("REAL_GO_LIVE_NOT_READY");
+    if ((brain.brain_status || core.brain_status) !== "GO") lockReasons.push("TRADE_BRAIN_NOT_GO");
+    if ((core.decision || human.decision) === "SKIP") lockReasons.push("MASTER_SKIP");
+
+    // ===== カード取得 =====
+    const cardToday   = findCard("本日の売買指示");
+    const cardShadow  = findCard("仮想口座");
+    const cardReason  = findCard("理由");
+    const cardBrain   = findCard("AI統合脳");
+    const cardReplay  = findCard("Replay / 期待値");
+    const cardWeight  = findCard("重み付きAI会議");
+    const cardLock    = findCard("ロック理由");
+
+    // ===== 本日の売買指示 =====
+    setBigAction(cardToday, todayAction);
+    rewriteRows(cardToday, {
+      "銘柄": txt(core.symbol || human.symbol || "1321.T"),
+      "現在値": txt(core.price || human.price) + "円",
+      "数量": txt(core.qty ?? human.qty ?? 0) + "株",
+      "想定金額": txt(core.amount ?? human.estimated_amount ?? 0) + "円",
+      "注文": txt(human.order_instruction || core.order_instruction || "なし"),
+      "損切り": txt(human.stop_loss || "-1.0%"),
+      "利確": txt(human.take_profit || "2.2%")
+    });
+
+    // ===== 仮想口座 =====
+    rewriteRows(cardShadow, {
+      "仮想残高": txt(shadow.equity),
+      "損益率": txt(shadow.return_pct ?? 0) + "%",
+      "建玉": txt(shadow.position || "なし"),
+      "数量": txt(shadow.position_qty ?? 0) + "株",
+      "含み損益": txt(shadow.unrealized_yen ?? 0)
+    });
+
+    // ===== 理由 =====
+    rewriteRows(cardReason, {
+      "理由": reasonText
+    });
+
+    // ===== AI統合脳 =====
+    rewriteRows(cardBrain, {
+      "AI脳": txt(brain.brain_status || core.brain_status),
+      "Brain Score": txt(brain.brain_score || core.brain_score),
+      "本番ロック": core.real_trade_allowed ? "OFF" : "ON",
+      "実弾許可": core.real_trade_allowed ? "YES" : "NO",
+      "Go Live": txt(real.status || "NOT_READY")
+    });
+
+    // ===== Replay / 期待値 =====
+    rewriteRows(cardReplay, {
+      "Replay Key": txt(brain.replay_key),
+      "Policy": txt(brain.replay_policy_action),
+      "期待値": txt(brain.replay_expectancy),
+      "Expectancy": txt(brain.replay_expectancy_action),
+      "Size倍率": txt(brain.replay_size_mult)
+    });
+
+    // ===== 重み付きAI会議 =====
+    const votes = brain.weighted_votes || {};
+    rewriteRows(cardWeight, {
+      "会議判断": txt(brain.weighted_agent_decision),
+      "LONG": txt(votes.LONG ?? 0),
+      "SHORT": txt(votes.SHORT ?? 0),
+      "SKIP": txt(votes.SKIP ?? 0),
+      "HOLD": txt(votes.HOLD ?? 0)
+    });
+
+    // ===== ロック理由 =====
+    rewriteRows(cardLock, {
+      "理由": lockReasons.join(" / ")
+    });
+  }
+
+  window.addEventListener("load", function(){
+    render();
+    setTimeout(render, 500);
+    setTimeout(render, 1500);
+    setInterval(render, 3000);
+  });
+})();
+</script>
+<!-- FORCE_DASHBOARD_RENDERER_END -->
+
