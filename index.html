@@ -1832,3 +1832,132 @@ setInterval(loadHumanTrade, 60000);
 </script>
 <!-- FORCE_DASHBOARD_RENDERER_END -->
 
+
+
+<!-- MOBILE_DASH_FORCE_RENDER_START -->
+<script>
+(function(){
+  function q(text){
+    const all = [...document.querySelectorAll("h1,h2,h3,div,span,p")];
+    return all.find(el => (el.textContent || "").trim() === text);
+  }
+  function cardByTitle(title){
+    const heads = [...document.querySelectorAll("h1,h2,h3")];
+    const h = heads.find(x => (x.textContent || "").includes(title));
+    return h ? h.closest("section,div") : null;
+  }
+  function safe(v, d="--"){
+    return (v===undefined || v===null || v==="") ? d : v;
+  }
+  function setBigText(card, value){
+    if(!card) return;
+    const els = [...card.querySelectorAll("div,span,p,h1,h2,h3")];
+    const target = els.find(el => {
+      const t = (el.textContent || "").trim();
+      return t === "--" || t === "見送り" || t === "買い" || t === "売り";
+    });
+    if(target) target.textContent = value;
+  }
+  function setRow(card, label, value){
+    if(!card) return;
+    const els = [...card.querySelectorAll("div,span,p")];
+    for(let i=0;i<els.length;i++){
+      if((els[i].textContent || "").trim() === label){
+        for(let j=i+1;j<Math.min(i+8, els.length);j++){
+          const t = (els[j].textContent || "").trim();
+          if(t !== "" && t !== label){
+            els[j].textContent = value;
+            return;
+          }
+        }
+      }
+    }
+  }
+
+  async function loadJson(name){
+    const r = await fetch(name + "?ts=" + Date.now(), {cache:"no-store"});
+    return await r.json();
+  }
+
+  async function render(){
+    const core  = await loadJson("./core_dashboard.json");
+    const human = await loadJson("./human_trade_view.json");
+    const brain = await loadJson("./trade_brain.json");
+    const real  = await loadJson("./real_go_live.json");
+
+    const shadow = core.shadow_account || human.shadow || {};
+    const reason = Array.isArray(human.reason_short) ? human.reason_short.join(" / ") : safe(human.reason_short);
+
+    const todayCard  = cardByTitle("本日の売買指示");
+    const shadowCard = cardByTitle("仮想口座");
+    const reasonCard = cardByTitle("理由");
+    const brainCard  = cardByTitle("AI統合脳");
+    const replayCard = cardByTitle("Replay / 期待値");
+    const weightCard = cardByTitle("重み付きAI会議");
+    const lockCard   = cardByTitle("ロック理由");
+
+    const todayAction =
+      human.today_action ||
+      (core.decision === "LONG" ? "買い" :
+       core.decision === "SHORT" ? "売り" : "見送り");
+
+    // 本日の売買指示
+    setBigText(todayCard, todayAction);
+    setRow(todayCard, "銘柄", safe(core.symbol || human.symbol || "1321.T"));
+    setRow(todayCard, "現在値", safe(core.price || human.price) + "円");
+    setRow(todayCard, "数量", safe(core.qty ?? human.qty ?? 0) + "株");
+    setRow(todayCard, "想定金額", safe(core.amount ?? human.estimated_amount ?? 0) + "円");
+    setRow(todayCard, "注文", safe(human.order_instruction || core.order_instruction || "なし"));
+    setRow(todayCard, "損切り", safe(human.stop_loss || "-1.0%"));
+    setRow(todayCard, "利確", safe(human.take_profit || "2.2%"));
+
+    // 仮想口座
+    setRow(shadowCard, "仮想残高", safe(shadow.equity));
+    setRow(shadowCard, "損益率", safe(shadow.return_pct ?? 0) + "%");
+    setRow(shadowCard, "建玉", safe(shadow.position || "なし"));
+    setRow(shadowCard, "数量", safe(shadow.position_qty ?? 0) + "株");
+    setRow(shadowCard, "含み損益", safe(shadow.unrealized_yen ?? 0));
+
+    // 理由
+    setRow(reasonCard, "理由", reason);
+
+    // AI統合脳
+    setRow(brainCard, "AI脳", safe(brain.brain_status || core.brain_status));
+    setRow(brainCard, "Brain Score", safe(brain.brain_score || core.brain_score));
+    setRow(brainCard, "本番ロック", core.real_trade_allowed ? "OFF" : "ON");
+    setRow(brainCard, "実弾許可", core.real_trade_allowed ? "YES" : "NO");
+    setRow(brainCard, "Go Live", safe(real.status || "NOT_READY"));
+
+    // Replay / 期待値
+    setRow(replayCard, "Replay Key", safe(brain.replay_key));
+    setRow(replayCard, "Policy", safe(brain.replay_policy_action));
+    setRow(replayCard, "期待値", safe(brain.replay_expectancy));
+    setRow(replayCard, "Expectancy", safe(brain.replay_expectancy_action));
+    setRow(replayCard, "Size倍率", safe(brain.replay_size_mult));
+
+    // 重み付きAI会議
+    const v = brain.weighted_votes || {};
+    setRow(weightCard, "会議判断", safe(brain.weighted_agent_decision));
+    setRow(weightCard, "LONG", safe(v.LONG ?? 0));
+    setRow(weightCard, "SHORT", safe(v.SHORT ?? 0));
+    setRow(weightCard, "SKIP", safe(v.SKIP ?? 0));
+    setRow(weightCard, "HOLD", safe(v.HOLD ?? 0));
+
+    // ロック理由
+    const locks = [];
+    if(!(real.allow_real_trade)) locks.push("REAL_GO_LIVE_NOT_READY");
+    if((brain.brain_status || core.brain_status) !== "GO") locks.push("TRADE_BRAIN_NOT_GO");
+    if((core.decision || human.decision) === "SKIP") locks.push("MASTER_SKIP");
+    setRow(lockCard, "理由", locks.join(" / "));
+  }
+
+  window.addEventListener("load", function(){
+    render();
+    setTimeout(render, 500);
+    setTimeout(render, 1500);
+    setTimeout(render, 3000);
+  });
+})();
+</script>
+<!-- MOBILE_DASH_FORCE_RENDER_END -->
+
