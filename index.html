@@ -1641,38 +1641,39 @@ async function loadJson(path, def={}){
 async function loadHumanTrade(){
   try{
     const h = await fetch("./human_trade_view.json?ts=" + Date.now()).then(r => r.json());
+    const core = await fetch("./core_dashboard.json?ts=" + Date.now()).then(r => r.json());
 
-    const set = (id, v) => {
+    const setText = (id, v) => {
       const el = document.getElementById(id);
       if(el) el.innerText = (v === null || v === undefined || v === "") ? "--" : v;
     };
 
-    const action = document.getElementById("humanAction");
-    if(action){
-      action.innerText = h.today_action || "--";
-      action.style.color =
-        h.decision === "LONG" ? "#57ff98" :
-        h.decision === "SHORT" ? "#ff5c6c" :
-        "#ffd84d";
-    }
+    const shadow = core.shadow_account || h.shadow || {};
+    const readiness = core.readiness || h.readiness || {};
 
-    set("humanSymbol", h.symbol);
-    set("humanPrice", h.price ? h.price + "円" : "--");
-    set("humanQty", (h.qty ?? 0) + "株");
-    set("humanAmount", h.estimated_amount ? Number(h.estimated_amount).toLocaleString() + "円" : "0円");
-    set("humanOrder", h.order_type);
-    set("humanStop", h.stop_loss);
-    set("humanTarget", h.take_profit);
+    setText("todayAction", h.today_action || (core.decision === "LONG" ? "買い" : core.decision === "SHORT" ? "売り" : "見送り"));
+    setText("todaySymbol", core.symbol || h.symbol || "1321.T");
+    setText("todayPrice", ((core.price ?? h.price ?? "--") + "円"));
+    setText("todayQty", ((core.qty ?? h.qty ?? 0) + "株"));
+    setText("todayAmount", ((core.amount ?? h.estimated_amount ?? 0) + "円"));
+    setText("todayOrder", h.order_instruction || core.order_instruction || "なし");
+    setText("todayStop", h.stop_loss || "-1.0%");
+    setText("todayTake", h.take_profit || "2.2%");
 
-    set("shadowEquity", h.shadow_equity ? Number(h.shadow_equity).toLocaleString() + "円" : "--");
-    set("shadowReturn", (h.shadow_return_pct ?? 0) + "%");
-    set("shadowPosition", h.shadow_position || "なし");
-    set("shadowQty", (h.shadow_position_qty ?? 0) + "株");
-    set("shadowUnreal", (h.shadow_unrealized_pct ?? 0) + "%");
+    setText("shadowEquity", shadow.equity ?? "--");
+    setText("shadowReturn", ((shadow.return_pct ?? 0) + "%"));
+    setText("todayPosition", shadow.position ?? "なし");
+    setText("todayEntry", shadow.position_qty ?? 0);
+    setText("todayUnrealized", shadow.unrealized_yen ?? 0);
 
-    set("humanReasons", (h.reason_short || []).join(" / "));
+    const remain = readiness.remaining_to_real_review ?? "--";
+    const reason = Array.isArray(h.reason_short) ? h.reason_short.join(" / ") : (h.reason_short || "--");
+    setText("reasonText", reason);
+
+    const headline = h.headline || `${h.today_action || "見送り"} / ${core.qty ?? h.qty ?? 0}株 / 約${core.amount ?? h.estimated_amount ?? 0}円 / 仮想 ${shadow.wins ?? 0}勝${shadow.losses ?? 0}敗 / 実弾まで残り${remain}`;
+    setText("headline", headline);
   }catch(e){
-    console.log("human trade view error", e);
+    console.error("loadHumanTrade error", e);
   }
 }
 
