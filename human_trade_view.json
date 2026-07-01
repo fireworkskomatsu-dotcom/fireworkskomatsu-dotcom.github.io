@@ -1,51 +1,85 @@
 {
-  "updated_at": "2026-06-25 11:16:19",
-  "today_action": "見送り",
-  "decision": "SKIP",
-  "symbol": "1321.T",
-  "name": "1321 日経225ETF",
-  "price": 75730.0,
-  "qty": 0,
-  "estimated_amount": 0.0,
-  "order_instruction": "なし",
-  "order_type": "なし",
-  "stop_loss": "-1.0%",
-  "take_profit": "2.2%",
-  "real_trade_allowed": false,
-  "mode": "SHADOW_ONLY",
-  "shadow": {
-    "is_running": true,
-    "equity": 1007120.0,
-    "cash": 931390.0,
-    "realized_pnl": 7120.0,
+  "version": "1321_v9_single_dashboard",
+  "updated_at": "2026-07-01 15:40:47",
+  "today": {
+    "new_action": "新規なし",
+    "decision": "SKIP",
+    "symbol": "1321.T",
+    "price": 73680.0,
+    "qty": 0,
+    "amount": 0.0,
+    "order": "なし",
+    "stop_loss": "-1.0%",
+    "take_profit": "2.2%"
+  },
+  "position": {
+    "status": "保有なし",
+    "side": "なし",
+    "qty": 0,
+    "entry_price": 0.0,
+    "current_price": 73680.0,
     "unrealized_yen": 0.0,
-    "return_pct": 0.71,
-    "position": "LONG",
-    "position_qty": 1,
-    "entry_price": 75730.0,
-    "current_price": 75730.0,
     "unrealized_pct": 0.0,
-    "closed_trades": 2,
+    "held_days": 6,
+    "exit_now": false,
+    "exit_reason": "HOLD"
+  },
+  "performance": {
+    "equity": 1005230.0,
+    "cash": 1005230.0,
+    "realized_pnl": 5230.0,
+    "return_pct": 0.52,
+    "closed_trades": 3,
     "wins": 2,
-    "losses": 0,
-    "win_rate": 100.0
+    "losses": 1,
+    "win_rate": 66.7,
+    "last_closed_pnl_yen": -1890.0,
+    "last_win_yen": 0,
+    "last_loss_yen": -1890.0
   },
-  "readiness": {
+  "ai": {
+    "brain_status": "GO",
+    "brain_score": 70,
+    "weighted_decision": "SKIP",
+    "votes": {
+      "LONG": 3.2,
+      "SHORT": 0.0,
+      "SKIP": 4.0,
+      "HOLD": 0.0
+    },
+    "replay_key": "TREND_UP_LONG",
+    "replay_policy": "BOOST",
+    "expectancy": 0.001108,
+    "expectancy_action": "BOOST",
+    "market_temperature": "NORMAL",
+    "overheat_type": "NONE"
+  },
+  "go_live": {
+    "status": "NOT_READY",
+    "allow_real_trade": false,
+    "production_locked": true,
+    "lock_reasons": [
+      "REAL_GO_LIVE_NOT_READY",
+      "MASTER_SKIP"
+    ],
     "experience_count": 6,
-    "remaining_to_shadow_review": 4,
-    "remaining_to_real_review": 14,
-    "shadow_review_ready": false,
-    "real_review_ready": false
+    "closed_trades": 3,
+    "remaining_experience": 14,
+    "remaining_closed": 0,
+    "rules": [
+      "実弾開始は最低20経験以上",
+      "閉じたトレード10件以上",
+      "PnL監査が正常",
+      "最大DDと勝率確認後"
+    ]
   },
-  "reason_short": [
-    "最終判断: SKIP",
-    "価格: 75730.0",
-    "数量: 0株",
-    "想定金額: 0.0円",
-    "仮想口座: 1007120.0円 / 損益 7120.0円 / 含み 0.0円",
-    "勝敗: 2勝 0敗 / 勝率 100.0%",
-    "実弾検討まで残り: 14ログ",
-    "理由: 市場温度異常 / OVERHEAT / Replay Policy BOOST TREND_UP_LONG / Replay Expectancy POSITIVE TREND_UP_LONG"
-  ],
-  "headline": "見送り / 0株 / 約0.0円 / 仮想 2勝0敗 / 実弾まで残り14"
+  "reason": [
+    "新規判断: SKIP",
+    "保有状態: 保有なし",
+    "決済判断: HOLD",
+    "勝敗: 2勝 1敗 / 勝率 66.7%",
+    "今回決済: -1890.0円",
+    "市場温度: NORMAL / NONE",
+    "実弾: NOT_READY / 理由: REAL_GO_LIVE_NOT_READY / MASTER_SKIP"
+  ]
 }

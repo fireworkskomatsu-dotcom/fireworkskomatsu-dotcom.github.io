@@ -1,16 +1,15 @@
 {
-  "time": "2026-07-01 15:20:23",
+  "time": "2026-07-01 15:40:47",
   "final_decision": "SKIP",
   "weighted_votes": {
     "LONG": 3.2,
     "SHORT": 0.0,
-    "SKIP": 6.0,
+    "SKIP": 4.0,
     "HOLD": 0.0
   },
   "reasons": [
     "FILTER_SKIP",
-    "RISK_EXIT",
-    "TEMP_BLOCK"
+    "RISK_EXIT"
   ],
   "source": "weighted_multi_agent_ai.py"
 }

@@ -1,5 +1,5 @@
 {
-  "time": "2026-07-01 15:20:23",
+  "time": "2026-07-01 15:40:47",
   "brain_status": "GO",
   "brain_score": 70,
   "flags": [
@@ -18,7 +18,7 @@
   "weighted_votes": {
     "LONG": 3.2,
     "SHORT": 0.0,
-    "SKIP": 6.0,
+    "SKIP": 4.0,
     "HOLD": 0.0
   },
   "position": 0,

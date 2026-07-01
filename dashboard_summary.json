@@ -1,44 +1,85 @@
 {
-  "time": "2026-06-25 11:16:19",
-  "symbol": "1321.T",
-  "price": 75730.0,
-  "final_decision": "SKIP",
-  "actual_size": 0,
-  "candidate_size": 0,
-  "brain_status": "GO",
-  "brain_score": 80,
-  "production_locked": true,
-  "allow_real_trade": false,
-  "go_live": "NOT_READY",
-  "go_live_v2": "NOT_READY",
-  "health": "OK",
-  "emergency_stop": false,
-  "closed": 2,
-  "wins": 2,
-  "losses": 0,
-  "win_rate": 100.0,
-  "realized_pnl": 7120.0,
-  "unrealized_yen": 0.0,
-  "shadow_equity": 1007120.0,
-  "shadow_return_pct": 0.71,
-  "replay_key": "TREND_UP_LONG",
-  "replay_policy_action": "BOOST",
-  "replay_expectancy": 0.001108,
-  "replay_expectancy_action": "BOOST",
-  "replay_size_mult": 1.25,
-  "weighted_agent_decision": "SKIP",
-  "weighted_votes": {
-    "LONG": 3.2,
-    "SHORT": 0.0,
-    "SKIP": 6.0,
-    "HOLD": 0.0
+  "version": "1321_v9_single_dashboard",
+  "updated_at": "2026-07-01 15:40:47",
+  "today": {
+    "new_action": "新規なし",
+    "decision": "SKIP",
+    "symbol": "1321.T",
+    "price": 73680.0,
+    "qty": 0,
+    "amount": 0.0,
+    "order": "なし",
+    "stop_loss": "-1.0%",
+    "take_profit": "2.2%"
   },
-  "main_reasons": [
-    "RECOVERY_WARNING_NOT_VETO"
-  ],
-  "lock_reasons": [
-    "REAL_GO_LIVE_NOT_READY",
-    "MASTER_SKIP"
-  ],
-  "summary": "1321.T price=75730.0 decision=SKIP shadow=1007120.0 wins=2 losses=0 go=NOT_READY"
+  "position": {
+    "status": "保有なし",
+    "side": "なし",
+    "qty": 0,
+    "entry_price": 0.0,
+    "current_price": 73680.0,
+    "unrealized_yen": 0.0,
+    "unrealized_pct": 0.0,
+    "held_days": 6,
+    "exit_now": false,
+    "exit_reason": "HOLD"
+  },
+  "performance": {
+    "equity": 1005230.0,
+    "cash": 1005230.0,
+    "realized_pnl": 5230.0,
+    "return_pct": 0.52,
+    "closed_trades": 3,
+    "wins": 2,
+    "losses": 1,
+    "win_rate": 66.7,
+    "last_closed_pnl_yen": -1890.0,
+    "last_win_yen": 0,
+    "last_loss_yen": -1890.0
+  },
+  "ai": {
+    "brain_status": "GO",
+    "brain_score": 70,
+    "weighted_decision": "SKIP",
+    "votes": {
+      "LONG": 3.2,
+      "SHORT": 0.0,
+      "SKIP": 4.0,
+      "HOLD": 0.0
+    },
+    "replay_key": "TREND_UP_LONG",
+    "replay_policy": "BOOST",
+    "expectancy": 0.001108,
+    "expectancy_action": "BOOST",
+    "market_temperature": "NORMAL",
+    "overheat_type": "NONE"
+  },
+  "go_live": {
+    "status": "NOT_READY",
+    "allow_real_trade": false,
+    "production_locked": true,
+    "lock_reasons": [
+      "REAL_GO_LIVE_NOT_READY",
+      "MASTER_SKIP"
+    ],
+    "experience_count": 6,
+    "closed_trades": 3,
+    "remaining_experience": 14,
+    "remaining_closed": 0,
+    "rules": [
+      "実弾開始は最低20経験以上",
+      "閉じたトレード10件以上",
+      "PnL監査が正常",
+      "最大DDと勝率確認後"
+    ]
+  },
+  "reason": [
+    "新規判断: SKIP",
+    "保有状態: 保有なし",
+    "決済判断: HOLD",
+    "勝敗: 2勝 1敗 / 勝率 66.7%",
+    "今回決済: -1890.0円",
+    "市場温度: NORMAL / NONE",
+    "実弾: NOT_READY / 理由: REAL_GO_LIVE_NOT_READY / MASTER_SKIP"
+  ]
 }
