@@ -1,11 +1,11 @@
 {
-  "time": "2026-06-25 11:16:19",
+  "time": "2026-07-01 15:20:23",
   "status": "NOT_READY",
   "allow_real_trade": false,
   "experience_count": 6,
-  "closed_trades": 2,
-  "win_rate": 100.0,
-  "realized_pnl": 7120.0,
+  "closed_trades": 3,
+  "win_rate": 66.7,
+  "realized_pnl": 5230.0,
   "rules": [
     "experience_count >= 20",
     "closed_trades >= 10",

@@ -1,7 +1,7 @@
 {
-  "time": "2026-06-25 11:16:19",
+  "time": "2026-07-01 15:20:23",
   "brain_status": "GO",
-  "brain_score": 80,
+  "brain_score": 70,
   "flags": [
     "MASTER_SKIP",
     "AGENT_SKIP"
@@ -21,9 +21,9 @@
     "SKIP": 6.0,
     "HOLD": 0.0
   },
-  "position": 1,
-  "side": "LONG",
+  "position": 0,
+  "side": null,
   "health": "OK",
   "emergency_stop": false,
-  "summary": "status=GO score=80 decision=SKIP agent=SKIP pos=LONG"
+  "summary": "status=GO score=70 decision=SKIP agent=SKIP pos=NONE"
 }

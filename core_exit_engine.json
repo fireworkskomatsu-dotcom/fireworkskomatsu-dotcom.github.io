@@ -1,14 +1,14 @@
 {
-  "time": "2026-06-25 11:16:18",
-  "exit_now": false,
-  "exit_reason": "HOLD",
+  "time": "2026-07-01 15:20:23",
+  "exit_now": true,
+  "exit_reason": "STOP_LOSS",
   "side": "LONG",
   "entry_price": 75730.0,
-  "current_price": 75730.0,
-  "unrealized_pct": 0.0,
+  "current_price": 73840.0,
+  "unrealized_pct": -2.496,
   "stop_pct": -0.01,
   "take_profit_pct": 0.022,
   "trail_pct": 0.012,
-  "held_days": 0,
+  "held_days": 6,
   "vol_mode": "UNKNOWN"
 }
